@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "2eda65ab4711b339",
+    "type": "split",
+    "children": [
+      {
+        "id": "12eee863a8095b67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b11482a07307daad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms_propability/counting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f89112e15dc8b0cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "4eadb424a857c9f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e2586818a156850",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f7fe4bff2c40e084",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#bias",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e9061cc30ff46e68",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "1041ec925a90705a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "ee496c24ab06da8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5e23c569d23732a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec654419f0279d44",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "algorithms_propability/counting.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3515f75553c17f4a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "algorithms_propability/counting.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9187be9420360738",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "651932b8d410c88c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "algorithms_propability/counting.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "canvas:Create new canvas": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-ocr:Search OCR": false
+    }
+  },
+  "active": "b11482a07307daad",
+  "lastOpenFiles": [
+    "pictures",
+    "Pasted image 20230901103037.png",
+    "Pasted image 20230901093228.png",
+    "Pasted image 20230901093219.png",
+    "Pasted image 20230901093143.png",
+    "Pasted image 20230901093129.png",
+    "algorithms_propability/counting.md",
+    "algorithms_propability",
+    "Untitled.md",
+    "Pasted image 20230625191002.png",
+    "Pasted image 20230625190954.png",
+    "Pasted image 20230625190946.png",
+    "Data mining and machine learning/Problems/2021exam.md",
+    "Data mining and machine learning/Problems/2022exam.md",
+    "Data mining and machine learning/Problems/Lookup table.md",
+    "Data mining and machine learning/Problems/solutions/Data old solutions/solution09.pdf",
+    "Data mining and machine learning/Problems/13. probability, k-means algorithm, probability and statistics, support vector machine.md",
+    "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
+    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+    "Data mining and machine learning/Problems/solution04.pdf",
+    "Data mining and machine learning/remember.md",
+    "Pasted image 20230625123448.png",
+    "Data mining and machine learning/Problems/16..md",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
+    "Data mining and machine learning/Problems/Mock exam.md",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/apriori.py~",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/decisions_tree_gini_index.py",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/decisions_tree.py",
+    "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
+    "Data mining and machine learning/Problems/solution07.pdf",
+    "Data mining and machine learning/Problems/solution06.pdf",
+    "Data mining and machine learning/Problems/solution05.pdf",
+    "Data mining and machine learning/Problems/solution03.pdf",
+    "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
+    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
+    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
+    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
+    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
+    "Data mining and machine learning/6. Supervised Learning.md",
+    "Data mining and machine learning/5. Learning with Distributions.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/tree.png",
+    "Untitled.canvas"
+  ]
+}
