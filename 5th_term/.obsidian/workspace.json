@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/counting.md",
+                "file": "software_engineering/Models/Sequential models/V-model.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms_propability/counting.md",
+                "file": "software_engineering/Models/Sequential models/V-model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms_propability/counting.md",
+                "file": "software_engineering/Models/Sequential models/V-model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms_propability/counting.md"
+                "file": "software_engineering/Models/Sequential models/V-model.md"
               }
             }
           }
@@ -158,52 +158,52 @@
   },
   "active": "b11482a07307daad",
   "lastOpenFiles": [
-    "pictures/Pasted image 20230901093143.png",
-    "pictures/Pasted image 20230901093228.png",
-    "pictures/Pasted image 20230901103037.png",
-    "pictures/Pasted image 20230901093219.png",
-    "pictures/Pasted image 20230901093129.png",
-    "rand",
-    "pictures",
-    "Pasted image 20230901103037.png",
-    "Pasted image 20230901093228.png",
-    "Pasted image 20230901093219.png",
-    "Pasted image 20230901093143.png",
-    "Pasted image 20230901093129.png",
+    "software_engineering/Models/Sequential models/Waterfall model.md",
+    "software_engineering/Models/Sequential models/V-model.md",
+    "software_engineering/Models/Sequential models/Basis.md",
+    "software_engineering/Models/Sequential models",
+    "software_engineering/Introduction.md",
+    "software_engineering/Requirements.md",
+    "pictures/Pasted image 20230904093816.png",
+    "pictures/Pasted image 20230904092112.png",
+    "software_engineering/Models",
+    "formal_languages_data_processing/1_finite_automata.md",
+    "books/formal_languages_data_processing/Introduction to the theory of computation_third edition - Michael Sipser.pdf",
+    "books/formal_languages_data_processing/Modern-Compiler-Implementation-in-C.pdf",
+    "books/algorithmsXpropability/discrete_mathemathics.pdf",
+    "books/formal_languages_data_processing",
+    "books/algorithmsXpropability",
+    "books",
+    "Pasted image 20230904093816.png",
+    "Pasted image 20230904092112.png",
+    "pictures/Pasted image 20230904090122.png",
+    "pictures/Pasted image 20230904085445.png",
+    "Pasted image 20230904090122.png",
+    "Pasted image 20230904085445.png",
+    "formal_languages_data_processing/0_Introduction.md",
+    "formal_languages_data_processing",
+    "Excalidraw/Drawing 2023-09-03 17.33.06.excalidraw.md",
+    "pictures/Pasted image 20230903155511.png",
+    "pictures/Pasted image 20230903155037.png",
+    "Excalidraw",
     "algorithms_propability/counting.md",
-    "algorithms_propability",
     "Untitled.md",
-    "Pasted image 20230625191002.png",
     "Data mining and machine learning/Problems/2021exam.md",
     "Data mining and machine learning/Problems/2022exam.md",
     "Data mining and machine learning/Problems/Lookup table.md",
-    "Data mining and machine learning/Problems/solutions/Data old solutions/solution09.pdf",
     "Data mining and machine learning/Problems/13. probability, k-means algorithm, probability and statistics, support vector machine.md",
     "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
     "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
-    "Data mining and machine learning/Problems/solution04.pdf",
     "Data mining and machine learning/remember.md",
     "Data mining and machine learning/Problems/16..md",
     "Data mining and machine learning/3. Classification.md",
     "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
     "Data mining and machine learning/Problems/Mock exam.md",
-    "Data mining and machine learning/Problems/solutions/dm566_tools/apriori.py~",
-    "Data mining and machine learning/Problems/solutions/dm566_tools/decisions_tree_gini_index.py",
-    "Data mining and machine learning/Problems/solutions/dm566_tools/decisions_tree.py",
     "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
-    "Data mining and machine learning/Problems/solution07.pdf",
-    "Data mining and machine learning/Problems/solution06.pdf",
     "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
     "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
     "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
     "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
-    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
-    "Data mining and machine learning/6. Supervised Learning.md",
-    "Data mining and machine learning/5. Learning with Distributions.md",
-    "Data mining and machine learning/4. Bayesian Learning.md",
-    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
-    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
-    "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
     "Untitled.canvas"
   ]
 }
