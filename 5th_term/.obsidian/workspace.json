@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Models/Sequential models/V-model.md",
+                "file": "algorithms_propability/counting.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "software_engineering/Models/Sequential models/V-model.md",
+                "file": "algorithms_propability/counting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "software_engineering/Models/Sequential models/V-model.md",
+                "file": "algorithms_propability/counting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "software_engineering/Models/Sequential models/V-model.md"
+                "file": "algorithms_propability/counting.md"
               }
             }
           }
@@ -158,35 +158,36 @@
   },
   "active": "b11482a07307daad",
   "lastOpenFiles": [
-    "software_engineering/Models/Sequential models/Waterfall model.md",
+    "Pasted image 20230907094729.png",
+    "Pasted image 20230907094046.png",
+    "Pasted image 20230907085335.png",
+    "Pasted image 20230907083937.png",
+    "formal_languages_data_processing/1_finite_automata.md",
+    "Pasted image 20230906155119.png",
+    "Pasted image 20230906155054.png",
+    "Pasted image 20230906154920.png",
+    "Pasted image 20230906154905.png",
+    "Pasted image 20230906150538.png",
+    "Pasted image 20230906142356.png",
+    "Pasted image 20230906142026.png",
+    "algorithms_propability/counting.md",
     "software_engineering/Models/Sequential models/V-model.md",
+    "software_engineering/Models/Sequential models/Waterfall model.md",
     "software_engineering/Models/Sequential models/Basis.md",
     "software_engineering/Models/Sequential models",
     "software_engineering/Introduction.md",
     "software_engineering/Requirements.md",
-    "pictures/Pasted image 20230904093816.png",
-    "pictures/Pasted image 20230904092112.png",
     "software_engineering/Models",
-    "formal_languages_data_processing/1_finite_automata.md",
     "books/formal_languages_data_processing/Introduction to the theory of computation_third edition - Michael Sipser.pdf",
     "books/formal_languages_data_processing/Modern-Compiler-Implementation-in-C.pdf",
     "books/algorithmsXpropability/discrete_mathemathics.pdf",
     "books/formal_languages_data_processing",
     "books/algorithmsXpropability",
     "books",
-    "Pasted image 20230904093816.png",
-    "Pasted image 20230904092112.png",
-    "pictures/Pasted image 20230904090122.png",
-    "pictures/Pasted image 20230904085445.png",
-    "Pasted image 20230904090122.png",
-    "Pasted image 20230904085445.png",
     "formal_languages_data_processing/0_Introduction.md",
     "formal_languages_data_processing",
     "Excalidraw/Drawing 2023-09-03 17.33.06.excalidraw.md",
-    "pictures/Pasted image 20230903155511.png",
-    "pictures/Pasted image 20230903155037.png",
     "Excalidraw",
-    "algorithms_propability/counting.md",
     "Untitled.md",
     "Data mining and machine learning/Problems/2021exam.md",
     "Data mining and machine learning/Problems/2022exam.md",
@@ -203,7 +204,6 @@
     "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
     "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
     "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
-    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
     "Untitled.canvas"
   ]
 }

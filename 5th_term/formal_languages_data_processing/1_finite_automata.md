@@ -50,3 +50,21 @@ examples
 ## Union
 Have to keep track of both automatas, and if **one of them accepts, then accept**
 Can also combine the automata introducing multiple states in each state
+
+
+# Nondetermination
+It make take in a $\epsilon$ at each of the arrows, meaning it will take no input and just proceed. Here can also create branches
+means that there exists two or more arrows for a given input
+![[Pasted image 20230906142026.png]]
+When a branch is met, it duplicates itself, running each of the automaton. If any of the branched succeed then the NFA accepts the input
+
+Any NFA can be turned into an equivalent DFA. This means that if a NFA recognises a language it must be regular.
+The procedure can be seen just after `corollary 1.40`. 
+![[Pasted image 20230906142356.png]]
+![[Pasted image 20230906150538.png]]
+
+## NFAs are closed under union, intersection and star
+![[Pasted image 20230906154920.png]]
+![[Pasted image 20230906154905.png]]
+![[Pasted image 20230906155119.png]]
+Notice that we cannot just add the start the initial state to accept state as this would accept undeseriable language additions. Fx adding ø to the set
