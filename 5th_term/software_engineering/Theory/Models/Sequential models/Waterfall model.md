@@ -13,11 +13,12 @@ Rigorous planning: Yes, but if one phase does not meet the deadline, that will c
 Good when having people with a lot of experience, when having the ability to do the work in small steps. Fx. building a house, first floors, then walls, then plumbing ...
 
 Does not have an official definition, but is just a pair of guidelines
+
+**Waterfall is particularly useful for large, complex projects** with very specific and unchanging requirements. Development teams will be less resistant to detailed product requirements documents and design specifications since that's what's expected.
 ![[Pasted image 20230903155037.png]]
 
 # 6 phases
 ### 1. Feasibility Study
-
 The main goal of this phase is to determine whether it would be financially and technically feasible to develop the software.   
 The feasibility study involves understanding the problem and then determining the various possible strategies to solve the problem. These different identified solutions are analyzed based on their benefits and drawbacks, The best solution is chosen and all the other phases are carried out as per this solution strategy. 
 

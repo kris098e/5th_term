@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "software_engineering/Theory/Models/Sequential models/Basis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b58b8dc386b9f93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "algorithms_propability/counting.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "e6e8e23c3661f1f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,28 +181,31 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "b11482a07307daad",
+  "active": "9b58b8dc386b9f93",
   "lastOpenFiles": [
-    "Pasted image 20230907094729.png",
-    "Pasted image 20230907094046.png",
-    "Pasted image 20230907085335.png",
-    "Pasted image 20230907083937.png",
-    "formal_languages_data_processing/1_finite_automata.md",
-    "Pasted image 20230906155119.png",
-    "Pasted image 20230906155054.png",
-    "Pasted image 20230906154920.png",
-    "Pasted image 20230906154905.png",
-    "Pasted image 20230906150538.png",
-    "Pasted image 20230906142356.png",
-    "Pasted image 20230906142026.png",
+    "Pasted image 20230908173440.png",
+    "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
+    "software_engineering/Theory/Models/Sequential models/Waterfall model.md",
+    "software_engineering/Theory/Models/Sequential models/Basis.md",
     "algorithms_propability/counting.md",
-    "software_engineering/Models/Sequential models/V-model.md",
-    "software_engineering/Models/Sequential models/Waterfall model.md",
-    "software_engineering/Models/Sequential models/Basis.md",
-    "software_engineering/Models/Sequential models",
-    "software_engineering/Introduction.md",
+    "pictures/Pasted image 20230908114847.png",
+    "pictures/Pasted image 20230908105135.png",
+    "pictures/Pasted image 20230908102700.png",
+    "pictures/Pasted image 20230907112542.png",
+    "pictures/Pasted image 20230907111031.png",
+    "pictures/Pasted image 20230907094729.png",
+    "pictures/Pasted image 20230907094046.png",
+    "pictures/Pasted image 20230907085335.png",
+    "pictures/Pasted image 20230907083937.png",
+    "pictures/Pasted image 20230906155119.png",
+    "software_engineering/Theory/Models/Sequential models/V-model.md",
+    "software_engineering/Theory/Introduction.md",
+    "software_engineering/Exercises",
     "software_engineering/Requirements.md",
-    "software_engineering/Models",
+    "software_engineering/Theory",
+    "formal_languages_data_processing/1_finite_automata.md",
+    "software_engineering/Theory/Models/Sequential models",
+    "software_engineering/Theory/Models",
     "books/formal_languages_data_processing/Introduction to the theory of computation_third edition - Michael Sipser.pdf",
     "books/formal_languages_data_processing/Modern-Compiler-Implementation-in-C.pdf",
     "books/algorithmsXpropability/discrete_mathemathics.pdf",
@@ -185,9 +213,7 @@
     "books/algorithmsXpropability",
     "books",
     "formal_languages_data_processing/0_Introduction.md",
-    "formal_languages_data_processing",
     "Excalidraw/Drawing 2023-09-03 17.33.06.excalidraw.md",
-    "Excalidraw",
     "Untitled.md",
     "Data mining and machine learning/Problems/2021exam.md",
     "Data mining and machine learning/Problems/2022exam.md",
@@ -203,7 +229,6 @@
     "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
     "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
     "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
-    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
     "Untitled.canvas"
   ]
 }
