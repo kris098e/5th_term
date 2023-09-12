@@ -61,9 +61,15 @@ It is based on how many ways there are to choose the specific combination, fx ch
 Think about it as we want exactly r, and if we chose `k` from `n` then we need only chose `r-k` in m. We iterate over the combinations where we fx choose more from `m` than `n`
 
 ## Generalized Permutations and combinations
-permutations with repetitions
-
+### permutations with repetitions
+https://www.youtube.com/watch?v=1Uy2E2ncazg
 When you have repetitions you can just divide by the number of ways to arrange the duplicates, as you want to get rid of all the arrangements you cannot tell apart. I.e when we fx have 3L's, we have to divide by the number of ways to arrange these L's as we cannot tell them apart.Because these are the number of ways to arrange them when they are together. Meaning, we know there are 3 possible Ls to the first L and 2 for the next and 1 for the next, we remove these permutations where the Ls are in the same place in the permutation, since we do not know which is which. fx we remove 1 of these `KLELLY, KLELLY` since we dont know which Ls are which
 ![[Pasted image 20230908173440.png]]
 
+### Combinations with repetition
+https://www.youtube.com/watch?v=ZcSSI6VY1kM
+![[Pasted image 20230910120729.png]]
+What we are doing is that when we take an item into the list, we put it back in. Meaning that we will actually, in the case where we choose the same object `r`-times, we end up with having `n+r-1` objects to choose from instead. `r-1` since the first time we take it, it is already contained inside of `n`.
 
+In the following example this means that we have `n=3` since we can chose from x1, x2, x3. We can then choose up to 7 objects, i.e we at max can choose from `3+6=n+r-1`. This is because we have 3 objects, and if we fx choose to use x1 7 times, we will have 7x `x1` and `x2,x3` are unchosen but they are still possible to be selected in another pick.
+![[Pasted image 20230910143805.png]]

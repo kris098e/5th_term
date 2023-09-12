@@ -26,7 +26,7 @@ Use the other litterature answer the following questions:
 - Describe the different phases in Waterfall.
     - What is input and output of each phase
     - What activites takes place in each phase?
-look at notes [[Waterfall model]]
+look at notes [[1. Waterfall model]]
 
 - What are the major differences in Waterfall and the V-Model?
     - What benefits are there?
@@ -54,7 +54,7 @@ look at notes [[Waterfall model]]
 	- Its high risk if the testing phase fails, will have to go back which is risky and costly
 - If you were to implement a shorterm project (< 2 months), would you use Waterfall? Why? Why not?
 	- Yes its fine
-  
+
 
 **Waterfall is particularly useful for large, complex projects** with very specific and unchanging requirements. Development teams will be less resistant to detailed product requirements documents and design specifications since that's what's expected.
 # 3 Examples

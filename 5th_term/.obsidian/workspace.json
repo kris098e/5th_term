@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "12eee863a8095b67",
+        "id": "c86497ba3ece8cce",
         "type": "tabs",
         "children": [
           {
-            "id": "b11482a07307daad",
+            "id": "fb6e2c21b170c285",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Theory/Models/Sequential models/Basis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b58b8dc386b9f93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithms_propability/counting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6e8e23c3661f1f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
+                "file": "software_engineering/Theory/2. Agile.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms_propability/counting.md",
+                "file": "software_engineering/Theory/2. Agile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms_propability/counting.md",
+                "file": "software_engineering/Theory/2. Agile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms_propability/counting.md"
+                "file": "software_engineering/Theory/2. Agile.md"
               }
             }
           }
@@ -181,38 +156,44 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "9b58b8dc386b9f93",
+  "active": "fb6e2c21b170c285",
   "lastOpenFiles": [
-    "Pasted image 20230908173440.png",
-    "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
-    "software_engineering/Theory/Models/Sequential models/Waterfall model.md",
-    "software_engineering/Theory/Models/Sequential models/Basis.md",
-    "algorithms_propability/counting.md",
-    "pictures/Pasted image 20230908114847.png",
-    "pictures/Pasted image 20230908105135.png",
-    "pictures/Pasted image 20230908102700.png",
-    "pictures/Pasted image 20230907112542.png",
-    "pictures/Pasted image 20230907111031.png",
-    "pictures/Pasted image 20230907094729.png",
-    "pictures/Pasted image 20230907094046.png",
-    "pictures/Pasted image 20230907085335.png",
-    "pictures/Pasted image 20230907083937.png",
-    "pictures/Pasted image 20230906155119.png",
-    "software_engineering/Theory/Models/Sequential models/V-model.md",
+    "software_engineering/Theory/2. Planning spectrum.md",
+    "software_engineering/Theory/2. cynefin framework.md",
+    "Pasted image 20230911162906.png",
+    "software_engineering/Theory/2. Agile.md",
+    "software_engineering/Theory/Models/Untitled.md",
+    "software_engineering/Theory/Models/Sequential models/1. Waterfall model.md",
     "software_engineering/Theory/Introduction.md",
+    "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
+    "software_engineering/Theory/Models/Sequential models/1. V-model.md",
+    "formal_languages_data_processing/1_finite_automata.md",
+    "Pasted image 20230911134758.png",
+    "Pasted image 20230911132111.png",
+    "Pasted image 20230911131533.png",
+    "Pasted image 20230911131357.png",
+    "Pasted image 20230911125320.png",
+    "Pasted image 20230911125004.png",
+    "Pasted image 20230911124903.png",
+    "Pasted image 20230911123758.png",
+    "formal_languages_data_processing/0_Introduction.md",
+    "algorithms_propability/exercises/1. counting.md",
+    "Pasted image 20230911092837.png",
+    "algorithms_propability/counting.md",
+    "algorithms_propability/exercises",
+    "formal_languages_data_processing/exercises/DFA and NFA.md",
+    "Excalidraw/DFA.excalidraw.md",
+    "software_engineering/Theory/Models/Sequential models/Basis.md",
+    "Excalidraw",
+    "formal_languages_data_processing/exercises",
     "software_engineering/Exercises",
     "software_engineering/Requirements.md",
     "software_engineering/Theory",
-    "formal_languages_data_processing/1_finite_automata.md",
     "software_engineering/Theory/Models/Sequential models",
     "software_engineering/Theory/Models",
     "books/formal_languages_data_processing/Introduction to the theory of computation_third edition - Michael Sipser.pdf",
     "books/formal_languages_data_processing/Modern-Compiler-Implementation-in-C.pdf",
     "books/algorithmsXpropability/discrete_mathemathics.pdf",
-    "books/formal_languages_data_processing",
-    "books/algorithmsXpropability",
-    "books",
-    "formal_languages_data_processing/0_Introduction.md",
     "Excalidraw/Drawing 2023-09-03 17.33.06.excalidraw.md",
     "Untitled.md",
     "Data mining and machine learning/Problems/2021exam.md",
@@ -223,12 +204,6 @@
     "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
     "Data mining and machine learning/remember.md",
     "Data mining and machine learning/Problems/16..md",
-    "Data mining and machine learning/3. Classification.md",
-    "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
-    "Data mining and machine learning/Problems/Mock exam.md",
-    "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
-    "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
-    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
     "Untitled.canvas"
   ]
 }
