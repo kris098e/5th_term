@@ -73,3 +73,8 @@ What we are doing is that when we take an item into the list, we put it back in.
 
 In the following example this means that we have `n=3` since we can chose from x1, x2, x3. We can then choose up to 7 objects, i.e we at max can choose from `3+6=n+r-1`. This is because we have 3 objects, and if we fx choose to use x1 7 times, we will have 7x `x1` and `x2,x3` are unchosen but they are still possible to be selected in another pick.
 ![[Pasted image 20230910143805.png]]
+
+# Objects into boxes
+Different ways to prove permutations with repetitions & comibinations with repetition
+![[Pasted image 20230912124110.png]]
+
