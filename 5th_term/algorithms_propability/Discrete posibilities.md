@@ -1,0 +1,43 @@
+# Introduction
+![[Pasted image 20230912061207.png]]
+![[Pasted image 20230912061151.png]]
+![[Pasted image 20230912061231.png]]
+![[Pasted image 20230912133010.png]]
+remember that P(E|F) means that F has already happened, therefore we divide by the P(F), since F has to occur first.
+
+![[Pasted image 20230917082201.png]]
+The intersection is also needed, since we only want the items that appear in both, since they are not independant. Fx if we have the example of generating 16 4-length bit-strings, and `F` is the event that the first bit is a 0, then we only have 8 left to choose from.
+
+![[Pasted image 20230917083853.png]]
+![[Pasted image 20230917085016.png]]
+
+# Bernoilli experiment
+![[Pasted image 20230917085752.png]]
+![[Pasted image 20230917090936.png]]
+## Explanation
+We want the probability `p` to be a success, and how many times do we want this to happen? `k` times. Then we have the rest of the times, which will be the failures `q`, having `n-k` times of this happening. In how many ways can this happen? It can happen `C(n,k)` ways. 
+
+### In depth, more understandable
+Remember that the events are mutually independent, meaning we use the formula of multiplying the events. We have `C(n,k)` ways of this event to happen. In this, if you think about writing the power out, it end up being visualized as, if we have the tuple `(S,S,S,F)` then we have the probabilities of each event `(p,p,p,q)`. In this way we see that we just take the probabilities of each of the events. 
+We have the weights, i.e fx `p` can be $\frac{2}{3}$ and `q` $\frac{1}{3}$. So the probability of fx 4 `S`  given all of the possible outcomes of choose function is $p^k*q^{n-k}$ , since they are mutually independent.
+## Example
+![[Pasted image 20230917090300.png]]
+Since the events are mutually independent and we throw we choose 4 of the events to be `Heads` which is ricked, then we end up with having $\frac{2}{3}$ probability for the heads and otherwise $\frac{1}{3}$ for the other 3 which are tails.
+Here we use the formula for independence, multiplying the events together.
+
+When there are only 2 outcomes, p and q (failure and success), where `p+q=1`. 
+# random variables
+just a tuple of the probability of the event to a another value, fx in the reals.
+![[Pasted image 20230917114818.png]]
+![[Pasted image 20230917115106.png]]
+
+# Birthday problem and hashing function collisions
+see `7.2.8`. Based on the probability of two keys mapped to the same hash is independent, so we go from $p_{n}=\frac{m}{m}\frac{m-1}{m}\dots \frac{0}{m}$ for each event, so each time we hash, there are one less hash this function can be hashed to. We can then see that if we want to see when the probability of two elements being mapped to the same hash becomes `>` than something, we want the opposite, _as we have just calculated the probability of these NOT being mapped to the same hash_ we just use $1-p_{n}$.
+# Monte Carlo Algorithm
+may only find the best solution with some probability
+
+**majority element, the element that occurs more than half of the times**
+## Book
+If we run an algorithm, the Monte Carlo Algorithm can answer, false or true when it is done. During the algorithm it may answer with `unknown`. If the algorithm returns `true` then the condition which was checked for a long the way is `true`. But if it answers `false`, it is with a certain probability that the return is incorrect. Fx if the algorithm we choose to run has a probability of $\frac{1}{4}$ of deciding something, and we run it `k` times, then the chance that the algorithm returns incorrect return value is $\left( \frac{1}{4} \right)^k$ if the monte carlo approach is used. That is, we believe whatever we test for must not be in the set with this probability.
+# Bayes theorem
+![[Pasted image 20230917160450.png]]

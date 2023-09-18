@@ -8,49 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "41c1c0ba83fd7e78",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/formelle_sprog/DFAab.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "d6daf52f3168a525",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "64dedd8199c1c944",
+            "id": "9847c1018dc99c9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Exercises/2..md",
+                "file": "software_engineering/Theory/3 Scrum/Scrum.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "dcc1718ec3cd7caf",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/formelle_sprog/DFA_even_a.excalidraw.md"
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -124,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "software_engineering/Exercises/2..md",
+                "file": "software_engineering/Theory/3 Scrum/Scrum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "software_engineering/Exercises/2..md",
+                "file": "software_engineering/Theory/3 Scrum/Scrum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "software_engineering/Exercises/2..md"
+                "file": "software_engineering/Theory/3 Scrum/Scrum.md"
               }
             }
           },
@@ -198,53 +168,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "64dedd8199c1c944",
+  "active": "9847c1018dc99c9b",
   "lastOpenFiles": [
+    "pictures/Pasted image 20230918172122.png",
+    "pictures/Pasted image 20230918171746.png",
+    "pictures/Pasted image 20230918164631.png",
+    "Pasted image 20230918172122.png",
+    "Pasted image 20230918171746.png",
+    "Pasted image 20230918164631.png",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Agile.md",
+    "software_engineering/Theory/3 Scrum/Scrum.md",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. cynefin framework.md",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Planning spectrum.md",
     "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
+    "software_engineering/Exercises/2. Agile cynefin planning.md",
+    "software_engineering/Theory/Introduction.md",
+    "software_engineering/Theory/3 Scrum",
+    "software_engineering/Theory/2. utf-8''Lecture%202_%20Agile.pdf",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. utf-8''Lecture%202_%20Agile.pdf",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "pictures/Pasted image 20230918155601.png",
+    "pictures/Pasted image 20230918151107.png",
+    "pictures/Pasted image 20230918142520.png",
+    "pictures/Pasted image 20230918135652.png",
+    "pictures/Pasted image 20230918135351.png",
+    "algorithms_propability/counting.md",
+    "algorithms_propability/exercises/1.counting.md",
+    "algorithms_propability/Read up on.md",
+    "formal_languages_data_processing/exercises/DFA and NFA.md",
+    "formal_languages_data_processing/0_Introduction.md",
+    "Excalidraw/formelle_sprog/1-19b.excalidraw.md",
+    "Excalidraw/formelle_sprog/NFA_union.excalidraw.md",
+    "Excalidraw/Drawing 2023-09-18 13.41.44.excalidraw.md",
+    "formal_languages_data_processing/2_CLI_data_formats.md",
+    "algorithms_propability/Discrete posibilities.md",
+    "Excalidraw/algosand/7.2_12E.excalidraw.md",
+    "Excalidraw/algosand/bools_inequality.excalidraw.md",
+    "books/algorithmsXpropability/discrete_mathemathics.pdf.sb-9da0b199-9m7VmE",
+    "formal_languages_data_processing/1_finite_automata.md",
+    "Excalidraw/formelle_sprog/DFA_even_a.excalidraw.md",
     "software_engineering/Theory/2. cynefin framework.md",
-    "software_engineering/Exercises/2..md",
     "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md",
     "Excalidraw/formelle_sprog/DFAab.excalidraw.md",
-    "Excalidraw/formelle_sprog/DFA_even_a.excalidraw.md",
-    "software_engineering/Theory/2. Agile.md",
-    "formal_languages_data_processing/exercises/DFA and NFA.md",
-    "Pasted image 20230915124033.png",
-    "Pasted image 20230915122431.png",
-    "Pasted image 20230915121634.png",
-    "Pasted image 20230915121508.png",
-    "2023-09-15.md",
-    "Excalidraw/formelle_sprog/IntersectionDFA.excalidraw.md",
-    "Excalidraw/formelle_sprog/DFA.excalidraw.md",
     "Untitled.canvas",
-    "Excalidraw/algosand/choose_n.excalidraw.md",
-    "algorithms_propability/exercises/1. counting.md",
-    "formal_languages_data_processing/1_finite_automata.md",
     "Excalidraw/algosand",
-    "algorithms_propability/counting.md",
-    "pictures/Pasted image 20230913130609.png",
-    "pictures/Pasted image 20230913130556.png",
-    "pictures/Pasted image 20230913130521.png",
-    "pictures/Pasted image 20230913130456.png",
-    "pictures/Pasted image 20230913130440.png",
-    "pictures/Pasted image 20230913130349.png",
-    "Excalidraw/Drawing 2023-09-13 08.02.37.excalidraw.md",
     "Excalidraw/formelle_sprog",
-    "software_engineering/Theory/utf-8''Lecture%202_%20Agile.pdf",
-    "Excalidraw/formelle_sprog/NFA_Complement.excalidraw.md",
-    "algorithms_propability/Discrete posibilities.md",
-    "software_engineering/Theory/2. Planning spectrum.md",
-    "software_engineering/Theory/Models/Untitled.md",
-    "software_engineering/Theory/Models/Sequential models/1. Waterfall model.md",
-    "software_engineering/Theory/Introduction.md",
-    "software_engineering/Theory/Models/Sequential models/1. V-model.md",
-    "formal_languages_data_processing/0_Introduction.md",
     "algorithms_propability/exercises",
-    "software_engineering/Theory/Models/Sequential models/Basis.md",
     "Excalidraw",
-    "formal_languages_data_processing/exercises",
-    "software_engineering/Exercises",
-    "software_engineering/Theory",
-    "software_engineering/Theory/Models/Sequential models",
-    "software_engineering/Theory/Models"
+    "formal_languages_data_processing/exercises"
   ]
 }

@@ -150,3 +150,5 @@ from the ones which does not accept we make a transition to the new accept state
 2. adding a transition from all of the states to the others and also adding the start state and a new end state
 3. remove state 2, concatenate it with state 1
 4. remove state 1 and concatenate it with start state
+
+
