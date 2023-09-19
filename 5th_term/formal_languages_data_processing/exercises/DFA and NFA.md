@@ -79,12 +79,26 @@ In the formal proof we have
 
 ![[Pasted image 20230918122418.png]]
 a. NFA which for each machine allows for going to the machines on the empty strings and allows to go back as we can repeat as many times we want
+
+Remember that the empty set is part of every set
+**We dont need to take into consideration all of the possibilites as each of the languages are described with an NFA, meaning we dont need to know what fx state 2 does on a 1 as it does not has to be deterministic**
 ![[NFA_union.excalidraw]]
 
 b.
+Start of by calculating how many states you can reach from the start state with epsilon transisitions
+{1,2,3,6,10}
+Next we need to check what each of the states does on a {0,1, $\epsilon$}
+
+When we have converged we add accept states to all of the states that were accept states
+Remember to follow the epsilon and add them to each state
+See that `5, 9, 13` are redundant accept state since state `2` accepts
+![[Pasted image 20230919104827.png]]
+![[NFA_1.17b]]
+
 
 ![[Pasted image 20230918124408.png]]
 ![[Pasted image 20230918124434.png]]
+**These are not regular expressions, they should be mathematical definitions**
 a. \^10
 b. (0|1)\*111\[01\]*
 c. \[01\]\*0101\[01\]\*
@@ -92,12 +106,15 @@ d. \[01\]{2}\0\[01\]\*
 e. 0(\[01\]{2})\*|1
 f.\[01\]\*(^(110))\[01\]\*
 g. (^(\[01\]{6,}))
+	$(\sum\ union \ \epsilon)^5$
 h. 
+j. 00^+ union 100\^+ union 0\^+01 union 0^+10^+
 
 
 ![[Pasted image 20230918133959.png]]
 b.
 ![[1-19b.excalidraw]]
+![[Pasted image 20230919110233.png]]
 
 ![[Pasted image 20230918135351.png]]
 h.
@@ -105,8 +122,19 @@ h.
 	- a
 	- ba
 - decline
-	- ø
+	- b
 	- $\epsilon$
 
 ![[Pasted image 20230918135652.png]]
-\[ab\]a\*(ulige antal b | lige antal b med a*, når møder b igen skal bruge ulige)\*a
+make a new start state and accept state, all the previous accept states gets an empty string transition to the new accept state
+and need to make all possible arrows to all states. Can use the empty set.
+
+Sequentially remove the states one by one by `ripping` them out
+![[NFA_to_regex.png]]
+
+![[Pasted image 20230919114757.png]]
+Make the previous start state accept and make the accept states be the new start states, then reverse the arrows
+![[Pasted image 20230919115217.png]]
+
+![[Pasted image 20230919115321.png]]
+![[Pasted image 20230919121426.png]]

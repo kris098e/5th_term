@@ -6,5 +6,6 @@
   "better-pdf-plugin",
   "obsidian-ocr",
   "obsidian-excalidraw-plugin",
-  "oz-clear-unused-images"
+  "oz-clear-unused-images",
+  "obsidian-image-caption"
 ]
