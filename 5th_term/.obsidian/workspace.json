@@ -11,11 +11,9 @@
             "id": "9847c1018dc99c9b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Journal/September/2023-09-19.md",
-                "mode": "source",
-                "source": false
+                "file": "pictures/Pasted image 20230919182305.png"
               }
             }
           }
@@ -93,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Journal/September/2023-09-19.md",
+                "file": "pictures/Pasted image 20230919182305.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Journal/September/2023-09-19.md",
+                "file": "pictures/Pasted image 20230919182305.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Journal/September/2023-09-19.md"
+                "file": "pictures/Pasted image 20230919182305.png"
               }
             }
           },
@@ -167,11 +165,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7e2586818a156850",
+  "active": "9847c1018dc99c9b",
   "lastOpenFiles": [
+    "Journal/September/2023-09-19.md",
+    "Journal/September/hww.md",
+    "Journal/September/dec.md",
+    "Journal/September/hww.enc",
     "Journal/September",
     "pictures/Pasted image 20230919182305.png",
-    "Journal/September/2023-09-19.md",
     "Journal",
     "algorithms_propability/2.Discrete posibilities.md",
     "pictures/Pasted image 20230919190538.png",
@@ -209,12 +210,9 @@
     "Excalidraw/Drawing 2023-09-18 13.41.44.excalidraw.md",
     "formal_languages_data_processing/2_CLI_data_formats.md",
     "Excalidraw/algosand/7.2_12E.excalidraw.md",
-    "Excalidraw/algosand/bools_inequality.excalidraw.md",
     "books/algorithmsXpropability/discrete_mathemathics.pdf.sb-9da0b199-9m7VmE",
     "Untitled.canvas",
     "Excalidraw/algosand",
-    "Excalidraw/formelle_sprog",
-    "algorithms_propability/exercises",
-    "Excalidraw"
+    "Excalidraw/formelle_sprog"
   ]
 }
