@@ -1,3 +1,5 @@
+[[04.pdf]]
+[[05.pdf]]
 # Data formats
 ## Tabular data formats
 Difference in the seperation
@@ -9,6 +11,13 @@ tab-seperated
 comma-seperated
 ### sql and xlxs files
 can be exported with build in features
+
+## JSON
+JavaScript Object Notation
+## XML
+eXtensible Markup Language
+![[Pasted image 20230920093752.png]]
+
 # Data discovery
 done in an **incremental** fashion, i.e do something and see what it does, then `pipe` it to the next command
 Also done since we dont want to write to disc before we are done with the entire process
@@ -30,11 +39,19 @@ Have to be aware of this to not make mistakes on some assumptions
 - gawk
 - sort
 - uniq
+	- Used after sorting as it is inefficient
 - tr
+	- translates characters into another character. Is not line oriented
+	- can also delete specific characters
 - cut
+	- cut out some columns
 - paste
+	- Merge lines of files, i.e using 2 or more files
 - join
+	- join lines on common field in 2 files
+	- Like natural join in databases
 - head/tail
+	- output first/last lines in file
 ## grep
 using `-E` interprets  special characters without using escape on it
 use `^` to negate the expression, but has to be inside of a special operator
@@ -65,4 +82,17 @@ Has options for ignoring case, printing the lines that does not matches the rege
     - Example: `(This) is \1 power`
 5. **References**
 	1. `\1` fx matches the first group matching. `\2` ofc matches the 2nd group
-	2. 
+## sed
+More powerful tool, stream-oriented
+
+Has to have the given syntax given below
+first given an address to start from then `,` another address **which can be a regular expression**
+![[05.pdf#page=12]]
+You can also provide options, `see man page`
+### Substitute
+useful operation / command. Can use regular expressions
+#### Examples
+see slides
+## awk
+Complete programming language
+Complicated

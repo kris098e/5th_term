@@ -11,9 +11,11 @@
             "id": "9847c1018dc99c9b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "pictures/Pasted image 20230919182305.png"
+                "file": "algorithms_propability/2.Discrete posibilities.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -75,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -91,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pictures/Pasted image 20230919182305.png",
+                "file": "algorithms_propability/2.Discrete posibilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pictures/Pasted image 20230919182305.png",
+                "file": "algorithms_propability/2.Discrete posibilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pictures/Pasted image 20230919182305.png"
+                "file": "algorithms_propability/2.Discrete posibilities.md"
               }
             }
           },
@@ -154,7 +157,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-ocr:Search OCR": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -162,33 +164,42 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-ocr:Search OCR": false
     }
   },
   "active": "9847c1018dc99c9b",
   "lastOpenFiles": [
+    "pictures/Pasted image 20230921133148.png",
+    "pictures/Pasted image 20230921131210.png",
+    "pictures/Pasted image 20230921130136.png",
+    "pictures/Pasted image 20230921125527.png",
+    "pictures/Pasted image 20230921125356.png",
+    "pictures/Pasted image 20230921125314.png",
+    "pictures/Pasted image 20230921125312.png",
+    "pictures/Pasted image 20230921125253.png",
+    "pictures/Pasted image 20230921124820.png",
+    "pictures/Pasted image 20230921124621.png",
+    "pictures/Pasted image 20230921122304.png",
+    "algorithms_propability/Exam problems.md",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "algorithms_propability/1.counting.md",
+    "formal_languages_data_processing/0_Introduction.md",
+    "formal_languages_data_processing/Compiler.md",
+    "formal_languages_data_processing/2_CLI_data_formats.md",
+    "formal_languages_data_processing/attachments/04.pdf",
+    "formal_languages_data_processing/attachments/05.pdf",
+    "formal_languages_data_processing/attachments",
+    "formal_languages_data_processing/Key notes.md",
     "Journal/September/2023-09-19.md",
     "Journal/September/hww.md",
     "Journal/September/dec.md",
     "Journal/September/hww.enc",
     "Journal/September",
-    "pictures/Pasted image 20230919182305.png",
     "Journal",
-    "algorithms_propability/2.Discrete posibilities.md",
-    "pictures/Pasted image 20230919190538.png",
-    "pictures/Pasted image 20230919190441.png",
-    "pictures/Pasted image 20230919184418.png",
-    "pictures/Pasted image 20230919183254.png",
-    "pictures/Pasted image 20230919133845.png",
     "algorithms_propability/Read up on.md",
     "formal_languages_data_processing/exercises/DFA and NFA.md",
-    "pictures/Pasted image 20230919121426.png",
-    "algorithms_propability/1.counting.md",
     "Untitled.md",
-    "pictures/Pasted image 20230919115321.png",
-    "pictures/Pasted image 20230919115217.png",
-    "pictures/Pasted image 20230919114757.png",
-    "formal_languages_data_processing/Key notes.md",
     "Excalidraw/formelle_sprog/NFA_1.17b.md",
     "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md",
     "Excalidraw/formelle_sprog/1-19b.excalidraw.md",
@@ -205,14 +216,6 @@
     "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. utf-8''Lecture%202_%20Agile.pdf",
     "software_engineering/Theory/2 Agile, cynefin, planning spectrum,",
     "algorithms_propability/exercises/2.Discrete_probability.md",
-    "algorithms_propability/exercises/1.counting.md",
-    "formal_languages_data_processing/0_Introduction.md",
-    "Excalidraw/Drawing 2023-09-18 13.41.44.excalidraw.md",
-    "formal_languages_data_processing/2_CLI_data_formats.md",
-    "Excalidraw/algosand/7.2_12E.excalidraw.md",
-    "books/algorithmsXpropability/discrete_mathemathics.pdf.sb-9da0b199-9m7VmE",
-    "Untitled.canvas",
-    "Excalidraw/algosand",
-    "Excalidraw/formelle_sprog"
+    "Untitled.canvas"
   ]
 }

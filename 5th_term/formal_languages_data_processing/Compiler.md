@@ -1,0 +1,1 @@
+remember to read the code and understand the code, as this will help a lot
