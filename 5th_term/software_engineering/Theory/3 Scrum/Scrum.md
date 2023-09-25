@@ -1,8 +1,9 @@
+[[scrum.pdf]]
 # Scrum is not Agile!
 Scrum is the complex part of cynefin
 ![[Pasted image 20230918172122.png]]
 Spring retrospective: talks about the methods that was used in the last sprint and how well it was used
-
+![[Pasted image 20230925173113.png]]
 ## Scrum Pillars
 optimize transparency, inspection and adaptationss
 1. Transparency: Transparency is the foundation of Scrum and refers to the visibility of the project's progress, processes, and challenges. It involves sharing information openly and making it accessible to all team members and stakeholders[[2]](https://www.atlassian.com/agile/project-management/3-pillars-scrum). Transparency ensures that everyone involved has a clear understanding of the project's goals, progress, and impediments. It enables effective collaboration, trust, and accountability within the team.
@@ -54,9 +55,14 @@ Can take a lot of the parts out, since it is flexible or add more to it whenever
 ### PO
 In charge of the backlog, clear communication of the product goal
 Represents the stakeholders, and an empowered customer
+
+**what**
 ### Scrum master
 Responsible for the scrum process, synchronization between the PO, orginisation and also the developers
+
+**process**
 ### Developers
+**how**
 ## the backlog
 owned by the PO, refined by the PO with the developers
 ## Daily scrum meeting
@@ -68,6 +74,8 @@ Plan what we aim to achieve during the next sprint
 ### Sprint backlog
 what we aim to achieve during the sprint
 picked from the product backlog
+## Refinement
+adding more details to tasks, after planning?
 ## Sprint review
 How far we got during the spring, what is the next step to take. Demo of what has happened to the rest of company.
 ## Done
@@ -80,3 +88,8 @@ take the output from the sprint review and adapt the process.
 2. what did not work
 3. what should we do about it
 ### Derby-Larsen model
+# review of last session
+## Who owns the technologies in the team
+the developers, as per definition there are no software-architects in scrum
+## Who can prioritise the backlog
+the product-owner, need to know what we are trying to solve and how to move forward, and with what

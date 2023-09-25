@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "57b0fb9e5c54a85d",
+        "id": "b1b0f3885dd17f8a",
         "type": "tabs",
         "children": [
           {
-            "id": "40dd38409b61accb",
+            "id": "7686af24d6dc1340",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/2.Discrete posibilities.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c291d49dd33e959",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
+                "file": "software_engineering/Theory/4_stakeholders/4.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -107,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
+                "file": "software_engineering/Theory/4_stakeholders/4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
+                "file": "software_engineering/Theory/4_stakeholders/4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms_propability/exercises/2.Discrete_probability.md"
+                "file": "software_engineering/Theory/4_stakeholders/4.md"
               }
             }
           },
@@ -181,26 +167,35 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "3c291d49dd33e959",
+  "active": "7686af24d6dc1340",
   "lastOpenFiles": [
+    "software_engineering/Theory/4_stakeholders/Guestalker - Stakeholders.md",
+    "software_engineering/Theory/4_stakeholders/4.md",
+    "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
+    "pictures/Pasted image 20230925175817.png",
+    "software_engineering/Theory/4_stakeholders",
+    "software_engineering/Exercises/4 1.md",
+    "software_engineering/Theory/3 Scrum/scrum.pdf",
+    "software_engineering/Theory/3 Scrum/Scrum.md",
+    "software_engineering/Exercises/4.md",
+    "pictures/Pasted image 20230925173914.png",
+    "pictures/Pasted image 20230925173113.png",
+    "pictures/Pasted image 20230925170453.png",
+    "pictures/Pasted image 20230925170250.png",
+    "software_engineering/Theory/Introduction.md",
+    "software_engineering/Requirements.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "pictures/Pasted image 20230925161445.png",
     "pictures/Pasted image 20230925145040.png",
     "pictures/Pasted image 20230925135841.png",
     "pictures/Pasted image 20230925135829.png",
     "algorithms_propability/2.Discrete posibilities.md",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
     "pictures/Pasted image 20230925131328.png",
-    "pictures/Pasted image 20230925131315.png",
-    "pictures/Pasted image 20230925131257.png",
-    "pictures/Pasted image 20230925131230.png",
     "books/algorithmsXpropability/discrete_mathemathics.pdf.sb-571b71c6-TMMl7C",
-    "pictures/Pasted image 20230925131211.png",
-    "pictures/Pasted image 20230925130928.png",
     "formal_languages_data_processing/exercises/CLI tools.md",
     "formal_languages_data_processing/exercises/DFA and NFA.md",
     "algorithms_propability/1.counting.md",
     "formal_languages_data_processing/3_compilers/Scanners.md",
-    "pictures/Pasted image 20230925112030.png",
-    "pictures/Pasted image 20230925111222.png",
     "formal_languages_data_processing/3_compilers/introduction.md",
     "formal_languages_data_processing/2_CLI_data_formats.md",
     "formal_languages_data_processing/3_compilers",
@@ -210,8 +205,6 @@
     "formal_languages_data_processing/exercises/attachments/output.tsv",
     "formal_languages_data_processing/exercises/attachments/example.csv",
     "formal_languages_data_processing/exercises/attachments/csv_to_tsv.py",
-    "formal_languages_data_processing/exercises/csv_to_tsv.py",
-    "formal_languages_data_processing/attachments/05.pdf",
     "algorithms_propability/Exam problems.md",
     "formal_languages_data_processing/0_Introduction.md",
     "formal_languages_data_processing/Key notes.md",
@@ -222,13 +215,6 @@
     "Untitled.md",
     "Excalidraw/formelle_sprog/NFA_1.17b.md",
     "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md",
-    "Excalidraw/formelle_sprog/1-19b.excalidraw.md",
-    "Excalidraw/formelle_sprog/NFA_union.excalidraw.md",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Planning spectrum.md",
-    "software_engineering/Theory/3 Scrum/Scrum.md",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Agile.md",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. cynefin framework.md",
-    "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
     "Untitled.canvas"
   ]
 }
