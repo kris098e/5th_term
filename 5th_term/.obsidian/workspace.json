@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4a38ccca6bcadad7",
+        "id": "57b0fb9e5c54a85d",
         "type": "tabs",
         "children": [
           {
-            "id": "9847c1018dc99c9b",
+            "id": "40dd38409b61accb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3c291d49dd33e959",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms_propability/2.Discrete posibilities.md",
+                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms_propability/2.Discrete posibilities.md",
+                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms_propability/2.Discrete posibilities.md"
+                "file": "algorithms_propability/exercises/2.Discrete_probability.md"
               }
             }
           },
@@ -168,37 +181,44 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "9847c1018dc99c9b",
+  "active": "3c291d49dd33e959",
   "lastOpenFiles": [
-    "pictures/Pasted image 20230921133148.png",
-    "pictures/Pasted image 20230921131210.png",
-    "pictures/Pasted image 20230921130136.png",
-    "pictures/Pasted image 20230921125527.png",
-    "pictures/Pasted image 20230921125356.png",
-    "pictures/Pasted image 20230921125314.png",
-    "pictures/Pasted image 20230921125312.png",
-    "pictures/Pasted image 20230921125253.png",
-    "pictures/Pasted image 20230921124820.png",
-    "pictures/Pasted image 20230921124621.png",
-    "pictures/Pasted image 20230921122304.png",
-    "algorithms_propability/Exam problems.md",
+    "pictures/Pasted image 20230925145040.png",
+    "pictures/Pasted image 20230925135841.png",
+    "pictures/Pasted image 20230925135829.png",
     "algorithms_propability/2.Discrete posibilities.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "pictures/Pasted image 20230925131328.png",
+    "pictures/Pasted image 20230925131315.png",
+    "pictures/Pasted image 20230925131257.png",
+    "pictures/Pasted image 20230925131230.png",
+    "books/algorithmsXpropability/discrete_mathemathics.pdf.sb-571b71c6-TMMl7C",
+    "pictures/Pasted image 20230925131211.png",
+    "pictures/Pasted image 20230925130928.png",
+    "formal_languages_data_processing/exercises/CLI tools.md",
+    "formal_languages_data_processing/exercises/DFA and NFA.md",
     "algorithms_propability/1.counting.md",
-    "formal_languages_data_processing/0_Introduction.md",
-    "formal_languages_data_processing/Compiler.md",
+    "formal_languages_data_processing/3_compilers/Scanners.md",
+    "pictures/Pasted image 20230925112030.png",
+    "pictures/Pasted image 20230925111222.png",
+    "formal_languages_data_processing/3_compilers/introduction.md",
     "formal_languages_data_processing/2_CLI_data_formats.md",
-    "formal_languages_data_processing/attachments/04.pdf",
+    "formal_languages_data_processing/3_compilers",
+    "formal_languages_data_processing/attachments/06-compiler.pdf",
+    "formal_languages_data_processing/attachments/06.pdf",
+    "formal_languages_data_processing/06.pdf",
+    "formal_languages_data_processing/exercises/attachments/output.tsv",
+    "formal_languages_data_processing/exercises/attachments/example.csv",
+    "formal_languages_data_processing/exercises/attachments/csv_to_tsv.py",
+    "formal_languages_data_processing/exercises/csv_to_tsv.py",
     "formal_languages_data_processing/attachments/05.pdf",
-    "formal_languages_data_processing/attachments",
+    "algorithms_propability/Exam problems.md",
+    "formal_languages_data_processing/0_Introduction.md",
     "formal_languages_data_processing/Key notes.md",
     "Journal/September/2023-09-19.md",
     "Journal/September/hww.md",
     "Journal/September/dec.md",
-    "Journal/September/hww.enc",
-    "Journal/September",
-    "Journal",
     "algorithms_propability/Read up on.md",
-    "formal_languages_data_processing/exercises/DFA and NFA.md",
     "Untitled.md",
     "Excalidraw/formelle_sprog/NFA_1.17b.md",
     "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md",
@@ -209,13 +229,6 @@
     "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Agile.md",
     "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. cynefin framework.md",
     "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
-    "software_engineering/Exercises/2. Agile cynefin planning.md",
-    "software_engineering/Theory/Introduction.md",
-    "software_engineering/Theory/3 Scrum",
-    "software_engineering/Theory/2. utf-8''Lecture%202_%20Agile.pdf",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. utf-8''Lecture%202_%20Agile.pdf",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
     "Untitled.canvas"
   ]
 }

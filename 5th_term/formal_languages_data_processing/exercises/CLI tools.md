@@ -1,0 +1,47 @@
+1. Consider the files
+    - [File_Ex_UTF8.txt](https://imada.sdu.dk/u/kslarsen/dm565/Files/File_Ex_UTF8.txt)
+    - [File_Ex_Latin1.txt](https://imada.sdu.dk/u/kslarsen/dm565/Files/File_Ex_Latin1.txt)
+    - [File_Ex_Unix_Eol.txt](https://imada.sdu.dk/u/kslarsen/dm565/Files/File_Ex_Unix_Eol.txt)
+    - [File_Ex_MS-DOS_Eol.txt](https://imada.sdu.dk/u/kslarsen/dm565/Files/File_Ex_MS-DOS_Eol.txt)
+    
+    Use the command-line possibilities to inspect these files, i.e., what does `file` and `wc` say about them? Inspect them using `od` with appropriate options; start with `od -tcuC`, for instance. How do they differ? Discuss pros and cons of the formats. Try `recode` to change from one character encoding to another.
+2. Using the Python `csv` package, read a file in the default csv format and output it in tsv format.
+![[csv_to_tsv.py]]
+
+3. Define separate `grep -E` regular expressions matching lines with
+    1. Scandinavian email address.
+	    1. `grep -E [A-Za-z0-9]+@[A-Za-z0-9]\.[a-z]{2}`
+    2. CPR numbers.
+	    1. `grep -E [0-9]{6}-[0-9]{4}`
+    3. phone numbers written as 2 groups of 4 digits or 4 groups of 2 digits; groups separated by one space.
+		1. `grep -E ([0-9]{4} [0-9]{4}|[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2})`
+    1. dates in the Danish format 1/1 1970.
+	    1. `grep -E [0-9]{1,2}/[0-9]{1,2} [0-9]{4}`
+    
+    In all of these problems, we are interested in the _format_. Thus, you do not have to worry about exactly which characters are legal in email addresses, if months have 30 or 31 days, or whether CPR numbers are legal according to checksums rules etc.
+4. Using `/usr/share/dict/words` (or [similar](https://gist.github.com/WChargin/8927565)), define separate `grep -E` regular expressions matching lines (words, since there is only one word per line in that file) with
+    1. consecutive repetition of at least three characters.
+	    1. `grep -E (.)\1\1$`
+    2. a consecutive repetition of the same sequence of four characters.
+	    1. `grep -E '([A-Za-z0-9]{4})\1+'`
+    3. a repetition of total length 4 _and_ a palindrome of total length 4.
+	    1. palindrome of length 4: `((.)(.)\2\1)`
+	    2. A repetition of length 4: `((.*)\1\1\1){4}`
+	    3. `grep -E ((.)(.)\2\1)?((.*)\1\1\1){4}((.)(.)\2\1))?`
+    5. words without vowels (a, e, i, o, u, y); use an option.
+	    1. `grep -E '^[^aeiouy]+$'`
+5. Define separate `grep -E` regular expressions matching lines with
+    1. an opening and closing html headline tag, e.g., `<h2>My Headline</h2>`; use an option to make it case insensitive, then use an option to print the line number for every match. You may require that headlines are on a line by themselves (and of course not nested).
+	    1. `grep -Ein '^[[:space:]]*<h[1-6]>.*<\/h[1-6]>$'`
+			-  `-i` makes the matching case-insensitive.
+			- `-n` prints line numbers for every match.
+
+	1. numbers in the range 1000 through 9999.
+		1. `grep -E [1-9][0-9]{3}`
+	2. numbers in the range 100 through 9999.
+		1. `gre -E ([1-9][0-9]{2})|([1-9][0-9]{3})`
+1. Using `ls -l | grep -E REGULAR_EXPRESSION`, list all files in some directory that
+    1. others can read or write (it is the 8th and 9th characters that are relevant).
+		    1. `ls -l | grep -E '^.......rw'`
+    2. were created in November and are pdf files.
+	    1.  `ls -l | grep -Ei 'sep.*\.pdf'`
