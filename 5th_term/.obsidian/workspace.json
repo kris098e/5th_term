@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Theory/4_stakeholders/4.md",
+                "file": "formal_languages_data_processing/3_compilers/Context free languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "software_engineering/Theory/4_stakeholders/4.md",
+                "file": "formal_languages_data_processing/3_compilers/Context free languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "software_engineering/Theory/4_stakeholders/4.md",
+                "file": "formal_languages_data_processing/3_compilers/Context free languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "software_engineering/Theory/4_stakeholders/4.md"
+                "file": "formal_languages_data_processing/3_compilers/Context free languages.md"
               }
             }
           },
@@ -156,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-ocr:Search OCR": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -163,12 +164,16 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-ocr:Search OCR": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "7686af24d6dc1340",
   "lastOpenFiles": [
+    "pictures/Pasted image 20230927083219.png",
+    "pictures/Pasted image 20230927083040.png",
+    "formal_languages_data_processing/3_compilers/Scanners.md",
+    "formal_languages_data_processing/3_compilers/Context free languages.md",
+    "formal_languages_data_processing/3_compilers/introduction.md",
     "software_engineering/Theory/4_stakeholders/Guestalker - Stakeholders.md",
     "software_engineering/Theory/4_stakeholders/4.md",
     "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
@@ -190,13 +195,10 @@
     "pictures/Pasted image 20230925135841.png",
     "pictures/Pasted image 20230925135829.png",
     "algorithms_propability/2.Discrete posibilities.md",
-    "pictures/Pasted image 20230925131328.png",
     "books/algorithmsXpropability/discrete_mathemathics.pdf.sb-571b71c6-TMMl7C",
     "formal_languages_data_processing/exercises/CLI tools.md",
     "formal_languages_data_processing/exercises/DFA and NFA.md",
     "algorithms_propability/1.counting.md",
-    "formal_languages_data_processing/3_compilers/Scanners.md",
-    "formal_languages_data_processing/3_compilers/introduction.md",
     "formal_languages_data_processing/2_CLI_data_formats.md",
     "formal_languages_data_processing/3_compilers",
     "formal_languages_data_processing/attachments/06-compiler.pdf",
@@ -213,8 +215,6 @@
     "Journal/September/dec.md",
     "algorithms_propability/Read up on.md",
     "Untitled.md",
-    "Excalidraw/formelle_sprog/NFA_1.17b.md",
-    "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md",
     "Untitled.canvas"
   ]
 }

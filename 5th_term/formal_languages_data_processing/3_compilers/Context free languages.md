@@ -1,0 +1,21 @@
+# Context free languages
+fx a language where we are able to count how many times a certain char is written
+
+it is not possible to recognise exactly ${a^iba^i|i\geq 0}$ since then we will have to recognise  other strings as well. 
+
+# Grammar
+`terminals`: the symbols which cannot get us any further in the syntax definition
+`start-symbol`: One of the variable we are supposed to start with
+`productions/rules`: the rules for what the specific symbol can go to.
+`parse tree`: the possibilities of where to go
+![[Pasted image 20230927083040.png]]
+> A grammar **recognises a language**. Fx, we have a grammar `G`, then if we follow the syntax, the string is then in `L(G)`
+
+![[Pasted image 20230927083219.png]]
+## Design tips
+- if having a lot of `if, while...` then make a variable, fx $S_{while}$ which can handle this.
+- DFA can be converted to a grammar
+	- fx $q_{i}\to aq_{j}$
+- Generate linked information together
+- Have enough variables, have one for each recursive construct
+- 

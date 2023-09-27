@@ -2,9 +2,8 @@
 from page 7
 
 # Input
-# Ouput
+# Output
 fx having `<=` will be send as `LEQ` as this is easier parsed later
-
 # Crafting a scanner
 easy to write regular expressions to match some identifiers
 
