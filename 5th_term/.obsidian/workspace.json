@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7686af24d6dc1340",
+            "id": "5b4c66f7b18c4697",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/3_compilers/Context free languages.md",
+                "file": "software_engineering/Exercises/3. Srum.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f510723339983e0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "software_engineering/Exercises/2. Agile cynefin planning.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "formal_languages_data_processing/3_compilers/Context free languages.md",
+                "file": "software_engineering/Exercises/3. Srum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "formal_languages_data_processing/3_compilers/Context free languages.md",
+                "file": "software_engineering/Exercises/3. Srum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "formal_languages_data_processing/3_compilers/Context free languages.md"
+                "file": "software_engineering/Exercises/3. Srum.md"
               }
             }
           },
@@ -167,54 +179,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7686af24d6dc1340",
+  "active": "5b4c66f7b18c4697",
   "lastOpenFiles": [
-    "pictures/Pasted image 20230927083219.png",
-    "pictures/Pasted image 20230927083040.png",
-    "formal_languages_data_processing/3_compilers/Scanners.md",
-    "formal_languages_data_processing/3_compilers/Context free languages.md",
-    "formal_languages_data_processing/3_compilers/introduction.md",
-    "software_engineering/Theory/4_stakeholders/Guestalker - Stakeholders.md",
-    "software_engineering/Theory/4_stakeholders/4.md",
+    "software_engineering/Exercises/2. Agile cynefin planning.md",
+    "software_engineering/Exercises/3. Srum.md",
+    "software_engineering/Theory/3 Scrum/Scrum.md",
     "software_engineering/Exercises/Introduction, waterfall-model and v-model.md",
-    "pictures/Pasted image 20230925175817.png",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "software_engineering/Theory/4_stakeholders/4.md",
+    "software_engineering/Theory/4_stakeholders/Guestalker - Stakeholders.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "pictures/Pasted image 20230929095316.png",
+    "pictures/Pasted image 20230929093522.png",
+    "pictures/Pasted image 20230929093040.png",
+    "algorithms_propability/exercises/1.counting.md",
+    "pictures/Pasted image 20230929092513.png",
+    "pictures/Pasted image 20230929091924.png",
+    "algorithms_propability/3. Inclusion exclusion.md",
+    "algorithms_propability/1.counting.md",
+    "pictures/Pasted image 20230929085259.png",
+    "pictures/Pasted image 20230929082555.png",
+    "algorithms_propability/exercises/3_dice_expected.py",
+    "algorithms_propability/exercises/scripts",
+    "pictures/Pasted image 20230929081714.png",
+    "pictures/Pasted image 20230929080613.png",
+    "pictures/Pasted image 20230928175449.png",
+    "formal_languages_data_processing/exercises/2.CLI tools changing content.md",
+    "formal_languages_data_processing/exercises/attachments/mail.txt",
+    "formal_languages_data_processing/exercises/attachments/users.txt",
+    "formal_languages_data_processing/exercises/1.CLI tools seaching.md",
+    "formal_languages_data_processing/exercises/0.DFA and NFA.md",
+    "formal_languages_data_processing/3_compilers/1.Parsing.md",
+    "formal_languages_data_processing/3_compilers/0.introduction.md",
+    "books/formal_languages_data_processing/Modern-Compiler-Implementation-in-C.pdf",
+    "formal_languages_data_processing/3_compilers/4.Parsing.md",
+    "formal_languages_data_processing/3_compilers/3.Context free languages.md",
+    "formal_languages_data_processing/3_compilers/2.Scanners.md",
     "software_engineering/Theory/4_stakeholders",
     "software_engineering/Exercises/4 1.md",
     "software_engineering/Theory/3 Scrum/scrum.pdf",
-    "software_engineering/Theory/3 Scrum/Scrum.md",
     "software_engineering/Exercises/4.md",
-    "pictures/Pasted image 20230925173914.png",
-    "pictures/Pasted image 20230925173113.png",
-    "pictures/Pasted image 20230925170453.png",
-    "pictures/Pasted image 20230925170250.png",
     "software_engineering/Theory/Introduction.md",
     "software_engineering/Requirements.md",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
-    "pictures/Pasted image 20230925161445.png",
-    "pictures/Pasted image 20230925145040.png",
-    "pictures/Pasted image 20230925135841.png",
-    "pictures/Pasted image 20230925135829.png",
-    "algorithms_propability/2.Discrete posibilities.md",
     "books/algorithmsXpropability/discrete_mathemathics.pdf.sb-571b71c6-TMMl7C",
-    "formal_languages_data_processing/exercises/CLI tools.md",
-    "formal_languages_data_processing/exercises/DFA and NFA.md",
-    "algorithms_propability/1.counting.md",
     "formal_languages_data_processing/2_CLI_data_formats.md",
     "formal_languages_data_processing/3_compilers",
     "formal_languages_data_processing/attachments/06-compiler.pdf",
-    "formal_languages_data_processing/attachments/06.pdf",
-    "formal_languages_data_processing/06.pdf",
-    "formal_languages_data_processing/exercises/attachments/output.tsv",
-    "formal_languages_data_processing/exercises/attachments/example.csv",
-    "formal_languages_data_processing/exercises/attachments/csv_to_tsv.py",
     "algorithms_propability/Exam problems.md",
     "formal_languages_data_processing/0_Introduction.md",
-    "formal_languages_data_processing/Key notes.md",
-    "Journal/September/2023-09-19.md",
-    "Journal/September/hww.md",
-    "Journal/September/dec.md",
-    "algorithms_propability/Read up on.md",
-    "Untitled.md",
     "Untitled.canvas"
   ]
 }
