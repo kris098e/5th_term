@@ -1,0 +1,10 @@
+
+# A simple test for stack access after print
+
+var a
+
+a = 41;
+print a;
+a = a + 1;
+print a;
+return 0;

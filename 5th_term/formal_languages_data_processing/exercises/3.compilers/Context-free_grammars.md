@@ -1,0 +1,54 @@
+![[Pasted image 20231005132921.png]]
+a. 
+S -> EEE
+E -> 0E|1T
+T -> 1T|0T|$\epsilon$
+
+b.
+S -> 0X0|1X1 | 1 | 0
+X -> 0X|1X| $\epsilon$
+
+c.
+S -> 0E|1E
+E -> 00E|01E|11E|10E|$\epsilon$
+
+S -> SSS | 0 | 1
+
+d.
+S -> 0S0 | 1S1 | 0S1 |1S0 | 0
+
+e.
+S -> 0S0 | 1S1 | 1 | 0 | $\epsilon$
+
+f.
+S -> S
+
+![[Pasted image 20231005140643.png]]
+a.
+S -> TaT
+T -> $\epsilon$ | aTb | bTa| a | TT `if you want b, then you must also get an a`
+
+b.
+S -> a | b | aEb | bEa | bWb | aQa | ba
+E -> a | b | S
+Q -> E | $\epsilon$
+
+c.
+
+d.
+
+
+![[Pasted image 20231005144008.png]]
+![[Pasted image 20231005144134.png]]
+G1, G2
+- Union
+G1 union G2: make new start symbol that either goes to G1 start state or G2.
+
+- Concatenation
+When we meet an accept state in either of the grammar, we start in the next grammar
+New start state which goes to S' -> $S_{1}S_{2}$, where S1 is start state in first grammar and S2 is start state in the next grammar
+
+- Star
+S' -> $S_{1}S'\ |\ \epsilon$
+
+![[Pasted image 20231005144044.png]]

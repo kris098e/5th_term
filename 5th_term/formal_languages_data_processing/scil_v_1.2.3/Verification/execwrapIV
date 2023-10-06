@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python3 ../Interpreter/interpreter.py < /tmp/$1-assemblerfile.s > /tmp/$1-output

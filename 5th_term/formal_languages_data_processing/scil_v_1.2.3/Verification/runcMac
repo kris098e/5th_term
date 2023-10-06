@@ -1,0 +1,3 @@
+# Take one file as argument, compile it, and send to stdout.
+
+python3 ../Compiler/compiler.py -m < $1

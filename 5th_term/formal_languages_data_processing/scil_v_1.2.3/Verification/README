@@ -1,0 +1,20 @@
+
+The test scripts assume a directory structure with a Verification
+directory (this one) at the same level as the the compiler directory,
+Compiler, and this test directory, Test.
+
+In the Test directory, files with suffix .src are source files and
+files with suffix .eop contain expected output of the corresponding
+source files.
+
+A good start is to be in the directory Verification and run the command
+
+> ./runAllTests (or ./runAllTestsIV)
+
+This will check and report on all the test files in Test. Note that
+filenames prefixed with "error" are supposed to result in an error
+message from the compiler or the message "INCORRECT output".
+
+If this is not working (and probably also if it is working), it might
+be good to check with the (brief) documentation for options as to how
+the compiler and the generated code can be run on different platforms.

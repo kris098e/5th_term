@@ -1,0 +1,4 @@
+# Take one test file as argument, compile, and run.
+
+python3 ../Compiler/compiler.py < $1 > tempGeneratedAssembler.s
+python3 ../Interpreter/interpreter.py < tempGeneratedAssembler.s

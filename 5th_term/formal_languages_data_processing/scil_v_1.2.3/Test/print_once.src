@@ -1,0 +1,5 @@
+
+# A first program to read the assembler for.
+
+print 42;
+return 0;

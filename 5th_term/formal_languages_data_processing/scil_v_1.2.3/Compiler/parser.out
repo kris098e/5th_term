@@ -1,0 +1,130 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    WHILE
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> body
+Rule 2     empty -> <empty>
+Rule 3     body -> optional_variables_declaration_list optional_functions_declaration_list statement_list
+Rule 4     optional_variables_declaration_list -> empty
+Rule 5     optional_variables_declaration_list -> variables_declaration_list
+Rule 6     variables_declaration_list -> VAR variables_list
+Rule 7     variables_declaration_list -> VAR variables_list variables_declaration_list
+Rule 8     variables_list -> IDENT
+Rule 9     variables_list -> IDENT COMMA variables_list
+Rule 10    optional_functions_declaration_list -> empty
+Rule 11    optional_functions_declaration_list -> functions_declaration_list
+Rule 12    functions_declaration_list -> function
+Rule 13    functions_declaration_list -> function functions_declaration_list
+Rule 14    function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL
+Rule 15    optional_parameter_list -> empty
+Rule 16    optional_parameter_list -> parameter_list
+Rule 17    parameter_list -> IDENT
+Rule 18    parameter_list -> IDENT COMMA parameter_list
+Rule 19    statement -> statement_return
+Rule 20    statement -> statement_print
+Rule 21    statement -> statement_assignment
+Rule 22    statement -> statement_ifthenelse
+Rule 23    statement -> statement_while
+Rule 24    statement -> statement_as_long_as
+Rule 25    statement -> statement_compound
+Rule 26    statement_return -> RETURN expression SEMICOL
+Rule 27    statement_print -> PRINT expression SEMICOL
+Rule 28    statement_assignment -> IDENT ASSIGN expression SEMICOL
+Rule 29    statement_ifthenelse -> IF expression THEN statement ELSE statement
+Rule 30    statement_as_long_as -> AS_LONG_AS expression DO statement
+Rule 31    statement_compound -> LCURL statement_list RCURL
+Rule 32    statement_list -> statement
+Rule 33    statement_list -> statement statement_list
+Rule 34    expression -> expression_integer
+Rule 35    expression -> expression_identifier
+Rule 36    expression -> expression_call
+Rule 37    expression -> expression_binop
+Rule 38    expression -> expression_group
+Rule 39    expression_integer -> INT
+Rule 40    expression_identifier -> IDENT
+Rule 41    expression_call -> IDENT LPAREN optional_expression_list RPAREN
+Rule 42    expression_binop -> expression PLUS expression
+Rule 43    expression_binop -> expression MINUS expression
+Rule 44    expression_binop -> expression TIMES expression
+Rule 45    expression_binop -> expression DIVIDE expression
+Rule 46    expression_binop -> expression EQ expression
+Rule 47    expression_binop -> expression NEQ expression
+Rule 48    expression_binop -> expression LT expression
+Rule 49    expression_binop -> expression GT expression
+Rule 50    expression_binop -> expression LTE expression
+Rule 51    expression_binop -> expression GTE expression
+Rule 52    expression_group -> LPAREN expression RPAREN
+Rule 53    optional_expression_list -> empty
+Rule 54    optional_expression_list -> expression_list
+Rule 55    expression_list -> expression
+Rule 56    expression_list -> expression COMMA expression_list
+
+Terminals, with rules where they appear
+
+ASSIGN               : 28
+AS_LONG_AS           : 30
+COMMA                : 9 18 56
+DIVIDE               : 45
+DO                   : 30
+ELSE                 : 29
+EQ                   : 46
+FUNCTION             : 14
+GT                   : 49
+GTE                  : 51
+IDENT                : 8 9 14 17 18 28 40 41
+IF                   : 29
+INT                  : 39
+LCURL                : 14 31
+LPAREN               : 14 41 52
+LT                   : 48
+LTE                  : 50
+MINUS                : 43
+NEQ                  : 47
+PLUS                 : 42
+PRINT                : 27
+RCURL                : 14 31
+RETURN               : 26
+RPAREN               : 14 41 52
+SEMICOL              : 26 27 28
+THEN                 : 29
+TIMES                : 44
+VAR                  : 6 7
+WHILE                : 
+error                : 
+
+Nonterminals, with rules where they appear
+
+body                 : 1 14
+empty                : 4 10 15 53
+expression           : 26 27 28 29 30 42 42 43 43 44 44 45 45 46 46 47 47 48 48 49 49 50 50 51 51 52 55 56
+expression_binop     : 37
+expression_call      : 36
+expression_group     : 38
+expression_identifier : 35
+expression_integer   : 34
+expression_list      : 54 56
+function             : 12 13
+functions_declaration_list : 11 13
+optional_expression_list : 41
+optional_functions_declaration_list : 3
+optional_parameter_list : 14
+optional_variables_declaration_list : 3
+parameter_list       : 16 18
+program              : 0
+statement            : 29 29 30 32 33
+statement_as_long_as : 24
+statement_assignment : 21
+statement_compound   : 25
+statement_ifthenelse : 22
+statement_list       : 3 31 33
+statement_print      : 20
+statement_return     : 19
+statement_while      : 23
+variables_declaration_list : 5 7
+variables_list       : 6 7 9
+

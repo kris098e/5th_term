@@ -1,0 +1,5 @@
+print 41+1;
+print 43-1;
+print 6*7;
+print 84/2;
+return 0;

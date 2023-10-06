@@ -1,0 +1,5 @@
+# Take one file as argument, compile, and run.
+
+python3 ../Compiler/compiler.py < $1 > tempGeneratedAssembler.s
+gcc tempGeneratedAssembler.s
+./a.out
