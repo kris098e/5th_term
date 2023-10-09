@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ada9f41cbbaa384e",
+            "id": "f6f47fd373fcfa25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Exercises/4..md",
+                "file": "formal_languages_data_processing/3_compilers/6.type_checking.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "software_engineering/Exercises/4..md",
+                "file": "formal_languages_data_processing/3_compilers/6.type_checking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "software_engineering/Exercises/4..md",
+                "file": "formal_languages_data_processing/3_compilers/6.type_checking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "software_engineering/Exercises/4..md"
+                "file": "formal_languages_data_processing/3_compilers/6.type_checking.md"
               }
             }
           },
@@ -167,54 +167,53 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "ada9f41cbbaa384e",
+  "active": "f6f47fd373fcfa25",
   "lastOpenFiles": [
-    "pictures/Pasted image 20231006154220.png",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/1.user-stories.md",
+    "formal_languages_data_processing/3_compilers/5.symbol_collection_type_checking.md",
+    "formal_languages_data_processing/3_compilers/6.type_checking.md",
+    "formal_languages_data_processing/attachments/11_symbol_collection_type_checking.pdf",
+    "formal_languages_data_processing/attachments/10_symbol_checking.pdf",
+    "pictures/Pasted image 20231009123637.png",
+    "formal_languages_data_processing/attachments/symbol_collection_type_checking.pdf",
+    "formal_languages_data_processing/3_compilers/4.2.0_example_use.md",
+    "formal_languages_data_processing/3_compilers/example_yacc/yacc-tutorial/makefile",
+    "formal_languages_data_processing/3_compilers/example_yacc/yacc-tutorial/calc.y",
+    "formal_languages_data_processing/3_compilers/example_yacc/yacc-tutorial/calc.l",
+    "formal_languages_data_processing/3_compilers/example_yacc/yacc-tutorial/README.md",
+    "formal_languages_data_processing/3_compilers/example_yacc/yacc-tutorial/LICENSE",
+    "formal_languages_data_processing/3_compilers/example_yacc/yacc-tutorial",
+    "formal_languages_data_processing/3_compilers/example_yacc",
+    "pictures/Pasted image 20231009114925.png",
+    "pictures/Pasted image 20231009114430.png",
+    "pictures/Pasted image 20231009113533.png",
+    "pictures/Pasted image 20231009113513.png",
+    "pictures/Pasted image 20231009113314.png",
+    "pictures/Pasted image 20231009113114.png",
+    "pictures/Pasted image 20231009113049.png",
+    "pictures/Pasted image 20231009112803.png",
+    "formal_languages_data_processing/3_compilers/example_lex/lex-tutorial/myscanner.l",
+    "formal_languages_data_processing/3_compilers/example_lex/lex-tutorial/README.md",
+    "pictures/Pasted image 20231009111552.png",
+    "formal_languages_data_processing/3_compilers/4.2_Using_parser_generators.md",
+    "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
+    "formal_languages_data_processing/2_CLI_data_formats.md",
+    "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "algorithms_propability/exercises/3.advanced_counting.md",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "formal_languages_data_processing/exercises/3.compilers/1.Context-free_grammars.md",
+    "formal_languages_data_processing/exercises/3.compilers/0.Exercises.md",
+    "formal_languages_data_processing/exercises/3.compilers/Untitled.md",
+    "algorithms_propability/exercises/last exam exercises.md",
     "software_engineering/Exercises/4..md",
+    "software_engineering/Theory/5_Product_Backlog_and_Project/1.user-stories.md",
     "software_engineering/Theory/4_stakeholders/UML-diagrams.md",
     "software_engineering/Theory/4_stakeholders/Guestalker - Stakeholders.md",
     "software_engineering/Theory/4_stakeholders/4.md",
     "software_engineering/Theory/3 Scrum/Untitled.md",
-    "pictures/Pasted image 20231006143752.png",
-    "pictures/Pasted image 20231006143319.png",
     "software_engineering/Exercises/3. Srum.md",
     "software_engineering/Theory/3 Scrum/Scrum.md",
-    "formal_languages_data_processing/exercises/3.compilers/Context-free_grammars.md",
-    "formal_languages_data_processing/exercises/3.compilers/Exercises.md",
-    "formal_languages_data_processing/exercises/attachments/2-9.jpeg",
-    "formal_languages_data_processing/exercises/3.compilers/Untitled.md",
-    "formal_languages_data_processing/exercises/3.compilers/Parsing.md",
-    "formal_languages_data_processing/exercises/attachments/DFA.jpeg",
-    "pictures/Pasted image 20231006125134.png",
-    "pictures/Pasted image 20231006124105.png",
-    "pictures/Pasted image 20231006123233.png",
-    "pictures/Pasted image 20231006123040.png",
-    "pictures/Pasted image 20231005151002.png",
     "Excalidraw/Drawing 2023-10-05 14.57.28.excalidraw.md",
-    "algorithms_propability/exercises/NB_NOT_THIS_YEARS_EXAM_PROBLEMS_exopg22.1.pdf",
-    "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
-    "pictures/Pasted image 20231005145633.png",
-    "algorithms_propability/5.Cernoff_bounds.md",
-    "algorithms_propability/4.Kleinberg_and_Tardos.md",
-    "software_engineering/Theory/4_stakeholders/Lecture 4_ Users and Requirements 2.pdf",
-    "Excalidraw/LR.excalidraw.md",
-    "formal_languages_data_processing/3_compilers/4.2_Using_parser_generators.md",
-    "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
-    "formal_languages_data_processing/3_compilers/5.0_bison_parser.md",
-    "formal_languages_data_processing/attachments/bison_parsser.pdf",
-    "algorithms_propability/exercises/last exam exercises.md",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/inte.s",
-    "formal_languages_data_processing/exercises/2.CLI tools changing content.md",
-    "formal_languages_data_processing/exercises/1.CLI tools seaching.md",
-    "algorithms_propability/1.counting.md",
-    "algorithms_propability/exercises/1.counting.md",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/nwss.s.tmp",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/nwss.s",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/DOS_eol_factorial.src",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/cca.s.tmp",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/cca.s",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/calls_in_calls.src",
     "Untitled.canvas"
   ]
 }
