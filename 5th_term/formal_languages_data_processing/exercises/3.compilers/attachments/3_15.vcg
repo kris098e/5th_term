@@ -1,0 +1,229 @@
+graph: {
+	display_edge_labels:	yes
+	priority_phase:	yes
+	port_sharing:	no
+	crossing_weight:	median
+	splines:	yes
+	node: {
+		title:	"0"
+		label:	"state  0\n $accept -> . S $end\n S -> . E\n E -> . 'while' E 'do' E\n E -> . id '=' E\n E -> . E '+' E\n E -> . id"
+	}
+	edge: {
+		sourcename:	"0"
+		targetname:	"1"
+		label:	"id"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"0"
+		targetname:	"2"
+		label:	"'while'"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"0"
+		targetname:	"3"
+		label:	"S"
+		color:	green
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"0"
+		targetname:	"4"
+		label:	"E"
+		color:	green
+		textcolor:	black
+	}
+	node: {
+		title:	"1"
+		label:	"state  1\n E -> id . '=' E\n E -> id .[$end, 'do', '+']"
+	}
+	edge: {
+		sourcename:	"1"
+		targetname:	"5"
+		label:	"'='"
+		color:	blue
+		textcolor:	black
+	}
+	node: {
+		title:	"2"
+		label:	"state  2\n E -> . 'while' E 'do' E\n E -> 'while' . E 'do' E\n E -> . id '=' E\n E -> . E '+' E\n E -> . id"
+	}
+	backedge: {
+		sourcename:	"2"
+		targetname:	"1"
+		label:	"id"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"2"
+		targetname:	"2"
+		label:	"'while'"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"2"
+		targetname:	"6"
+		label:	"E"
+		color:	green
+		textcolor:	black
+	}
+	node: {
+		title:	"3"
+		label:	"state  3\n $accept -> S . $end"
+	}
+	edge: {
+		sourcename:	"3"
+		targetname:	"7"
+		label:	"$end"
+		color:	blue
+		textcolor:	black
+	}
+	node: {
+		title:	"4"
+		label:	"state  4\n S -> E .[$end]\n E -> E . '+' E"
+	}
+	edge: {
+		sourcename:	"4"
+		targetname:	"8"
+		label:	"'+'"
+		color:	blue
+		textcolor:	black
+	}
+	node: {
+		title:	"5"
+		label:	"state  5\n E -> . 'while' E 'do' E\n E -> . id '=' E\n E -> id '=' . E\n E -> . E '+' E\n E -> . id"
+	}
+	backedge: {
+		sourcename:	"5"
+		targetname:	"1"
+		label:	"id"
+		color:	blue
+		textcolor:	black
+	}
+	backedge: {
+		sourcename:	"5"
+		targetname:	"2"
+		label:	"'while'"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"5"
+		targetname:	"9"
+		label:	"E"
+		color:	green
+		textcolor:	black
+	}
+	node: {
+		title:	"6"
+		label:	"state  6\n E -> 'while' E . 'do' E\n E -> E . '+' E"
+	}
+	edge: {
+		sourcename:	"6"
+		targetname:	"10"
+		label:	"'do'"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"6"
+		targetname:	"8"
+		label:	"'+'"
+		color:	blue
+		textcolor:	black
+	}
+	node: {
+		title:	"7"
+		label:	"state  7\n $accept -> S $end ."
+	}
+	node: {
+		title:	"8"
+		label:	"state  8\n E -> . 'while' E 'do' E\n E -> . id '=' E\n E -> . E '+' E\n E -> E '+' . E\n E -> . id"
+	}
+	backedge: {
+		sourcename:	"8"
+		targetname:	"1"
+		label:	"id"
+		color:	blue
+		textcolor:	black
+	}
+	backedge: {
+		sourcename:	"8"
+		targetname:	"2"
+		label:	"'while'"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"8"
+		targetname:	"11"
+		label:	"E"
+		color:	green
+		textcolor:	black
+	}
+	node: {
+		title:	"9"
+		label:	"state  9\n E -> id '=' E .[$end, 'do', '+']\n E -> E . '+' E"
+	}
+	backedge: {
+		sourcename:	"9"
+		targetname:	"8"
+		label:	"'+'"
+		color:	blue
+		textcolor:	black
+	}
+	node: {
+		title:	"10"
+		label:	"state 10\n E -> . 'while' E 'do' E\n E -> 'while' E 'do' . E\n E -> . id '=' E\n E -> . E '+' E\n E -> . id"
+	}
+	backedge: {
+		sourcename:	"10"
+		targetname:	"1"
+		label:	"id"
+		color:	blue
+		textcolor:	black
+	}
+	backedge: {
+		sourcename:	"10"
+		targetname:	"2"
+		label:	"'while'"
+		color:	blue
+		textcolor:	black
+	}
+	edge: {
+		sourcename:	"10"
+		targetname:	"12"
+		label:	"E"
+		color:	green
+		textcolor:	black
+	}
+	node: {
+		title:	"11"
+		label:	"state 11\n E -> E . '+' E[$end, 'do', '+']\n E -> E '+' E .[$end, 'do', '+']"
+	}
+	backedge: {
+		sourcename:	"11"
+		targetname:	"8"
+		label:	"'+'"
+		color:	blue
+		textcolor:	black
+	}
+	node: {
+		title:	"12"
+		label:	"state 12\n E -> 'while' E 'do' E .[$end, 'do', '+']\n E -> E . '+' E"
+	}
+	backedge: {
+		sourcename:	"12"
+		targetname:	"8"
+		label:	"'+'"
+		color:	blue
+		textcolor:	black
+	}
+
+
+}
