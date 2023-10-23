@@ -11,7 +11,7 @@ from singleton_decorator import singleton
 from visitors_base import VisitorsBase
 from symbols import NameCategory
 
-
+# autogenerating enumuration types for the intermediate representation:
 class Op(Enum):
     """Defines the various operations."""
     MOVE = auto()
@@ -71,14 +71,14 @@ class Mode:
         if args:
             self.offset = args[0]
 
-
+# Instruction arguments representation:
 class Arg:
     """Representation of instruction arguments with a target and a mode."""
     def __init__(self, target, addressing):
         self.target = target
         self.addressing = addressing
 
-
+# Instruction representation:
 class Ins:
     """Representation of an instruction with an opcode, a number of
        arguments, and an optional comment.
@@ -154,7 +154,7 @@ class ASTCodeGenerationVisitor(VisitorsBase):
                       Arg(Target(T.RSL), Mode(M.DIR)),
                       c="preparing for static link computation"))
         for i in range(level_difference):
-            # Static link is offset two from base pointer:
+            # Static link is offset two from base pointer: look at the slides for code generation to see why
             self._app(Ins(Op.MOVE,
                           Arg(Target(T.RSL), Mode(M.IRL, -2)),
                           Arg(Target(T.RSL), Mode(M.DIR)),
@@ -166,10 +166,10 @@ class ASTCodeGenerationVisitor(VisitorsBase):
             t.end_label = self._labels.next(f"end_{t.name}")
 
     def postMidVisit_body(self, t):
-        self._ensure_labels(self._function_stack[-1])
+        self._ensure_labels(self._function_stack[-1]) # make sure label is there
         label = self._function_stack[-1].start_label
         self._app(Ins(Op.LABEL, Arg(Target(T.MEM, label), Mode(M.DIR))))
-        self._app(Ins(Op.META, Meta.CALLEE_PROLOGUE))
+        self._app(Ins(Op.META, Meta.CALLEE_PROLOGUE)) # do the callee prologue when emitting
         self._app(Ins(Op.META,
                       Meta.ALLOCATE_STACK_SPACE,
                       t.number_of_variables))
@@ -271,10 +271,11 @@ class ASTCodeGenerationVisitor(VisitorsBase):
     def preVisit_statement_while(self, t):
         """while_label:
         """
-        t.while_label = self._labels.next("while")
-        t.endwhile_label = self._labels.next("endwhile")
+        t.while_label = self._labels.next("while") # assembly label for the while, put a unique label on it. Add a number to the end.
+        t.endwhile_label = self._labels.next("endwhile") # assembly label for the end of the while, put a unique label on it. Add a number to the end.
         self._app(Ins(Op.LABEL,
-                      Arg(Target(T.MEM, t.while_label), Mode(M.DIR))))
+                      Arg(Target(T.MEM, t.while_label), Mode(M.DIR)))) 
+        # app: append to the list of instructions, Op: operation, LABEL: label, Arg: argument, Target: target, T.MEM: memory, t.while_label: the label, Mode: mode, M.DIR: direct addressing mode
 
     def midVisit_statement_while(self, t):
         """                pop reg1
@@ -282,17 +283,21 @@ class ASTCodeGenerationVisitor(VisitorsBase):
                            cmp reg1, reg2
                            je endwhile_label
         """
+        # app: append to the list of instructions, Op: operation, POP: pop, Arg: argument, Target: target, T.REG: register, 1: register 1, Mode: mode, M.DIR: direct addressing mode
         self._app(Ins(Op.POP,
                       Arg(Target(T.REG, 1), Mode(M.DIR)),
                       c="move computed boolean to register"))
+        # app: append to the list of instructions, Op: operation, MOVE: move, Arg: argument, Target: target, T.IMI: immediate integer, 0: 0, Mode: mode, M.DIR: direct addressing mode
         self._app(Ins(Op.MOVE,
                       Arg(Target(T.IMI, 0), Mode(M.DIR)),
                       Arg(Target(T.REG, 2), Mode(M.DIR)),
                       c="move false to register"))
+        # Compare instruction, between register 1 and register 2
         self._app(Ins(Op.CMP,
                       Arg(Target(T.REG, 1), Mode(M.DIR)),
                       Arg(Target(T.REG, 2), Mode(M.DIR)),
                       c="compare computed boolean to false"))
+        # Jump instruction, if equal, jump to end while
         self._app(Ins(Op.JE,
                       Arg(Target(T.MEM, t.endwhile_label), Mode(M.DIR)),
                       c="jump to end_while if false"))
@@ -301,7 +306,9 @@ class ASTCodeGenerationVisitor(VisitorsBase):
         """                jmp while_label
            endwhile_label:
         """
+        # Jump instruction, jump to the while label
         self._app(Ins(Op.JMP, Arg(Target(T.MEM, t.while_label), Mode(M.DIR))))
+        # Label instruction, label the end of the while
         self._app(Ins(Op.LABEL,
                       Arg(Target(T.MEM, t.endwhile_label), Mode(M.DIR))))
 
@@ -319,12 +326,12 @@ class ASTCodeGenerationVisitor(VisitorsBase):
         """
         value = self._current_scope.lookup(t.identifier)
         # Follow static link:
-        level_difference = self._function_stack[-1].scope_level - value.level
-        self._follow_static_link(level_difference)
-        if value.cat == NameCategory.PARAMETER:
+        level_difference = self._function_stack[-1].scope_level - value.level # find the level difference between the current scope and the scope of the identifier
+        self._follow_static_link(level_difference) # follow the static link, if not in the same scope. 
+        if value.cat == NameCategory.PARAMETER: # if the value is a parameter, have to find the offset onto the stack
             offset = value.info
             self._app(Ins(Op.PUSH,
-                          Arg(Target(T.RSL), Mode(M.IRL, -(offset + 3))),
+                          Arg(Target(T.RSL), Mode(M.IRL, -(offset + 3))), # offset is the offset to the parameter, fx first parameter is offset 0, second is offset 1, etc. use offset 3 as the first parameter is 3 away from the base pointer
                           c=f"push value of {offset+1}. parameter"))
         elif value.cat == NameCategory.VARIABLE:
             offset = value.info

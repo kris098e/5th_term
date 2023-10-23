@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+                "file": "formal_languages_data_processing/3_compilers/7.code_generation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bc8a37afde10a10f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "formal_languages_data_processing/exercises/3.compilers/3..md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/3..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/3..md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md"
+                "file": "formal_languages_data_processing/exercises/3.compilers/3..md"
               }
             }
           },
@@ -163,58 +176,57 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-ocr:Search OCR": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e60ff51bbf632e67",
+  "active": "bc8a37afde10a10f",
   "lastOpenFiles": [
+    "algorithms_propability/4.Kleinberg_and_Tardos.md",
+    "formal_languages_data_processing/exercises/3.compilers/3..md",
+    "algorithms_propability/3. Inclusion exclusion.md",
+    "algorithms_propability/1.counting.md",
+    "Untitled.md",
+    "formal_languages_data_processing/3_compilers/7.code_generation.md",
+    "formal_languages_data_processing/attachments/Code_generation.excalidraw.md",
+    "formal_languages_data_processing/attachments/slides-code-generation.pdf",
+    "formal_languages_data_processing/attachments/notes-code-generation.pdf",
+    "formal_languages_data_processing/exercises/SCIL_walkthrough/walkthrough.md",
     "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
-    "algorithms_propability/2.Discrete posibilities.md",
-    "algorithms_propability/exercises/3.advanced_counting.md",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
-    "pictures/Pasted image 20231013135934.png",
-    "algorithms_propability/exercises/last exam exercises.md",
+    "formal_languages_data_processing/exercises/SCIL_walkthrough",
+    "Excalidraw/Drawing 2023-10-17 09.57.49.excalidraw.md",
+    "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+    "formal_languages_data_processing/3_compilers/6.type_checking.md",
+    "formal_languages_data_processing/3_compilers/5.symbol_collection_type_checking.md",
+    "software_engineering/Theory/5_Product_Backlog_and_Project/lecture_5.pdf",
+    "software_engineering/project/software_engineering-project/src/test/kotlin/project/application/repo/abstractRepoSetup.kt",
+    "software_engineering/project/software_engineering-project/src/test/kotlin/project/application/repo/TEST.kt",
+    "software_engineering/project/software_engineering-project/src/test/kotlin/project/application/repo",
+    "software_engineering/project/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/UsersRecord.java",
+    "software_engineering/project/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/GroupsRecord.java",
+    "software_engineering/project/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/DatabasechangeloglockRecord.java",
+    "software_engineering/project/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-32x32.png",
+    "software_engineering/project/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-16x16.png",
+    "algorithms_propability/6.recurence_relations.md",
     "algorithms_propability/5.Cernoff_bounds.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "algorithms_propability/exercises/1.counting.md",
+    "algorithms_propability/exercises/3.advanced_counting.md",
+    "algorithms_propability/exercises/last exam exercises.md",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "pictures/Pasted image 20231013135934.png",
     "pictures/Pasted image 20231013134446.png",
     "pictures/Pasted image 20231013133735.png",
     "pictures/Pasted image 20231013133629.png",
-    "formal_languages_data_processing/attachments/bison_parsser.pdf",
-    "algorithms_propability/exercises/1.counting.md",
     "pictures/Pasted image 20231013123834.png",
     "pictures/Pasted image 20231013122718.png",
     "pictures/Pasted image 20231013120115.png",
     "pictures/Pasted image 20231013115915.png",
-    "pictures/Pasted image 20231013115127.png",
-    "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
-    "pictures/Pasted image 20231013114221.png",
-    "formal_languages_data_processing/exercises/3.compilers/attachments/3_15.vcg",
-    "software_engineering/project/software_engineering-project/src/test/kotlin/project/application/ApplicationTest.kt",
-    "software_engineering/project/software_engineering-project/src/test/kotlin/project/application/DemoTest.kt",
-    "software_engineering/project/software_engineering-project/src/test/kotlin/project/application",
-    "software_engineering/project/software_engineering-project/src/test/kotlin/project",
     "formal_languages_data_processing/exercises/3.compilers/1.Context-free_grammars.md",
     "formal_languages_data_processing/3_compilers/4.2_Using_parser_generators.md",
-    "formal_languages_data_processing/exercises/3.compilers/attachments/3_15.output",
     "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
     "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
     "software_engineering/Exercises/4..md",
     "formal_languages_data_processing/exercises/3.compilers/attachments/Appel-3-5.excalidraw.md",
-    "formal_languages_data_processing/exercises/3.compilers/attachments/3_15.tab.c",
-    "formal_languages_data_processing/exercises/3.compilers/3_15.y",
-    "formal_languages_data_processing/exercises/3.compilers/attachments/3_15.y",
-    "formal_languages_data_processing/exercises/3.compilers/Untitled 1.md",
-    "formal_languages_data_processing/3_compilers/3.Context free languages.md",
-    "formal_languages_data_processing/3_compilers/4.2.0_example_use.md",
-    "formal_languages_data_processing/3_compilers/6.type_checking.md",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/0.use-cases.md",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/2.product_backlog.md",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/1.user-stories.md",
-    "software_engineering/Exercises/6.Product and other things.md",
-    "software_engineering/Theory/6_product_and_other_things/0.Estimations.md",
-    "algorithms_propability/6.recurence_relations.md",
-    "algorithms_propability/3. Inclusion exclusion.md",
-    "formal_languages_data_processing/exercises/3.compilers/attachments/Appel-3-8.excalidraw.md",
     "Untitled.canvas"
   ]
 }
