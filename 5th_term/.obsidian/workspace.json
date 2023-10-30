@@ -4,45 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d6f02ed0f40b008e",
+        "id": "940ea5d7a19221f5",
         "type": "tabs",
         "children": [
           {
-            "id": "e60ff51bbf632e67",
+            "id": "d45efbc26eac1629",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/3_compilers/7.code_generation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc8a37afde10a10f",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "software_engineering/Theory/5_Product_Backlog_and_Project/lecture_5.pdf"
-              }
-            }
-          },
-          {
-            "id": "e2101255de1a67d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/3..md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/4..md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -116,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/3..md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/4..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/3..md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/4..md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/3..md"
+                "file": "formal_languages_data_processing/exercises/3.compilers/4..md"
               }
             }
           },
@@ -190,19 +167,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e2101255de1a67d4",
+  "active": "d45efbc26eac1629",
   "lastOpenFiles": [
+    "formal_languages_data_processing/exercises/3.compilers/4..md",
+    "formal_languages_data_processing/3_compilers/7.code_generation.md",
+    "software_engineering/Theory/5_Product_Backlog_and_Project/lecture_5.pdf",
+    "algorithms_propability/4.Kleinberg_and_Tardos.md",
+    "algorithms_propability/3. Inclusion exclusion.md",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "bachelors/List of things to add from nicklas.md",
+    "bachelors",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "formal_languages_data_processing/exercises/3.compilers/3..md",
     "formal_languages_data_processing/exercises/3.compilers/Nice bison example.md",
     "formal_languages_data_processing/exercises/1.CLI tools seaching.md",
     "formal_languages_data_processing/exercises/2.CLI tools changing content.md",
     "algorithms_propability/exercises/1.counting.md",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
     "algorithms_propability/exercises/3.advanced_counting.md",
     "Excalidraw/Drawing 2023-10-26 12.04.06.excalidraw.md",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/lecture_5.pdf",
     "software_engineering/Theory/5_Product_Backlog_and_Project/1.user-stories.md",
     "software_engineering/Theory/5_Product_Backlog_and_Project/0.use-cases.md",
-    "formal_languages_data_processing/exercises/3.compilers/3..md",
     "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
     "formal_languages_data_processing/5_DFA_minimazation/minimazation.md",
     "formal_languages_data_processing/5_DFA_minimazation/DFA_minimazation.pdf",
@@ -215,10 +199,8 @@
     "software_engineering/project/software_engineering-project/build/test-results/test/testlist",
     "software_engineering/project/software_engineering-project/build/classes/kotlin/test/META-INF/software_engineering-project_test.kotlin_module",
     "software_engineering/project/software_engineering-project/build/classes/kotlin/test/project/application/repo/setup/Testddd.class",
-    "software_engineering/project/software_engineering-project/build/kotlin/compileTestKotlin/cacheable/caches-jvm/jvm/kotlin/dirty-output-classes.tab_i.len",
     "software_engineering/project/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-32x32.png",
     "software_engineering/project/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-16x16.png",
-    "algorithms_propability/2.Discrete posibilities.md",
     "software_engineering/Theory/7_Architecture_C4_UML/REST_and_documentation.md",
     "Untitled.md",
     "software_engineering/Theory/7_Architecture_C4_UML/Universal_robots.md",
@@ -230,11 +212,6 @@
     "software_engineering/Theory/6_product_and_other_things/0.Estimations.md",
     "software_engineering/Theory/6_product_and_other_things/talk_from_product_manager_at_lego.md",
     "pictures/Pasted image 20231023144116.png",
-    "algorithms_propability/4.Kleinberg_and_Tardos.md",
-    "algorithms_propability/3. Inclusion exclusion.md",
-    "algorithms_propability/1.counting.md",
-    "formal_languages_data_processing/3_compilers/7.code_generation.md",
-    "formal_languages_data_processing/attachments/Code_generation.excalidraw.md",
     "pictures/Pasted image 20231013135934.png",
     "pictures/Pasted image 20231013134446.png",
     "pictures/Pasted image 20231013133735.png",
