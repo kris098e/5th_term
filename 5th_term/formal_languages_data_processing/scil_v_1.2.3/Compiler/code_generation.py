@@ -268,6 +268,14 @@ class ASTCodeGenerationVisitor(VisitorsBase):
         self._app(Ins(Op.LABEL,
                       Arg(Target(T.MEM, t.endif_label), Mode(M.DIR))))
 
+    def preVisit_statement_repeat_until(self, t):
+        """repeat_label:
+        """
+        t.repeat_label = self._labels.next("repeat")
+        t.endrepeat_label = self._labels.next("endrepeat")
+        self._app(Ins(Op.LABEL,
+                      Arg(Target(T.MEM, t.repeat_label), Mode(M.DIR))))
+        
     def preVisit_statement_while(self, t):
         """while_label:
         """
@@ -277,6 +285,31 @@ class ASTCodeGenerationVisitor(VisitorsBase):
                       Arg(Target(T.MEM, t.while_label), Mode(M.DIR)))) 
         # app: append to the list of instructions, Op: operation, LABEL: label, Arg: argument, Target: target, T.MEM: memory, t.while_label: the label, Mode: mode, M.DIR: direct addressing mode
 
+    def midVisit_statement_repeat_until(self, t):
+        """                pop reg1
+                           move false, reg2
+                           cmp reg1, reg2
+                           jne repeat_label
+                           endrepeat_label
+        """
+        self._app(Ins(Op.POP,
+                      Arg(Target(T.REG, 1), Mode(M.DIR)),
+                      c="move computed boolean to register"))
+        self._app(Ins(Op.MOVE,
+                      Arg(Target(T.IMI, 0), Mode(M.DIR)),
+                      Arg(Target(T.REG, 2), Mode(M.DIR)),
+                      c="move false to register"))
+        self._app(Ins(Op.CMP,
+                      Arg(Target(T.REG, 1), Mode(M.DIR)),
+                      Arg(Target(T.REG, 2), Mode(M.DIR)),
+                      c="compare computed boolean to false"))
+        self._app(Ins(Op.JNE,
+                      Arg(Target(T.MEM, t.repeat_label), Mode(M.DIR)),
+                      c="jump to repeat if false"))
+        self._app(Ins(Op.LABEL,
+                      Arg(Target(T.MEM, t.endrepeat_label), Mode(M.DIR))))
+        
+        
     def midVisit_statement_while(self, t):
         """                pop reg1
                            move false, reg2

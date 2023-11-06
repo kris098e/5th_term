@@ -17,7 +17,7 @@ starts at page 6
 - see in `W` we can just work on the smaller one.
 - remember u have to take the one that goes to the state. So you have to look back, not forward.
 
-# Can use this is fx type equivalence checking
+# Can use this in fx type equivalence checking
 - If using structural equivalence, the types will have exactly the same structure in the DFA and states.
 - can be also fx via linked lists
 

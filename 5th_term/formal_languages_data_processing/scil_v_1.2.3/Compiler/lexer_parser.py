@@ -27,7 +27,9 @@ reserved = {
     'function': 'FUNCTION',
     'return': 'RETURN',
     'var': 'VAR',
-    'print': 'PRINT'
+    'print': 'PRINT',
+    'repeat': 'REPEAT',
+    'until': 'UNTIL',
 }
 
 
@@ -192,9 +194,13 @@ def p_statement(t):
                  | statement_assignment
                  | statement_ifthenelse
                  | statement_while
+                 | statement_repeat_until
                  | statement_compound'''
     t[0] = t[1]
 
+def p_statement_repeat_until(t):
+    'statement_repeat_until : REPEAT statement_list UNTIL expression SEMICOL'
+    t[0] = AST.statement_repeat_until(t[4], t[2], t.lexer.lineno)
 
 def p_statement_return(t):
     'statement_return : RETURN expression SEMICOL'
@@ -214,7 +220,6 @@ def p_statement_assignment(t):
 def p_statement_ifthenelse(t):
     'statement_ifthenelse : IF expression THEN statement ELSE statement'
     t[0] = AST.statement_ifthenelse(t[2], t[4], t[6], t.lexer.lineno)
-
 
 def p_statement_while(t):
     'statement_while :  WHILE expression DO statement'

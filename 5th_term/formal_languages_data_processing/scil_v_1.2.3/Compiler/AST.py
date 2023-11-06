@@ -242,3 +242,15 @@ class expression_list:
         if self.next:
             self.next.accept(visitor)
         visitor.postVisit(self)
+
+@dataclass
+class statement_repeat_until:
+    exp: Any
+    repeat_part: Any
+    lineno: int
+
+    def accept(self, visitor):
+        visitor.preVisit(self)
+        self.repeat_part.accept(visitor)
+        self.exp.accept(visitor)
+        visitor.midVisit(self)

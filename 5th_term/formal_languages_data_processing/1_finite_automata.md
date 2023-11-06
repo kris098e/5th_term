@@ -51,7 +51,6 @@ examples
 Have to keep track of both automatas, and if **one of them accepts, then accept**
 Can also combine the automata introducing multiple states in each state
 
-
 # Nondetermination
 It may take in a $\epsilon$ at each of the arrows, meaning it will take no input and just proceed. Here can also create branches
 means that there exists two or more arrows for a given input
@@ -68,8 +67,6 @@ The procedure can be seen just after `corollary 1.40`.
 ![[Pasted image 20230906154905.png]]
 ![[Pasted image 20230906155119.png]]
 Notice that we cannot just add the start the initial state to accept state as this would accept undeseriable language additions. Fx adding ø to the set
-
-
 # Regular expressions
 some operators have higher precedence than others
 
@@ -79,7 +76,6 @@ star is the strongest
 ## Definion
 ![[Pasted image 20230911123758.png]]
 Means that we are allowed to use syntax in regular expressions
-
 ## Shorthands
 allowed to write $\sum$ _and then some syntax_ for indicating a regular language, which is just the language
 $R^+$  is $R\ concat\ R^*$
