@@ -7,7 +7,17 @@
 	- should not modify code (annotation processor)
 	- Not 
 
+**!!!kapt is not supported for kotlin/native!!!** This is because it generates source code for java. This is a huge problem when considering it is faster to run natively than the JVM. And as some project uses **kotlin/native for fx mobile apps** `we need a testing framework which can handle kotlin/native` to test kotlin/native code.
 
+Kapt (Kotlin Annotation Processing Tool) is primarily designed for JVM-based projects, including Android projects, and it's not typically used with Kotlin/Native or Kotlin/JS projects [kotlinlang.org](https://kotlinlang.org/docs/kapt.html).
+
+Kapt generates Java stubs from Kotlin files, which Java annotation processors then process. However, Kotlin/Native and Kotlin/JS do not use the JVM, so this approach is not applicable [kotlinlang.org](https://kotlinlang.org/docs/kapt.html).
+
+Kotlin/Native is a technology for compiling Kotlin directly to native binaries, which can run without a virtual machine. Kotlin/JS is a technology for compiling Kotlin to JavaScript, which can run in any JavaScript environment. Neither of these environments have a concept of Java annotation processors, so Kapt cannot be used with them [kotlinlang.org](https://kotlinlang.org/docs/kapt.html).
+
+On the other hand, KSP (Kotlin Symbol Processing) is a Kotlin-first alternative to Kapt and it's designed to work with all Kotlin platforms, including Kotlin/Native and Kotlin/JS. KSP analyzes Kotlin code directly, which makes it more suitable for these platforms [developer.android.com](https://developer.android.com/build/migrate-to-ksp).
+
+In conclusion, while Kapt is a valuable tool for annotation processing in JVM-based Kotlin projects, it's not suitable for Kotlin/Native or Kotlin/JS projects. For these platforms, KSP is the recommended tool for annotation processing.
 
 
 

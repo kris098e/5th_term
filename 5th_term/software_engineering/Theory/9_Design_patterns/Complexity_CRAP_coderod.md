@@ -4,7 +4,7 @@ less that 10 complexity in a function
 - +1 for the call to the function
 - Does not have to be accurate, really opinion based - have to use the same measure everytime tho. Cannot change.
 
-# CRAP
+# CRAP - formula
 look slides
 - penalities for not testing
 - penalties for having high cyclomatic complexity

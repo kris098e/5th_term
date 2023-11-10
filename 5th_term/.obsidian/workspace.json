@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "940ea5d7a19221f5",
+        "id": "c53b2ef1cc14c736",
         "type": "tabs",
         "children": [
           {
-            "id": "8a6b84327f36d9a6",
+            "id": "ac883400b4e0426f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "28f59c6d8df9eef1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8193bbe090b1b37d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "software_engineering/Theory/8_UML_C4_architecture/Architecture_UML.md",
+                "file": "bachelors/jacopo_skeleton.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
+                "file": "bachelors/jacopo_skeleton.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
+                "file": "bachelors/jacopo_skeleton.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md"
+                "file": "bachelors/jacopo_skeleton.md"
               }
             }
           },
@@ -180,7 +156,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-ocr:Search OCR": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -188,57 +163,58 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "8a6b84327f36d9a6",
+  "active": "7e2586818a156850",
   "lastOpenFiles": [
-    "pictures/Pasted image 20231106175027.png",
-    "pictures/Pasted image 20231106175025.png",
-    "pictures/Pasted image 20231106173629.png",
-    "software_engineering/Theory/9_Design_patterns/Remember.md",
+    "bachelors/skeleton_thesis_proposal.md",
+    "bachelors/jacopo_skeleton.md",
+    "bachelors/unit_testing_(2020).pdf",
+    "bachelors/Test-Driven Development By Example (Kent Beck).pdf",
+    "notes bachelors.md",
+    "bachelors/KAPT_vs_KSP.md",
+    "algorithms_propability/8.flows.md",
+    "software_engineering/Exercises/8.SOLID_INVEST_Achitect_UML.md",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/security/BcryptUtilities.kt",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "software_engineering/Exercises/9.design_patterns.md",
+    "algorithms_propability/3. Inclusion exclusion.md",
+    "algorithms_propability/exercises/4.networks.md",
     "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
+    "software_engineering/Theory/8_UML_C4_architecture/0.recap.md",
+    "pictures/Pasted image 20231108124611.png",
+    "pictures/Pasted image 20231108124558.png",
+    "pictures/Pasted image 20231108124515.png",
+    "pictures/Pasted image 20231108124450.png",
+    "pictures/Pasted image 20231108124434.png",
+    "pictures/Pasted image 20231108122835.png",
+    "pictures/Pasted image 20231108122820.png",
+    "pictures/Pasted image 20231108122744.png",
+    "pictures/Pasted image 20231108122736.png",
+    "pictures/Pasted image 20231108122720.png",
+    "software_engineering/software_engineering-project/jwt.md",
+    "software_engineering/software_engineering-project/build/classes/kotlin/main/META-INF/software_engineering-project.kotlin_module",
+    "software_engineering/software_engineering-project/build/classes/kotlin/main/project/security/JwtService.class",
+    "software_engineering/software_engineering-project/build/classes/kotlin/main/project/security/JwtConfig.class",
+    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/dirty-output-classes.tab_i.len",
+    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/dirty-output-classes.tab_i",
+    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/dirty-output-classes.tab",
+    "software_engineering/software_engineering-project/build/snapshot/kotlin/compileKotlin/2.zip",
+    "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
+    "Excalidraw/DFAminimize.excalidraw.md",
+    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/1..md",
+    "formal_languages_data_processing/exercises/3.compilers/4..md",
+    "formal_languages_data_processing/exercises/0.DFA and NFA.md",
+    "formal_languages_data_processing/exercises/1.CLI tools seaching.md",
+    "formal_languages_data_processing/4_data_cleaning_web_scraping/1.web_scraping.md",
+    "formal_languages_data_processing/4_data_cleaning_web_scraping/0.Data_cleaning.md",
     "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
+    "software_engineering/Theory/9_Design_patterns/Remember.md",
     "algorithms_propability/4.Kleinberg_and_Tardos.md",
     "software_engineering/Theory/8_UML_C4_architecture/Architecture_UML.md",
-    "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
-    "software_engineering/Theory/8_UML_C4_architecture/0.recap.md",
-    "pictures/Pasted image 20231106153059.png",
     "software_engineering/Theory/8_UML_C4_architecture/UML.md",
-    "software_engineering/Theory/8_UML_C4_architecture/c4.md",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Agile.md",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. cynefin framework.md",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Planning spectrum.md",
-    "pictures/Pasted image 20231106152231.png",
-    "pictures/Pasted image 20231106152105.png",
-    "algorithms_propability/exercises/Ksat_recurrence.md",
-    "software_engineering/Theory/9_Design_patterns",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
-    "algorithms_propability/exercises/3.advanced_counting.md",
-    "algorithms_propability/3. Inclusion exclusion.md",
-    "algorithms_propability/2.Discrete posibilities.md",
-    "algorithms_propability/exercises/last exam exercises.md",
-    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/1..md",
-    "algorithms_propability/exercises/exam_question_gothrough.md",
-    "algorithms_propability/8.flows.md",
-    "algorithms_propability/7.quicksort.md",
-    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/beatifulsoup.py",
-    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/E04.php",
-    "formal_languages_data_processing/4_data_cleaning_web_scraping/1.web_scraping.md",
-    "formal_languages_data_processing/4_data_cleaning_web_scraping/datacleaning_webscraping.pdf",
-    "formal_languages_data_processing/5_DFA_minimazation/minimazation.md",
-    "formal_languages_data_processing/4_data_cleaning_web_scraping/0.Data_cleaning.md",
-    "formal_languages_data_processing/5_DFA_minimazation/DFA_minimazation.pdf",
-    "pictures/Pasted image 20231106110602.png",
-    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning",
-    "formal_languages_data_processing/Untitled",
-    "formal_languages_data_processing/scil_v_1.2.3/Compiler/types.src",
-    "Innovation_project/bmcIntroRF.pdf",
-    "books/algorithmsXpropability/bmcIntroRF.pdf",
-    "software_engineering/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-32x32.png",
-    "software_engineering/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-16x16.png",
-    "pictures/Pasted image 20231103113019.png",
-    "pictures/Pasted image 20231103102625.png",
     "Untitled.canvas"
   ]
 }
