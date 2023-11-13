@@ -5,7 +5,7 @@ less that 10 complexity in a function
 - Does not have to be accurate, really opinion based - have to use the same measure everytime tho. Cannot change.
 
 # CRAP - formula
-look slides
+[[Lecture 9_ Design Patterns 2.pdf#page=29]]
 - penalities for not testing
 - penalties for having high cyclomatic complexity
 - if we have low test coverage and high complexity, then we will be penaltiest by a lot

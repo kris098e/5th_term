@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ac883400b4e0426f",
+            "id": "ab009d32266b9bb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bachelors/jacopo_skeleton.md",
+                "file": "software_engineering/Theory/10_testing/Testing.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bachelors/jacopo_skeleton.md",
+                "file": "software_engineering/Theory/10_testing/Testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bachelors/jacopo_skeleton.md",
+                "file": "software_engineering/Theory/10_testing/Testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bachelors/jacopo_skeleton.md"
+                "file": "software_engineering/Theory/10_testing/Testing.md"
               }
             }
           },
@@ -167,54 +167,54 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "7e2586818a156850",
+  "active": "ab009d32266b9bb1",
   "lastOpenFiles": [
-    "bachelors/skeleton_thesis_proposal.md",
+    "software_engineering/Theory/10_testing/Lecture 10_ Testing.pdf",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-sessions.html",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/index.html",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/index.source.html",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/index.html",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/Person.html",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/Person.groovy.html",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/up.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/source.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/sort.js",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/sort.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/session.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/report.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/report.css",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/redbar.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/prettify.js",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/package.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/method.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/group.gif",
+    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/greenbar.gif",
+    "software_engineering/Theory/9_Design_patterns/Recap.md",
+    "software_engineering/Theory/9_Design_patterns/Remember_exam.md",
+    "software_engineering/Theory/10_testing/Guest_lecture.md",
+    "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
+    "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
+    "software_engineering/Theory/10_testing/Testing.md",
+    "software_engineering/Exercises/2. Agile cynefin planning.md",
+    "algorithms_propability/exercises/5.networks_flows.md",
+    "algorithms_propability/exercises/4.Ksat_recurrence.md",
+    "algorithms_propability/exercises/3.advanced_counting.md",
+    "bachelors/updated_proposal.md",
     "bachelors/jacopo_skeleton.md",
-    "bachelors/unit_testing_(2020).pdf",
-    "bachelors/Test-Driven Development By Example (Kent Beck).pdf",
+    "bachelors/skeleton_thesis_proposal.md",
     "notes bachelors.md",
     "bachelors/KAPT_vs_KSP.md",
     "algorithms_propability/8.flows.md",
     "software_engineering/Exercises/8.SOLID_INVEST_Achitect_UML.md",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/security/BcryptUtilities.kt",
     "algorithms_propability/2.Discrete posibilities.md",
     "software_engineering/Exercises/9.design_patterns.md",
     "algorithms_propability/3. Inclusion exclusion.md",
-    "algorithms_propability/exercises/4.networks.md",
-    "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
     "software_engineering/Theory/8_UML_C4_architecture/0.recap.md",
-    "pictures/Pasted image 20231108124611.png",
-    "pictures/Pasted image 20231108124558.png",
-    "pictures/Pasted image 20231108124515.png",
-    "pictures/Pasted image 20231108124450.png",
-    "pictures/Pasted image 20231108124434.png",
-    "pictures/Pasted image 20231108122835.png",
-    "pictures/Pasted image 20231108122820.png",
-    "pictures/Pasted image 20231108122744.png",
-    "pictures/Pasted image 20231108122736.png",
-    "pictures/Pasted image 20231108122720.png",
     "software_engineering/software_engineering-project/jwt.md",
-    "software_engineering/software_engineering-project/build/classes/kotlin/main/META-INF/software_engineering-project.kotlin_module",
-    "software_engineering/software_engineering-project/build/classes/kotlin/main/project/security/JwtService.class",
-    "software_engineering/software_engineering-project/build/classes/kotlin/main/project/security/JwtConfig.class",
-    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/dirty-output-classes.tab_i.len",
-    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/dirty-output-classes.tab_i",
-    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/jvm/kotlin/dirty-output-classes.tab",
-    "software_engineering/software_engineering-project/build/snapshot/kotlin/compileKotlin/2.zip",
     "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
     "Excalidraw/DFAminimize.excalidraw.md",
     "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/1..md",
-    "formal_languages_data_processing/exercises/3.compilers/4..md",
-    "formal_languages_data_processing/exercises/0.DFA and NFA.md",
-    "formal_languages_data_processing/exercises/1.CLI tools seaching.md",
-    "formal_languages_data_processing/4_data_cleaning_web_scraping/1.web_scraping.md",
-    "formal_languages_data_processing/4_data_cleaning_web_scraping/0.Data_cleaning.md",
-    "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
-    "software_engineering/Theory/9_Design_patterns/Remember.md",
-    "algorithms_propability/4.Kleinberg_and_Tardos.md",
-    "software_engineering/Theory/8_UML_C4_architecture/Architecture_UML.md",
-    "software_engineering/Theory/8_UML_C4_architecture/UML.md",
     "Untitled.canvas"
   ]
 }
