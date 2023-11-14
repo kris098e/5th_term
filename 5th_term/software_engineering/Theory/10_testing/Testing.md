@@ -1,37 +1,13 @@
 # Stubs and mocks
-## Stubs
-Stubs will always return the same value when called with certain parameters.
-A stub may look look like
+Stubs are when you provide an answer to a method. fx
 ```kotlin
-interface Car {
-	fun turnOn(times: Int): Boolean
-}
-
-val carStub = mockk<Car>()
-@Test
-fun `turn on`() {
-	every { carStub.turnOn(2) } returns false
-}
+every { someMockk.function("somethings") } returns "hello"
 ```
-## Mocks
-Mocks may use stubs to finish out the operation, but wont always return the same. 
-```kotlin
-class Service(car: Car) {
-	fun helloCar(): String {
-		if (time.now.minutes == 2) return Car.turnOn(2).toString()
-		else return "not 2!"
-	}
-}
-val carStub = mockk<Car>()
-val Service = Service(carStub)
-
-@Test
-fun `test Service`() {
-	every { carStub.turnOn(2) } returns false
-	assert(exactly = 1) { carStub.turnOn(2) }
-}
+mocks are used to just verify some behavior. Fx
+```Kotlin
+verify(exactly = 1) { someMockk.function("some input") }
 ```
-This example the mock may behave differently, but the stub can only return the same value.
+In summary, stubs are used to define the behavior of dependencies in your tests, while mocks are used to verify the behavior of the code under test. Both are essential tools in unit testing, and understanding how to use them effectively can greatly improve the reliability and maintainability of your tests.
 # Levels of testing
 **Look at the slides for image of the types of tests**
 ## Acceptance Testing

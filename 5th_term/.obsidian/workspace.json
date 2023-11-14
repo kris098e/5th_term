@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Theory/10_testing/Testing.md",
+                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "software_engineering/Theory/10_testing/Testing.md",
+                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "software_engineering/Theory/10_testing/Testing.md",
+                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "software_engineering/Theory/10_testing/Testing.md"
+                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md"
               }
             }
           },
@@ -163,12 +163,28 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-ocr:Search OCR": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "ab009d32266b9bb1",
   "lastOpenFiles": [
+    "formal_languages_data_processing/exercises/00.recap_through.md",
+    "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
+    "algorithms_propability/8.flows.md",
+    "algorithms_propability/9.CORMEN_5.md",
+    "pictures/Pasted image 20231114100755.png",
+    "pictures/Pasted image 20231114100037.png",
+    "pictures/Pasted image 20231114094727.png",
+    "pictures/Pasted image 20231114094702.png",
+    "pictures/Pasted image 20231114094650.png",
+    "pictures/Pasted image 20231114094604.png",
+    "pictures/Pasted image 20231114094506.png",
+    "pictures/Pasted image 20231114094255.png",
+    "pictures/Pasted image 20231114094128.png",
+    "pictures/Pasted image 20231114093959.png",
+    "algorithms_propability/7.quicksort.md",
+    "software_engineering/Theory/10_testing/Testing.md",
+    "software_engineering/Theory/10_testing/Guest_lecture.md",
     "software_engineering/Theory/10_testing/Lecture 10_ Testing.pdf",
     "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-sessions.html",
     "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/index.html",
@@ -177,25 +193,12 @@
     "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/Person.html",
     "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/Person.groovy.html",
     "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/up.gif",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/source.gif",
     "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/sort.js",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/sort.gif",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/session.gif",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/report.gif",
     "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/report.css",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/redbar.gif",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/prettify.js",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/package.gif",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/method.gif",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/group.gif",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/greenbar.gif",
     "software_engineering/Theory/9_Design_patterns/Recap.md",
     "software_engineering/Theory/9_Design_patterns/Remember_exam.md",
-    "software_engineering/Theory/10_testing/Guest_lecture.md",
     "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
     "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
-    "software_engineering/Theory/10_testing/Testing.md",
     "software_engineering/Exercises/2. Agile cynefin planning.md",
     "algorithms_propability/exercises/5.networks_flows.md",
     "algorithms_propability/exercises/4.Ksat_recurrence.md",
@@ -205,16 +208,12 @@
     "bachelors/skeleton_thesis_proposal.md",
     "notes bachelors.md",
     "bachelors/KAPT_vs_KSP.md",
-    "algorithms_propability/8.flows.md",
     "software_engineering/Exercises/8.SOLID_INVEST_Achitect_UML.md",
     "algorithms_propability/2.Discrete posibilities.md",
     "software_engineering/Exercises/9.design_patterns.md",
     "algorithms_propability/3. Inclusion exclusion.md",
     "software_engineering/Theory/8_UML_C4_architecture/0.recap.md",
     "software_engineering/software_engineering-project/jwt.md",
-    "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
-    "Excalidraw/DFAminimize.excalidraw.md",
-    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/1..md",
     "Untitled.canvas"
   ]
 }
