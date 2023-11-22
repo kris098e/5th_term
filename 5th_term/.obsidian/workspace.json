@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c53b2ef1cc14c736",
+        "id": "06cc59279e6b4db5",
         "type": "tabs",
         "children": [
           {
-            "id": "ab009d32266b9bb1",
+            "id": "dd6bd7e1d3f2333e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
+                "file": "algorithms_propability/12_count_min_scetch.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
+                "file": "algorithms_propability/12_count_min_scetch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
+                "file": "algorithms_propability/12_count_min_scetch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md"
+                "file": "algorithms_propability/12_count_min_scetch.md"
               }
             }
           },
@@ -156,6 +156,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-ocr:Search OCR": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -166,54 +167,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ab009d32266b9bb1",
+  "active": "dd6bd7e1d3f2333e",
   "lastOpenFiles": [
-    "formal_languages_data_processing/exercises/00.recap_through.md",
-    "formal_languages_data_processing/exercises/000.CrucialNotes_mistakes.md",
-    "algorithms_propability/8.flows.md",
-    "algorithms_propability/9.CORMEN_5.md",
-    "pictures/Pasted image 20231114100755.png",
-    "pictures/Pasted image 20231114100037.png",
-    "pictures/Pasted image 20231114094727.png",
-    "pictures/Pasted image 20231114094702.png",
-    "pictures/Pasted image 20231114094650.png",
-    "pictures/Pasted image 20231114094604.png",
-    "pictures/Pasted image 20231114094506.png",
-    "pictures/Pasted image 20231114094255.png",
-    "pictures/Pasted image 20231114094128.png",
-    "pictures/Pasted image 20231114093959.png",
-    "algorithms_propability/7.quicksort.md",
+    "pictures/Pasted image 20231122091416.png",
+    "pictures/Pasted image 20231122091050.png",
+    "pictures/Pasted image 20231122090801.png",
+    "pictures/Pasted image 20231122090001.png",
+    "pictures/Pasted image 20231122085421.png",
+    "pictures/Pasted image 20231122085211.png",
+    "pictures/Pasted image 20231122084522.png",
+    "pictures/Pasted image 20231122084447.png",
+    "pictures/Pasted image 20231122084218.png",
+    "pictures/Pasted image 20231122084059.png",
+    "pictures/Pasted image 20231122084047.png",
+    "algorithms_propability/11.hashing.md",
+    "algorithms_propability/12_count_min_scetch.md",
+    "software_engineering/Theory/11_bugs_maintnancen/1.0.Orginasations.md",
+    "software_engineering/Theory/11_bugs_maintnancen/1.1Larmans laws of Oganizational Behaviour.md",
+    "software_engineering/Theory/11_bugs_maintnancen/0.Bugs.md",
+    "software_engineering/Theory/10_testing/recap.md",
+    "software_engineering/Theory/10_testing/utf-8''Lecture%2010_%20Testing.pdf",
     "software_engineering/Theory/10_testing/Testing.md",
-    "software_engineering/Theory/10_testing/Guest_lecture.md",
-    "software_engineering/Theory/10_testing/Lecture 10_ Testing.pdf",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-sessions.html",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/index.html",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/index.source.html",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/index.html",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/Person.html",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default/Person.groovy.html",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/default",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/sort.js",
-    "software_engineering/Theory/10_testing/dm571-unit-test-test/build/reports/jacoco/test/html/jacoco-resources/report.css",
-    "software_engineering/Theory/9_Design_patterns/Recap.md",
-    "software_engineering/Theory/9_Design_patterns/Remember_exam.md",
-    "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
-    "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
-    "software_engineering/Exercises/2. Agile cynefin planning.md",
+    "software_engineering/Theory/11_bugs_maintnancen",
+    "algorithms_propability/4.Kleinberg_and_Tardos.md",
+    "algorithms_propability/5.Chernoff_bounds.md",
+    "algorithms_propability/exercises/graph_contraction.md",
+    "algorithms_propability/exercises/6.random_permutation.md",
     "algorithms_propability/exercises/5.networks_flows.md",
-    "algorithms_propability/exercises/4.Ksat_recurrence.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
     "algorithms_propability/exercises/3.advanced_counting.md",
-    "bachelors/updated_proposal.md",
-    "bachelors/jacopo_skeleton.md",
-    "bachelors/skeleton_thesis_proposal.md",
-    "notes bachelors.md",
-    "bachelors/KAPT_vs_KSP.md",
-    "software_engineering/Exercises/8.SOLID_INVEST_Achitect_UML.md",
+    "algorithms_propability/exercises/4.Ksat_recurrence.md",
+    "algorithms_propability/8.flows.md",
+    "algorithms_propability/10.max-back_orderings_of_graphs.md",
+    "algorithms_propability/9.CORMEN_5.md",
+    "Excalidraw/DigraphFromGraph.excalidraw.md",
+    "software_engineering/Exercises/10.Testing.md",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/CreaseUserResponseDto.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/mapper/ResponseMapper.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/mapper/RequestMapper.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/mapper",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/UserResponseDto.kt",
+    "software_engineering/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/UserRecord.java",
+    "software_engineering/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/UserRoleRecord.java",
+    "software_engineering/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/ShowRecord.java",
+    "Innovation_project/lll.md",
+    "Untitled.md",
+    "algorithms_propability/7.quicksort.md",
+    "algorithms_propability/6.recurence_relations.md",
     "algorithms_propability/2.Discrete posibilities.md",
-    "software_engineering/Exercises/9.design_patterns.md",
-    "algorithms_propability/3. Inclusion exclusion.md",
-    "software_engineering/Theory/8_UML_C4_architecture/0.recap.md",
-    "software_engineering/software_engineering-project/jwt.md",
     "Untitled.canvas"
   ]
 }

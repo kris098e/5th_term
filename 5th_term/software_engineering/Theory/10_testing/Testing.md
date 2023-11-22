@@ -32,6 +32,7 @@ Unit tests are designed to test individual components in isolation. They are typ
 
 
 # Equivalence Partitions
+Different values for tests, test something is a given range and fx on each side of the boundry
 # Unit tests examples
 ## Example 1
 Carsten means
