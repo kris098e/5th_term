@@ -1,7 +1,7 @@
 ![[Pasted image 20231122064751.png]]
 A matter of we want to find the majority element without saving all of the elements, since `we dont have that much memory, and it may be slow`. 
 ![[Pasted image 20231122064928.png]]
-This will in fact return the majority element.
+This will in fact return the majority element, when it occurs more than twice the times
 ![[Pasted image 20231122065146.png]]
 We use $\log m$ space as this is the maximal the counter can be in bits, if the stream only contained `m` repeats of the same elements. And $\log n$ bits for the largest $x_{i}$.
 ![[Pasted image 20231122065728.png]]
@@ -13,6 +13,7 @@ We use $\log m$ space as this is the maximal the counter can be in bits, if the 
 
 ![[Pasted image 20231122074503.png]]
 `2nd bullet point:` We only decrement all of the counters by 1, whenever we dont hold the element that we are currently looking at. We only decrement $\frac{m}{k}$ times. 
+- **Important** to notice that it is `all` that are decremented, thats why we have the upperbound of decrementing $\frac{m}{k}$ times.
 ![[Pasted image 20231122080658.png]]
 space use is $\frac{1}{\epsilon}$ since this is the amount of counters we store.
 # More important
@@ -43,7 +44,7 @@ We use markovs inequality (where we have isolated $\frac{n}{b}$ in the previous 
 ![[Pasted image 20231122085421.png]]
 - If we `only` look at the smallest upper bound, i.e the smallest value of all of the hashtables we made for the frequencies, then we will get a `much` smaller amount that we will be off by from the real frequency.
 	- note that it states $\leq \frac{1}{2^l}$ not $2^e$.
-	- He did not say why it came out to be this probability, but it must be because the hashfunctions are independent of eachother, therefore we have some $(\frac{1}{m})^l$ probability that a fixed other value hits the value that another fixed value hits in `all` of the `l` tables/rows
+	- This is because the probability that we are off by $2 \frac{n}{b}=\frac{1}{2}$ (look at the picture above this) so if we do it $l$ times then the probability will become $\frac{1}{2^l}$. 
 ![[Pasted image 20231122090001.png]]
 - This means that we choose $b=\frac{2}{\epsilon}$ many columns for each row, or b is the size of the hashtables
 - $\delta$ will be the number of hashfucntions, i.e the number of rows.

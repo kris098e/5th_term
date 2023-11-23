@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dd6bd7e1d3f2333e",
+            "id": "afb512eee8653678",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "algorithms_propability/12_count_min_scetch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7594f46e3cb2dd2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "software_engineering/Theory/11_bugs_maintnancen/1.1Larmans laws of Oganizational Behaviour.md",
                 "mode": "source",
                 "source": false
               }
@@ -167,34 +179,43 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dd6bd7e1d3f2333e",
+  "active": "afb512eee8653678",
   "lastOpenFiles": [
+    "algorithms_propability/11.hashing.md",
+    "software_engineering/Exercises/11.bugs_maintnance_orginization.md",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/UserResponseDto.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/dto/ShowDto.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/dto/ShiftDto.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/dto",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/ShiftsResponseDto.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/ShiftsRepoImpl.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/ShiftsRepo.kt",
+    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/ShiftsController.kt",
+    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.s",
+    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values",
+    "software_engineering/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-32x32.png",
+    "software_engineering/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-16x16.png",
+    "pictures/Pasted image 20231123105432.png",
+    "software_engineering/Theory/11_bugs_maintnancen/1.1Larmans laws of Oganizational Behaviour.md",
+    "pictures/Pasted image 20231123102339.png",
+    "pictures/Pasted image 20231123102039.png",
+    "pictures/Pasted image 20231123101958.png",
+    "software_engineering/Theory/11_bugs_maintnancen/1.0.Orginasations.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "bachelors/jacopo_skeleton.md",
+    "algorithms_propability/12_count_min_scetch.md",
     "pictures/Pasted image 20231122091416.png",
     "pictures/Pasted image 20231122091050.png",
     "pictures/Pasted image 20231122090801.png",
     "pictures/Pasted image 20231122090001.png",
-    "pictures/Pasted image 20231122085421.png",
-    "pictures/Pasted image 20231122085211.png",
-    "pictures/Pasted image 20231122084522.png",
-    "pictures/Pasted image 20231122084447.png",
-    "pictures/Pasted image 20231122084218.png",
-    "pictures/Pasted image 20231122084059.png",
-    "pictures/Pasted image 20231122084047.png",
-    "algorithms_propability/11.hashing.md",
-    "algorithms_propability/12_count_min_scetch.md",
-    "software_engineering/Theory/11_bugs_maintnancen/1.0.Orginasations.md",
-    "software_engineering/Theory/11_bugs_maintnancen/1.1Larmans laws of Oganizational Behaviour.md",
     "software_engineering/Theory/11_bugs_maintnancen/0.Bugs.md",
     "software_engineering/Theory/10_testing/recap.md",
-    "software_engineering/Theory/10_testing/utf-8''Lecture%2010_%20Testing.pdf",
     "software_engineering/Theory/10_testing/Testing.md",
-    "software_engineering/Theory/11_bugs_maintnancen",
     "algorithms_propability/4.Kleinberg_and_Tardos.md",
     "algorithms_propability/5.Chernoff_bounds.md",
     "algorithms_propability/exercises/graph_contraction.md",
     "algorithms_propability/exercises/6.random_permutation.md",
     "algorithms_propability/exercises/5.networks_flows.md",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
     "algorithms_propability/exercises/3.advanced_counting.md",
     "algorithms_propability/exercises/4.Ksat_recurrence.md",
     "algorithms_propability/8.flows.md",
@@ -202,19 +223,9 @@
     "algorithms_propability/9.CORMEN_5.md",
     "Excalidraw/DigraphFromGraph.excalidraw.md",
     "software_engineering/Exercises/10.Testing.md",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/CreaseUserResponseDto.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/mapper/ResponseMapper.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/mapper/RequestMapper.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/mapper",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/UserResponseDto.kt",
-    "software_engineering/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/UserRecord.java",
-    "software_engineering/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/UserRoleRecord.java",
-    "software_engineering/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/ShowRecord.java",
     "Innovation_project/lll.md",
     "Untitled.md",
     "algorithms_propability/7.quicksort.md",
-    "algorithms_propability/6.recurence_relations.md",
-    "algorithms_propability/2.Discrete posibilities.md",
     "Untitled.canvas"
   ]
 }
