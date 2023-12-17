@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/1.counting.md",
+                "file": "algorithms_propability/Exam/exam_notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms_propability/1.counting.md",
+                "file": "algorithms_propability/Exam/exam_notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms_propability/1.counting.md",
+                "file": "algorithms_propability/Exam/exam_notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms_propability/1.counting.md"
+                "file": "algorithms_propability/Exam/exam_notes.md"
               }
             }
           },
@@ -192,12 +192,13 @@
   },
   "active": "3d0f6a4055f5ad67",
   "lastOpenFiles": [
+    "algorithms_propability/1.counting.md",
+    "algorithms_propability/Exam/exam_notes.md",
     "algorithms_propability/Exam/Exam_questions_and_notes.md",
     "algorithms_propability/2.Discrete posibilities.md",
     "algorithms_propability/exercises/2.Discrete_probability.md",
     "pictures/Pasted image 20231217092601.png",
     "algorithms_propability/exercises/1.counting.md",
-    "algorithms_propability/1.counting.md",
     "pictures/Pasted image 20231216093753.png",
     "Excalidraw/probability.excalidraw.md",
     "algorithms_propability/3. Inclusion exclusion.md",
