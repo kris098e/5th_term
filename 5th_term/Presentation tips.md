@@ -1,0 +1,21 @@
+# Goods
+- Smile
+- Speak slowly
+	- Remember breaks
+- Rehers the presentation
+- Remember the flow of the presentation
+	- fx something must come before something else to have a better explanation
+- Know the order of your slides
+- It is alright to say `I dont know` instead of wasting time on something you don't know
+- Show what you are talking about matters
+- Have a way to stall, fx drink water if you are stressed about the question.
+# Bads
+- Bullet points as notes
+	- fx include figures instead, he can also read the slides
+	- `keywords` are fine
+	- No notes on slides
+		- Can bring own notes
+- Stop saying "emmmmm"
+	- Will make you appear less knowledgeable about the idea
+- Dont think the examinator is there to annoy you
+	- They are there to figure out what you have of knowledge

@@ -4,28 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "06cc59279e6b4db5",
+        "id": "14340381fcab59cb",
         "type": "tabs",
         "children": [
           {
-            "id": "afb512eee8653678",
+            "id": "3d0f6a4055f5ad67",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/12_count_min_scetch.md",
+                "file": "algorithms_propability/1.counting.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7594f46e3cb2dd2c",
+            "id": "ade967e02381073f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Theory/11_bugs_maintnancen/1.1Larmans laws of Oganizational Behaviour.md",
+                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3bdce8a74be91f5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms_propability/2.Discrete posibilities.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.50260543823242
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -105,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms_propability/12_count_min_scetch.md",
+                "file": "algorithms_propability/1.counting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms_propability/12_count_min_scetch.md",
+                "file": "algorithms_propability/1.counting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms_propability/12_count_min_scetch.md"
+                "file": "algorithms_propability/1.counting.md"
               }
             }
           },
@@ -168,7 +180,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-ocr:Search OCR": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -179,53 +190,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "afb512eee8653678",
+  "active": "3d0f6a4055f5ad67",
   "lastOpenFiles": [
-    "algorithms_propability/11.hashing.md",
-    "software_engineering/Exercises/11.bugs_maintnance_orginization.md",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/UserResponseDto.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/dto/ShowDto.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/dto/ShiftDto.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/dto",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/dto/ShiftsResponseDto.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/ShiftsRepoImpl.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/repository/ShiftsRepo.kt",
-    "software_engineering/software_engineering-project/src/main/kotlin/project/controller/ShiftsController.kt",
-    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.s",
-    "software_engineering/software_engineering-project/build/kotlin/compileKotlin/cacheable/caches-jvm/lookups/lookups.tab.values",
-    "software_engineering/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-32x32.png",
-    "software_engineering/software_engineering-project/build/tmp/kapt3/classes/main/META-INF/swagger/views/swagger-ui/res/favicon-16x16.png",
-    "pictures/Pasted image 20231123105432.png",
-    "software_engineering/Theory/11_bugs_maintnancen/1.1Larmans laws of Oganizational Behaviour.md",
-    "pictures/Pasted image 20231123102339.png",
-    "pictures/Pasted image 20231123102039.png",
-    "pictures/Pasted image 20231123101958.png",
-    "software_engineering/Theory/11_bugs_maintnancen/1.0.Orginasations.md",
+    "algorithms_propability/Exam/Exam_questions_and_notes.md",
+    "algorithms_propability/2.Discrete posibilities.md",
     "algorithms_propability/exercises/2.Discrete_probability.md",
-    "bachelors/jacopo_skeleton.md",
-    "algorithms_propability/12_count_min_scetch.md",
-    "pictures/Pasted image 20231122091416.png",
-    "pictures/Pasted image 20231122091050.png",
-    "pictures/Pasted image 20231122090801.png",
-    "pictures/Pasted image 20231122090001.png",
-    "software_engineering/Theory/11_bugs_maintnancen/0.Bugs.md",
-    "software_engineering/Theory/10_testing/recap.md",
-    "software_engineering/Theory/10_testing/Testing.md",
-    "algorithms_propability/4.Kleinberg_and_Tardos.md",
+    "pictures/Pasted image 20231217092601.png",
+    "algorithms_propability/exercises/1.counting.md",
+    "algorithms_propability/1.counting.md",
+    "pictures/Pasted image 20231216093753.png",
+    "Excalidraw/probability.excalidraw.md",
+    "algorithms_propability/3. Inclusion exclusion.md",
+    "pictures/Pasted image 20231216064334.png",
     "algorithms_propability/5.Chernoff_bounds.md",
-    "algorithms_propability/exercises/graph_contraction.md",
-    "algorithms_propability/exercises/6.random_permutation.md",
-    "algorithms_propability/exercises/5.networks_flows.md",
-    "algorithms_propability/exercises/3.advanced_counting.md",
-    "algorithms_propability/exercises/4.Ksat_recurrence.md",
-    "algorithms_propability/8.flows.md",
-    "algorithms_propability/10.max-back_orderings_of_graphs.md",
-    "algorithms_propability/9.CORMEN_5.md",
-    "Excalidraw/DigraphFromGraph.excalidraw.md",
-    "software_engineering/Exercises/10.Testing.md",
-    "Innovation_project/lll.md",
-    "Untitled.md",
-    "algorithms_propability/7.quicksort.md",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Planning spectrum.md",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. cynefin framework.md",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Agile.md",
+    "software_engineering/Theory/1_Planning_models/Sequential models/Basis.md",
+    "software_engineering/Theory/1_Planning_models/Sequential models/1. Waterfall model.md",
+    "software_engineering/Theory/1_Planning_models/Sequential models/1. V-model.md",
+    "Excalidraw/beautfil_soup.excalidraw.png",
+    "Excalidraw/beautfil_soup.excalidraw.md",
+    "Excalidraw/Drawing 2023-12-15 15.20.26.excalidraw.md",
+    "algorithms_propability/4.Kleinberg_and_Tardos.md",
+    "pictures/Pasted image 20231215083843.png",
+    "pictures/Pasted image 20230907111031.png",
+    "pictures/Pasted image 20231215082721.png",
+    "pictures/Pasted image 20231214200425.png",
+    "algorithms_propability/exercises/0.exercises_exam_assignment.md",
+    "algorithms_propability/exspmjan24.pdf",
+    "algorithms_propability/Exam",
+    "algorithms_propability/Unconfirmed 102816.crdownload",
+    "algorithms_propability/13_string-matching.md",
+    "Untitled 1.md",
+    "Excalidraw/string_matching.excalidraw.md",
+    "pictures/Pasted image 20231213091043.png",
+    "software_engineering/Exam.md",
+    "Presentation tips.md",
+    "software_engineering/Exercises/13_tool.md",
+    "pictures/Pasted image 20231209181333.png",
+    "software_engineering/Theory/13_Picking_the_Right_Tool/2_ethics_in_code.md",
+    "software_engineering/software_engineering-project.zip",
+    "software_engineering/software_engineering-project/build/test-results/test/binary/results.bin",
+    "software_engineering/software_engineering-project/build/test-results/test/binary/output.bin.idx",
+    "software_engineering/software_engineering-project/build/test-results/test/testlist/junit-platform-unique-ids-9214803034204288090.txt",
+    "software_engineering/software_engineering-project/build/test-results/test/testlist",
+    "software_engineering/software_engineering-project/build/jacoco/test.exec",
+    "software_engineering/software_engineering-project/build/generated-src/jooq/main/org/jooq/generated/tables/records/UserRoleRecord.java",
     "Untitled.canvas"
   ]
 }
