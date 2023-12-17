@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3d0f6a4055f5ad67",
+            "id": "fba5c6060d9e3a29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms_propability/7.quicksort.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ab2e6512d0ae97a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,32 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ade967e02381073f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithms_propability/exercises/2.Discrete_probability.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3bdce8a74be91f5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "algorithms_propability/2.Discrete posibilities.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,7 +160,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -190,13 +180,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3d0f6a4055f5ad67",
+  "active": "ab2e6512d0ae97a5",
   "lastOpenFiles": [
-    "algorithms_propability/Exam/exam_notes.md",
+    "algorithms_propability/7.quicksort.md",
+    "pictures/Pasted image 20231217124834.png",
     "algorithms_propability/Exam/Exam_questions_and_notes.md",
-    "algorithms_propability/1.counting.md",
-    "algorithms_propability/2.Discrete posibilities.md",
+    "pictures/Pasted image 20231217120635.png",
+    "algorithms_propability/4.Kleinberg_and_Tardos.md",
     "algorithms_propability/exercises/2.Discrete_probability.md",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "algorithms_propability/exercises/3.advanced_counting.md",
+    "algorithms_propability/Exam/exam_notes.md",
+    "algorithms_propability/1.counting.md",
     "pictures/Pasted image 20231217092601.png",
     "algorithms_propability/exercises/1.counting.md",
     "pictures/Pasted image 20231216093753.png",
@@ -213,7 +208,6 @@
     "Excalidraw/beautfil_soup.excalidraw.png",
     "Excalidraw/beautfil_soup.excalidraw.md",
     "Excalidraw/Drawing 2023-12-15 15.20.26.excalidraw.md",
-    "algorithms_propability/4.Kleinberg_and_Tardos.md",
     "pictures/Pasted image 20231215083843.png",
     "pictures/Pasted image 20230907111031.png",
     "pictures/Pasted image 20231215082721.png",
@@ -225,12 +219,7 @@
     "algorithms_propability/13_string-matching.md",
     "Untitled 1.md",
     "Excalidraw/string_matching.excalidraw.md",
-    "pictures/Pasted image 20231213091043.png",
     "software_engineering/Exam.md",
-    "Presentation tips.md",
-    "software_engineering/Exercises/13_tool.md",
-    "pictures/Pasted image 20231209181333.png",
-    "software_engineering/Theory/13_Picking_the_Right_Tool/2_ethics_in_code.md",
     "software_engineering/software_engineering-project.zip",
     "software_engineering/software_engineering-project/build/test-results/test/binary/results.bin",
     "software_engineering/software_engineering-project/build/test-results/test/binary/output.bin.idx",

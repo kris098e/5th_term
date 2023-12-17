@@ -148,13 +148,66 @@ $$\frac{V(X)}{r^{2}}\geq p(\mid X(s)-E(X)\mid \geq r)$$
 - Chebyshev: $p(|X(s)-E(X)|\geq r)\leq \frac{V(X)}{r^2}$
 - Markov: $p(X(s)\geq a)\leq \frac{E(X)}{a}$
 
-# 4. Randomized algorithms (Quicksort, median finding and selection, min-cut in graphs, generating a random permutation, majority element and more!!!)
-
-
+# 4. Randomized algorithms (Quicksort, median finding and selection, min-cut in graphs, generating a random permutation, majority element, and more!!!)
+## Median finding
+![[Pasted image 20231031062454.png]]
+Select(S,k) = Select(the set, the size of half the set)
+![[Pasted image 20231031062421.png]]
+![[Pasted image 20231031063442.png]]
+- Want to remove at least some constant $\times$ n, in each iteration of `select(S,k)`.
+- The reason why the last step shows it is $\leq$ is because it starts from $i=0$
+- **IMPORTANT** that you remember the rule for deriving
+	- $\sum_{i=0}^{\infty}(1-\epsilon)^i=\frac{1}{1-(1-\epsilon)}$
+	- this is because $\sum_{i=0}^{\infty}ar^i=\frac{a}{1-r}$
+	- where in our case $r=(1-\epsilon)$
+![[Pasted image 20231031065338.png]]
+Probability of picking something in the middel is $\frac{1}{2}$. We then work on $\frac{3}{4}n$ the next time. 
+![[Pasted image 20231031065940.png]]
+We now go with phases, so how big the set will be in the next phase. The set we are working on is $\mid S'\mid$, which if we were unlucky we only removed $\frac{3}{4}$ of the `n` elements in the last phase. This happens when the splitter is picked as the last or first element of `central`.
+![[Pasted image 20231031070301.png]]
+as it follows geometric distrubition, expected number of times before we get a central splitter is
+$$\frac{1}{p}=\frac{1}{\frac{1}{2}}=2$$
+How much time do we spend in each phase?
+![[Pasted image 20231031070607.png]]
+- How much work we do, at most what is stated since we may be lucky to not always choose the worst splitter (first or last element) in central. 
+`remember` each random variable is the number of steps done by the algorithm. We can now work out the expected work in each step.
+![[Pasted image 20231031071634.png]]
+- Note: we do not put upper bound, since we dont know how many phases we will do.
+- We use $\leq$ since we may not do $2$ steps in each phase, `i.e:` because the expected value of $E(X_{j})$ is specified as an upper bound.
+## Quicksort
+![[Pasted image 20231031072355.png]]
+We now look how many subproblems there are, which is based on the splitter: i.e running quicksort on $S^{-}$ and $S^+$.
+![[Pasted image 20231217120635.png]]
+### Prove how many problems we end up with.
+**Remember** that the set `S` has type `j` if the following holds
+$$n\cdot \left( \frac{3}{4} \right)^{j+1}<\mid S'\mid \leq n\cdot \left( \frac{3}{4} \right)^j$$
+I.e for each of the rounds, how much work is done in each recursive call, and how many recursive calls are there.
+![[Pasted image 20231031072940.png]]
+It says they are all `disjoint`. This means that when we split $S$ we will create a subproblems of type $j$  The main point is that they are `disjoint`.
+![[Pasted image 20231031073116.png]]
+- The total number of subproblems of type `j` is exactly what is stated. Think about if we have 5 elements and we split in the middel then we have 2 subproblems.
+- so there are at most $\frac{n}{n\cdot \left( \frac{3}{4} \right)^{j+1}}$ subproblems of type `j`
+	- for each of these subproblems, we do at most $n\cdot \left( \frac{3}{4} \right)^j$ work, as this is the largest split we can make, if you choose an unlucky splitter. These cancel out, meaning the expected amount of work on each subproblem is $O(n)$
+![[Pasted image 20231031073245.png]]
+- How many times can we divide n by $\frac{4}{3}$ before we go down to 1? That is, the largest possible set side after $\frac{n}{\frac{4}{3}}=\frac{3}{4}n$. 
+- There are at most $\log_{\frac{4}{3}}n$ different types, `j`, and as we do $O(n)$ on each subproblem, we will do a total amount of work $O(n \log n)$
+## Notes to take with into the exam
+- The split picture
+- select(S, k)
+- randselect
+	- central splitter
+	- prove linear runtime
+	- phases
+	- probability of good splitter, expected #times before finding a good splitter
+	- sum of all random variables
+- RandQsort
+	- Splits are disjoint (back to split picture)
+	- how many subproblems are at most created of type `j`
+	- how much work for each
+	- total types of `j`
 # 5. Probabilistic analysis (using (indicator) random variables, coupon collector, expected running time of quicksort and selection, randomized approximation for max k-SAT)
-
-  
-
+## Quicksort and selection
+Look at the problem above.
 # 6. Examples of applications of indicator random variables (find some yourselves in the pensum, there are many!)
 
   
