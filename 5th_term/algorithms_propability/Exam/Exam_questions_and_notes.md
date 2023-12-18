@@ -59,6 +59,8 @@ Fluently you can quickly prove the generalisation of this, arguing that there is
 - $\sum_{k=0}^{n} (-1)^{k}{n \choose k}(n-k)! \approx \frac{n!}{e}$ as the number of scenarios where no people get the correct coat.
 
 # 3. Discrete probability, random variables and bounds (expected value, variance, Bayes formula, Markov's inequality, Chebyshev's inequality and Chernoff bounds)
+## Comment
+Maybe do more examples instead of doing the basics
 ## Introduction
 - start by drawing a diagram for the probabilities
 ![[probability.excalidraw]]
@@ -209,19 +211,20 @@ It says they are all `disjoint`. This means that when we split $S$ we will creat
 ## Quicksort and selection
 Look at the problem above.
 # 6. Examples of applications of indicator random variables (find some yourselves in the pensum, there are many!)
-
-  
+Universal hashing, perfect hashing
 
 # 7. Universal hashing (universal hash functions, perfect hashing (also called 2-level hashing), count-min sketch)
+Look at Overleaf
+https://www.overleaf.com/project/653b925960e85f96d2a551aa
 
-  
 
 # 8. String matching (naive algorithm, The Rabin-Karp algorithm, Finite automaton based string matching).
 
-  
+
 
 # 9. Maximum flows (Definitions, Ford Fulkerson algorithm, Max-Flow- Min-Cut theorem, Edmonds-Karp Algorithm, bipartite matching, integrality theorem)
 
   
 
 # 10. The min-cut problem (randomized algorithm, solution via flows, solution via max-back orderings)
+

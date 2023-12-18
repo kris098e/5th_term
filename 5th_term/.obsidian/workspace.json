@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fba5c6060d9e3a29",
+            "id": "4a95f386ded1fbd7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/7.quicksort.md",
+                "file": "algorithms_propability/12_count_min_scetch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e097adb64ec1f285",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "algorithms_propability/Exam/Exam_questions_and_notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/Exam/Exam_questions_and_notes.md",
+                "file": "algorithms_propability/11.hashing.md",
                 "mode": "source",
                 "source": false
               }
@@ -180,11 +192,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ab2e6512d0ae97a5",
+  "active": "e097adb64ec1f285",
   "lastOpenFiles": [
+    "algorithms_propability/12_count_min_scetch.md",
+    "algorithms_propability/11.hashing.md",
+    "algorithms_propability/Exam/Exam_questions_and_notes.md",
+    "algorithms_propability/exercises/last exam exercises.md",
     "algorithms_propability/7.quicksort.md",
     "pictures/Pasted image 20231217124834.png",
-    "algorithms_propability/Exam/Exam_questions_and_notes.md",
     "pictures/Pasted image 20231217120635.png",
     "algorithms_propability/4.Kleinberg_and_Tardos.md",
     "algorithms_propability/exercises/2.Discrete_probability.md",
@@ -218,8 +233,6 @@
     "algorithms_propability/Unconfirmed 102816.crdownload",
     "algorithms_propability/13_string-matching.md",
     "Untitled 1.md",
-    "Excalidraw/string_matching.excalidraw.md",
-    "software_engineering/Exam.md",
     "software_engineering/software_engineering-project.zip",
     "software_engineering/software_engineering-project/build/test-results/test/binary/results.bin",
     "software_engineering/software_engineering-project/build/test-results/test/binary/output.bin.idx",

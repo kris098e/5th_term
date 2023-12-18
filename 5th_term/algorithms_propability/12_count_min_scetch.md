@@ -19,7 +19,7 @@ space use is $\frac{1}{\epsilon}$ since this is the amount of counters we store.
 # More important
 ![[Pasted image 20231122081544.png]]
 ![[Pasted image 20231122081605.png]]
-
+we use `h1,h2,...,hl` to construct an $l\times b$ array `M` of counters as follows
 ![[Pasted image 20231122081747.png]]
 What we do is that we have a hashfunction for each of the `l` rows. We then go through all of the `l` rows, hashing `x` via `h` i.e $h_{l}(x)$ and increment the counter, which started at 0, in each of the rows. Therefore each of the rows has exactly `1` of the counters incremented with each entry.
 ![[Pasted image 20231122082053.png]]
