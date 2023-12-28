@@ -21,8 +21,6 @@ This means that the `p` is actually what we have added to the string `T` from `S
 ![[Pasted image 20231209095215.png]]
 It is much more efficient to calculate the number using the lowest calculation. Since we do not have to have all of the large numbers $10^{4},10^3,\dots$ since we can just do it by multiplying by 10 multiple times.
 
-> 17 min inde
-
 ![[Pasted image 20231209135443.png]]
 - To calculate $t_{s+1}$ we have to remove the most significant number from $t_{s}$ which was calculated by $10^{m-1}T[s+1]$. We now want to make all of the other numbers count for $10\cdot number$ more, i.e. multiply all expressions in $t_{s}$ by 10, since the 2nd most significant number before is now the most significant and need to be `multiplied by 10`.  Lastly we want to ass the least significant number again.
 - If we have already caclulated $10^{m-1}$ it is constant time, else it is what stated below on the picture.
@@ -49,8 +47,7 @@ If we have a hit, we must actually test if they are a true match. This means in 
 ![[Pasted image 20231209160559.png]]
 ![[Pasted image 20231209160902.png]]
 ![[Pasted image 20231209161117.png]]
-- This simply means that `x` last character is the last of `p`, 2nd last is also matching the one in `p` and so on. I.e we give it a string, and it will return the max of `k`, where `k` is the largest suffix.
-- ![[Pasted image 20231209170519.png]]
+- This simply means that `x` last character is the last of `p`, 2nd last is also matching the one in `p` and so on. I.e we give it a string, and it will return the max of `k`, where `k` is the largest suffix. ![[Pasted image 20231209170519.png]]
 
 ![[Pasted image 20231209172010.png]]
 This means that the transition function will now be:
@@ -70,7 +67,8 @@ $P_{q}$ is the longest prefix of `P`. This means that we are currently in the st
 - This statement is what is tying it all together.
 	- instead of looking at the longest suffix $p_{q}$ which is the longest prefix of `p` in the text `x`, we can simply look for the same in the string $p_{q}a$, so we can omit the `x` all together.
 	- Jørgen says it would be easier to make a drawing and see it. So you could use the one in the DFA example.
-	- ![[string_matching.excalidraw]] Only the green part matters, as we are looking for something which is also a prefix of `p`, therefore we should only look at maximally the last `len(p)` elements, as only this can form a prefix of `p`. If the first characters in the `green area` does not from a prefix of `p` then we should also omit looking at these.
+	- ![[string_matching.excalidraw]] Only the green part matters, as we are looking for something which is also a prefix of `p`, therefore we should only look at maximally the last `len(p)` elements, as only this can form a prefix of `p`. If the first characters in the `green area` do not from a prefix of `p` then we should also omit looking at these.
+		  if what we read in next 
 - see for instance from minute `56` for explanation
 - In this example it is important to notice that $p\ ]\ p_{q}a$, so adding `a` to the current position will actually move us one step closer to finalizing.
 - What is stated is that when $p_{q}]x$ and we add `a` to the text `x` then what was read in $x+p_{q}$ as $p_{q}$ is a suffix of `x` then when we read in `a` , this must also be a suffix. **remember that $p_{q}$ is not the entire `p`**.  

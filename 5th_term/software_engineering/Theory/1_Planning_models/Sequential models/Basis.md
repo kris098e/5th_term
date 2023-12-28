@@ -7,7 +7,7 @@ during the early phase of software development the documentation _is_ the specif
 
 Documentation is key during every phase
 
-**during test phase** without good documentation every mistake no matter the size will have to be done by the guy implementing it, as no others can do it in a good enough time-span
+**during test phase** without good documentation every mistake no matter the size will have to be done by the guy implementing it, as no others can do it in a good enough time span
 **Following the operations phase** if the software has to be changed even slightly, it may need for writing the whole code again if no proper documentation is provided
 
 # Step 3, attempt to do it twice
