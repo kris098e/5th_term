@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6c8d63c7d6982220",
+            "id": "4294b8f8c56f9613",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,18 +20,29 @@
             }
           },
           {
-            "id": "38669244cf8f8313",
+            "id": "34010ccd48eebb98",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/Exam/Mads.md",
+                "file": "algorithms_propability/Exam/Exam_questions_and_notes.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "885830434444a487",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/dregular.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.500732421875
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -181,54 +192,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6c8d63c7d6982220",
+  "active": "34010ccd48eebb98",
   "lastOpenFiles": [
-    "algorithms_propability/Exam/Mads.md",
-    "algorithms_propability/Exam/Exam_questions_and_notes.md",
+    "pictures/Pasted image 20240103190806.png",
     "algorithms_propability/8.flows.md",
-    "algorithms_propability/9.CORMEN_5.md",
-    "algorithms_propability/exercises/5.networks_flows.md",
+    "pictures/Pasted image 20240103154502.png",
+    "pictures/Pasted image 20240103153754.png",
+    "algorithms_propability/Exam/Exam_questions_and_notes.md",
+    "Excalidraw/dregular.excalidraw.md",
     "algorithms_propability/10.max-back_orderings_of_graphs.md",
+    "algorithms_propability/Exam/Mads.md",
+    "algorithms_propability/11.hashing.md",
+    "algorithms_propability/3. Inclusion exclusion.md",
+    "algorithms_propability/9.CORMEN_5.md",
+    "algorithms_propability/2.Discrete posibilities.md",
+    "algorithms_propability/1.counting.md",
+    "algorithms_propability/exercises/2.Discrete_probability.md",
+    "algorithms_propability/Exam/check.md",
+    "algorithms_propability/Exam/tmp",
+    "algorithms_propability/exercises/1.counting.md",
+    "algorithms_propability/exercises/3.advanced_counting.md",
+    "Excalidraw/algosand_flows_2.excalidraw.md",
+    "Untitled 2.md",
+    "pictures/Pasted image 20231230144806.png",
+    "pictures/Pasted image 20231230142426.png",
+    "pictures/Pasted image 20231230135327.png",
+    "pictures/Pasted image 20231230134546.png",
+    "pictures/Pasted image 20231230131221.png",
+    "pictures/Pasted image 20231230125459.png",
+    "pictures/Pasted image 20231230123551.png",
+    "pictures/Pasted image 20231230121506.png",
+    "algorithms_propability/7.quicksort.md",
+    "bachelors/Notes/Nicklas.md",
+    "algorithms_propability/exercises/5.networks_flows.md",
     "Excalidraw/string_matching.excalidraw.md",
     "algorithms_propability/13_string-matching.md",
-    "pictures/Pasted image 20231228100311.png",
     "algorithms_propability/Exam problems.md",
-    "bachelors/Notes/Nicklas.md",
     "software_engineering/Exercises/1. Introduction, waterfall-model and v-model.md",
     "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/slides.pdf",
     "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/2. Agile.md",
     "software_engineering/Theory/1_Planning_models/slides.pdf",
     "software_engineering/Theory/1_Planning_models/Flashcards.md",
-    "software_engineering/Theory/1_Planning_models/Sequential models/Basis.md",
-    "software_engineering/Theory/1_Planning_models/Sequential models/1. Waterfall model.md",
-    "software_engineering/Theory/1_Planning_models/Sequential models/1. V-model.md",
     "software_engineering/Theory/14_recap/slides.pdf",
     "software_engineering/Theory/14_recap",
     "software_engineering/Theory/13_Picking_the_Right_Tool/slides.pdf",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
-    "algorithms_propability/exercises/1.counting.md",
-    "algorithms_propability/exercises/4.Ksat_recurrence.md",
-    "algorithms_propability/exercises/3.advanced_counting.md",
-    "algorithms_propability/1.counting.md",
     "Innovation_project/HealthHunter/__pycache__/databaseAccess.cpython-312.pyc",
     "Innovation_project/HealthHunter/__pycache__/dtos.cpython-312.pyc",
     "Innovation_project/HealthHunter/__pycache__",
     "Innovation_project/HealthHunter/Business Model Canvas.pdf",
-    "algorithms_propability/2.Discrete posibilities.md",
-    "algorithms_propability/exercises/6.random_permutation.md",
-    "algorithms_propability/5.Chernoff_bounds.md",
-    "algorithms_propability/12_count_min_scetch.md",
-    "algorithms_propability/4.Kleinberg_and_Tardos.md",
-    "pictures/Pasted image 20231218160804.png",
-    "pictures/Pasted image 20231217124834.png",
-    "pictures/Pasted image 20231217120635.png",
-    "pictures/Pasted image 20231217092601.png",
-    "pictures/Pasted image 20231216093753.png",
-    "pictures/Pasted image 20231216064334.png",
-    "Excalidraw/beautfil_soup.excalidraw.png",
-    "pictures/Pasted image 20231215083843.png",
-    "pictures/Pasted image 20230907111031.png",
-    "algorithms_propability/exspmjan24.pdf",
     "Untitled.canvas"
   ]
 }

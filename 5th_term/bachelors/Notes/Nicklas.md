@@ -7,6 +7,8 @@ At first we record, and since the `invoke()` function is used, while recording, 
 Have to remove the global state for each of the mocks when we want to mock classes. This is because as a class, we cannot extend 2 classes. So when we have to extend the original class, we can only extend this, and not `Mockable`. We do this by making a hashmap `Map<Any, AtomicList<Stub>`, keeping the state in the map, and the invocations. So we make all of the functions go outside of `Mockable` as fx top-level protected functions, and they can then be used by each of the generated mocks
 
 For `spies` we can for instance, if dont find a stubbing when a function is called, just call `super.$function()` with the supplied arguments. This way we dont have to do a lot of work for `spies`. We just have to add something to the `invoke()`-function (maybe), and generate some code.
+### Ideas for moving Mockable away
+So we have to move the logic out of the `Mockable` class. This means that we fx could make a global state, and the functions `invoke(), ...` as top level functions, in the same package as the generated classes. This means we can still call the `invoke()` function. Else we could also make an `internal Companion object` that can do these. 
 ## 1st phase / compile time / K-generation
 1. Annotate property with `@Mock` which we will use for generating the code needed such that we can do logic on the annotated property, as we find all the properties annotated with this to know which classes to generate code for.
 2. That is, we generate the respective classes, add the properties for the class, and add the functions with the correct modifiers, arguments ...
@@ -16,15 +18,16 @@ For `spies` we can for instance, if dont find a stubbing when a function is call
 - The kotlin compiler automaticly uses the generated `mock()` functions because they are more specific than the generic variant included in the core library.
 - On the mock, you can use the functions provided by the `Mockable` class, for creating the expected behavior. 
 - We use `every { }` and `coEvery { }` to create the expected behaviour. We create the expected behavior by recording the invocations, via exceptions, where we store the expectation matching the invocation in a list for later `match`-finding.
-
 # Steps
-# Stubbing of class types
+
+## Stubbing of class types
 
 1. Refactor code to remove dependency on `Mockable` by moving code to functions unrelated to the mock instance, e.g. by having the instance as a first parameter, and by keeping state per instance globally/statically
 2. Remove support for `stubsUnitByDefault` until further notice
 3. Make code generator generate code without the use of the now removed `Mockable` base class
 4. Make code generator support generating code for classes with a 0 parameter constructor (Require the use of the `all-open` plugin)
 5. Make code generator support recursively generating mocks for classes with non-zero parameter constructors
+
 
 # First intro
 ## ValueOf / problems with generating the correct classes as parameters

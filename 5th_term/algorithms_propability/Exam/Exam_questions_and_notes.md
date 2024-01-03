@@ -5,10 +5,10 @@ you can choose exercises from the assignments or from class.
 - the different counting rules
 - Pigeon hole principle
 	- could show the thing with $n^2+1$ distinct element then increasing or decreasing of size $n+1$?
-	- look at the first exercise with proving something with the pigeon hole principle
-
+![[Pasted image 20231214200425.png]]
+When we have filled out all of the possible combinations, we still have one more person to insert. However, when we insert the number 101 person, there are no more unused combinations only allowing for $(10,10)$, and since we know that one person must have the tuple $(10,10)$ associated with it, if this new person is shorter than that person, then it will increase the longest decreasing series, else it will increase it.
+ 
 - **ramseys theorem** the example on page 425.
-
 - group of 6 people, each pair of individuals contains 2 enemies or 2 friends, there are now 3 mutual friends or 3 mutual enemies, when we pick a person out. This follows from the generalized pigeon hole principle $\lceil \frac{n}{\groups}\rceil=\lceil \frac{5}{2}\rceil=3$. Meaning that there must be at least 4 friends or 4 enemies.
 
 - permutations, combinations
@@ -19,30 +19,38 @@ you can choose exercises from the assignments or from class.
 
 > Combinations with repetition
 > stars and bars ![[Pasted image 20231215083843.png]]
+> **Its about placing 7 objects, but adding (3-1) bars such that we can distinct the different kinds of objects from each other**
+> In this example we have `n=3`, which means we will only `2` separators, bars, to distinguish between these. We have to choose `7` objects, but to distinguish between what is what in this we will need `2` separators. This means we effectively have to pick `9 objects`.
 - pascals triangle
 	- ![[Pasted image 20230907111031.png]]
-
+![[Pasted image 20231215082721.png]]
 - Vandermonde
 	- ![[Pasted image 20230907112542.png]]
 
 - $${2n\choose{2}} = {n \choose 2}+n^2$$
 - Find the exercise with how many permutations of people we can seat around a table.
+## Notes for the exam
+- Pigeon hole principle ($n^{2}+1$)
+	- Cases for person $j < k$
+- Counting with repetition
+- Permutations with repetitions
 # 2. Inclusion-exclusion with applications(derivation of the general formula, number of onto-functions, the hatcheck problem)
 - start by drawing the Venn-diagram, and showing the formula
 ![[Pasted image 20230928061536.png]]
 ## Generalized formula
 ![[Pasted image 20231216064334.png]]
 The binomial theorem states that
-
 $$(x+y)^n=\sum_{k=0}^{n}{n\choose k}x^{n-k}y^k$$
-
 In Corollary 2, $1^{n-k}=1$ so it does not matter that we multiply the other part with this. 
 ![[Pasted image 20230928110002.png]]
 ### Notes to the proof
-- See first that, in the `2nd step`, we used the corollary, which let us rewrite the expression so that it will be equal to `0`. 
-- Next we isolate the `C(r,0)` which ends up concluding that the `1st` equation is `=1`.
-- Do keep an eye out for the $(-1)^{r}$ and $(-1)^{r+1}$, as these are used differently in the different equations. 
-This concludes that each element `a` is counted once, which means that all elements are counted once by the equation.
+The reason why for sum in 1 set is $C(r,1)$ is because we have `r-sets the element is in`, now how many ways can we choose the two distinct sets, fx choose $r_1,r_2$ with each other and $r_{1,}r_3$, this we can do in $C(r,2)$ ways. ...
+- First we state what the summation will look like
+- The 2nd equation is not dependant on the first. We simply state that using the corollary, this is equation is `= 0`
+- Since the 2nd equation is using a `-` where it should be `+` in the 1st equation, then we can fix this by moving these terms to the right-hand side of the equation, and we get exactly the first equation on the right-hand side.
+	- Now we can see that this is equal to $C(r,0)=1$
+	
+remember it is $\dots (-1)^{r+1}$ but this can be seen by the fact that the first first choose $C(r,1)$ is positive, i.e $r=1$
 ## number of onto functions
 ![[Pasted image 20230928164329.png]]
 The number of functions in this example is $3^6$ since, for each of the elements being mapped via the function, i.e the x's in `f(x)`, can each go to 3 options. Meaning we have $3^6$ functions.
@@ -50,13 +58,23 @@ The number of functions in this example is $3^6$ since, for each of the elements
 - S2: we have $1^6$ options, and we can choose the elements to exclude in $3\choose 2$ ways.
 
 Fluently you can quickly prove the generalisation of this, arguing that there is a pattern that how many options in the codomain we map to is falling linearly with how many elements in the codomain we exclude.
+
+**Notice that there is a `mistake`. it is supposed to be** $$\sum\limits_{k=0}^{n} (-1)^{k} { n \choose k} (n-k)^m$$
 ![[Pasted image 20230928165006.png]]
 ## Hatcheck
 ![[Pasted image 20230928174050.png]]
 - This is similar to the number of onto functions, but just now it is factorial instead of power. 
 - The intuition is that, we look at the entire space $10!$, and remove the once that does not meet the predicate. So we remove ${10 \choose 1}9!$ since we here select 1 of the coats to be the correct, and then we do not care about the rest. We have not subtracted too many, so we add this. We then end up with
 - $\sum_{k=0}^{n} (-1)^{k}{n \choose k}(n-k)! \approx \frac{n!}{e}$ as the number of scenarios where no people get the correct coat.
-
+## Exam Notes
+- Generalized formula for inclusion-exclusion (venn-diagram)
+- Prove each element is counted only once
+	- Focus in on specific element `a`
+	- Uses binomial theorem $(x+y)^{n}=\sum\limits_{k=0}^{n}{n \choose k}x^{k} y^{n-k}$, 
+- Number of onto functions
+	- Connect seen pattern with a generalized formula
+- Hatcheck derangements
+	- Similar with last function, now it is just permutations
 # 3. Discrete probability, random variables and bounds (expected value, variance, Bayes formula, Markov's inequality, Chebyshev's inequality and Chernoff bounds)
 ## Comment
 Maybe do more examples instead of doing the basics
@@ -124,7 +142,7 @@ $$=a\left( \sum_{s \in A}p(s) \right)=a \cdotp(X(s)\geq a)$$
 ending notes:
 $$E(x) \geq a \cdot p(X(s)\geq a)\implies p(X(s) \geq a)\leq \frac{E(X)}{a}$$
 ## Chebyshev
-$$p(|X(s)-E(X)|\geq r)\leq \frac{V(X)}{r^2}$$
+$$p(|X(S)-E(X)|\geq r)\leq \frac{V(X)}{r^2}$$
 proof:
 
 $$V(X)=\sum_{s \in S}p(s)(X(s)-E(X))^2$$
@@ -140,15 +158,35 @@ $$=r^2p(A)$$
 $$=r^2p(\mid X(s)-E(X)\mid \geq r)$$
 putting it together:
 $$\frac{V(X)}{r^{2}}\geq p(\mid X(s)-E(X)\mid \geq r)$$
-## Notes to take with into the exam
-- basics (Venn-diagram)
-- Linearity of expectation
-- Bernolli trials (regular and with random indicator variables)
-- Variance
-- Union bound
-- Chebyshev: $p(|X(s)-E(X)|\geq r)\leq \frac{V(X)}{r^2}$
-- Markov: $p(X(s)\geq a)\leq \frac{E(X)}{a}$
+## Hatcheck with bounds
+Probability that more than 10 people get their hat back in the hatcheck problem, bounded by chebyshev:
+$$p(|X(S)-E(X)| \geq r) \leq \frac{V(X)}{r^2}$$
+$$p(|X(S)-E(X)| \geq 10) \leq \frac{V(X)}{10}$$
+we define some random variables, let $X_{i}=1$ iff person `i` get their hat correctly back, else 0.
+$$E(X_{i})=\sum\limits_{s \in S} p(s)X_i(s)=\frac{1}{n}1+\left( 1-\frac{1}{n} \right)0=\frac{1}{n}$$
+there are `n` people, we have 
+$$X=X_{1},X_{2}, \dots, X_{n}$$
+so 
+$$E(X)=E\left( \sum\limits_{i=1}^{n}X_{i} \right)=\sum\limits_{i=1}^{n}E(X_{i})=n\cdot \frac{1}{n}=1$$
+as
+$$V(X)=E(X^{2})-E(X)^{2}$$
+we can now instantly calculate
+$$E(X)^{2}=1^{2}=1$$
+We can calculate
+$$E(X^{2})=E\left((X_{1},X_{2}, \dots, X_{n})^{2}\right)=E\left( \sum\limits_{i=0}^{n}X_{i}^{2} \right)+E\left(\sum\limits_{1\leq j <k\leq n} X_{j}X_{k}\right)$$
+$$=n \frac{1}{n} + n(n-1)\left( \frac{1}{n\cdot n-1} \right)=2$$
+since $X_{i}^{2}=\frac{1}{n}$ as $1^{2}=1$
+There are $n^2$ options to match the random variables, therefore we have $n(n-1)$ options left after having summed over `n` possibilities. For these, having both success for `j` and `k`, is $\frac{1}{n}$ for `j` and $\frac{1}{n-1}$ for `k`, as it increases the probability for `k` that `j` got his/her hat correctly back.
 
+we can now insert into the formula:
+$$p(|X(S)-E(X)| \geq 10) \leq \frac{2-1}{10^2}=\frac{1}{100}$$
+
+## Notes to take with into the exam
+- Markovs inequality
+	- $p(|X(s) \geq a) \leq \frac{E(X)}{a}$
+- Chebyshevs inequality
+	- $p(|X(S)-E(X)| \geq r) \leq \frac{V(X)}{r^2}$
+- Probability that more than 10 people get their hat back
 # 4. Randomized algorithms (Quicksort, median finding and selection, min-cut in graphs, generating a random permutation, majority element, and more!!!)
 **Use less time on not-randselect / select** just handwave it, showcasing it is $O(n^2)$
 ## Median finding
@@ -219,10 +257,131 @@ It says they are all `disjoint`. This means that when we split $S$ we will creat
 ## Quicksort and selection
 Look at the problem above.
 # 6. Examples of applications of indicator random variables (find some yourselves in the pensum, there are many!)
-Universal hashing, 
+## Hatcheck with bounds
+Probability that more than 10 people get their hat back in the hatcheck problem, bounded by chebyshev:
+$$p(|X(S)-E(X)| \geq r) \leq \frac{V(X)}{r^2}$$
+$$p(|X(S)-E(X)| \geq 10) \leq \frac{V(X)}{10^{2}}$$
+we define some random variables, let $X_{i}=1$ iff person `i` get their hat correctly back, else 0.
+$$E(X_{i})=\sum\limits_{s \in S} p(s)X_i(s)=\frac{1}{n}1+\left( 1-\frac{1}{n} \right)0=\frac{1}{n}$$
+there are `n` people, we have 
+$$X=X_{1},X_{2}, \dots, X_{n}$$
+so
+$$E(X)=E\left( \sum\limits_{i=1}^{n}X_{i} \right)=\sum\limits_{i=1}^{n}E(X_{i})=n\cdot \frac{1}{n}=1$$
+as
+$$V(X)=E(X^{2})-E(X)^{2}$$
+we can now instantly calculate
+$$E(X)^{2}=1^{2}=1$$
+We can calculate
+$$E(X^{2})=E\left((X_{1},X_{2}, \dots, X_{n})^{2}\right)=E\left( \sum\limits_{i=0}^{n}X_{i}^{2} \right)+E\left(\sum\limits_{1\leq j <k\leq n} X_{j}X_{k}\right)$$
+$$=n \frac{1}{n} + n(n-1)\left( \frac{1}{n\cdot n-1} \right)=2$$
+since $X_{i}^{2}=\frac{1}{n}$ as $1^{2}=1$
+There are $n^2$ options to match the random variables, therefore we have $n(n-1)$ options left after having summed over `n` possibilities. For these, having both success for `j` and `k`, is $\frac{1}{n}$ for `j` and $\frac{1}{n-1}$ for `k`, as it increases the probability for `k` that `j` got his/her hat correctly back.
+
+we can now insert into the formula:
+$$p(|X(S)-E(X)| \geq 10) \leq \frac{2-1}{10^2}=\frac{1}{100}$$
+## Universal hashing
+- Choose a random universal hashfunction independant of the keys.
+The probability that two keys hash to the same index should be $\frac{1}{|S|}$, i.e.
+$$p(h(k)=h(l))\leq \frac{1}{m}$$
+
+given that
+$$h: U \to [m]_{0}$$
+i.e it has to use all spots `m`, for all input keys in the universe `m`
+- We handle all collisions with chaining
+	- what is the length of the linked list at index `i` in the hash table?
+say we hash some collection of elements $S$ where $|S| = n$.
+- we now wish to hash. a new element `k`
+	- if $k \notin S$, then we want $E(n_{h(k)})$ of the linked list at any index to be $\leq \frac{n}{m}=\alpha$
+	- if $k \in S$ then we want $E(n_{h(k)})$ at any index to be $\leq \frac{n}{m}+1=\alpha + 1$
+define random indicator variable for `k`, $\forall l \in U \ define\ X_{k,l}, \ where \ k \neq l \ is =1$ iff $h(k)=h(l)$ else 0.
+now since we have fixed our element `k`. Now we can calculate the expected value of the random variable
+$$E(X_{k,l})=p \cdot 1 +(1-p)0=p \implies E(X_{k,l})\leq \frac{1}{m}$$
+we can now analyze the length of the linked list at a given index.
+$$X=\sum\limits_{l \in S}X_{k,l}$$
+$$E(X)=E\left( \sum\limits_{l \in S}X_{k,l} \right)=\sum\limits_{l \in S}E(X_{k,l}) \leq \frac{n}{m}=\alpha$$
+now if $k\in S$, then we are guaranteed that we will have an extra element in the index, when we hash the same element again, `and also, since $k\in S$ then we will have 1 random indicator variable less generated, therefore we only have n-1 random indicator variables`, therefore this would be $E(X)=\frac{n-1}{m}+1 \leq \alpha +1$
+
+**In conclusion**
+- if $k \notin S$, then we want $E(n_{h(k)})$ of the linked list at any index to be $\leq \frac{n}{m}=\alpha$
+- if $k \in S$ then we want $E(n_{h(k)})$ at any index to be $\leq \frac{n}{m}+1=\alpha + 1$
+
+**Therefore** if we make $O(m)$ insert operations, fx $S\in O(m)=10m$, then the `search, insert, delete, ...` operations will be constant time $O(1)$.
+
+## Notes for the exam
+- Chebyshevs inequality
+	- $p(|X(S)-E(X)| \geq r) \leq \frac{V(X)}{r^2}$
+- Probability that more than 10 people get their hat back
+- Universal hashing
 # 7. Universal hashing (universal hash functions, perfect hashing (also called 2-level hashing), count-min sketch)
-Look at Overleaf
-https://www.overleaf.com/project/653b925960e85f96d2a551aa
+## Universal hashing
+- Choose a random universal hashfunction independant of the keys.
+The probability that two keys hash to the same index should be $\frac{1}{|S|}$, i.e.
+$$p(h(k)=h(l))\leq \frac{1}{m}$$
+
+given that
+$$h: U \to [m]_{0}$$
+i.e it has to use all spots `m`, for all input keys in the universe `m`
+- We handle all collisions with chaining
+	- what is the length of the linked list at index `i` in the hash table?
+say we hash some collection of elements $S$ where $|S| = n$.
+- we now wish to hash. a new element `k`
+	- if $k \notin S$, then we want $E(n_{h(k)})$ of the linked list at any index to be $\leq \frac{n}{m}=\alpha$
+	- if $k \in S$ then we want $E(n_{h(k)})$ at any index to be $\leq \frac{n}{m}+1=\alpha + 1$
+define random indicator variable for `k`, $\forall l \in U \ define\ X_{k,l}, \ where \ k \neq l \ is =1$ iff $h(k)=h(l)$ else 0.
+now since we have fixed our element `k`. Now we can calculate the expected value of the random variable
+$$E(X_{k,l})=p \cdot 1 +(1-p)0=p \implies E(X_{k,l})\leq \frac{1}{m}$$
+we can now analyze the length of the linked list at a given index.
+$$X=\sum\limits_{l \in S}X_{k,l}$$
+$$E(X)=E\left( \sum\limits_{l \in S}X_{k,l} \right)=\sum\limits_{l \in S}E(X_{k,l}) \leq \frac{n}{m}=\alpha$$
+now if $k\in S$, then we are guaranteed that we will have an extra element in the index, when we hash the same element again, `and also, since $k\in S$ then we will have 1 random indicator variable less generated, therefore we only have n-1 random indicator variables`, therefore this would be $E(X)=\frac{n-1}{m}+1 \leq \alpha +1$
+
+**In conclusion**
+- if $k \notin S$, then we want $E(n_{h(k)})$ of the linked list at any index to be $\leq \frac{n}{m}=\alpha$
+- if $k \in S$ then we want $E(n_{h(k)})$ at any index to be $\leq \frac{n}{m}+1=\alpha + 1$
+
+**Therefore** if we make $O(m)$ insert operations, fx $S\in O(m)=10m$, then the `search, insert, delete, ...` operations will be constant time $O(1)$.
+## Count min sketch
+Bruges til at finde heavy hitters i et uendeligt langt input. Lav en $l \times b$ matrix **M**. Hver row har sin egen hash function, som er randomly valgt ud fra en familie af universelle hashfunctions $U \to [b]$. Flow er så når man møder et input, kører man hashfunktionen på alle rækker og addere til counteren hvor dette input bliver hashet til.\\
+**Eksempel?**\\
+Anerkend at selvom man har et uendeligt input, så bruger man altid den samme mængde plads. Altid $l \times b$. Der kommer til at være clashes i counterne, så counterne i cellerne er kun en upper bound for hvor mange gange input bliver mødt. \\
+Vi kigger vil nu, ved at bruge en probabalistic approach, kigge på hvad den forventede mængde clashes vi har er. Definer random indicator variable $I_{i,x}(y)$ som er $1$ hviss $h_{i}(x)=h_{i}(y)$ ellers 0. Hvor $h_{i}$ er den universelle hashfunktion $i$ ved række $i$. Da vi bruger en universal hashfunction, er sandsynligheden for to forskellige input clasher $p(I_{i,x}(y)=1)\leq \frac{1}{b}$. Det betyder at counteren i celle $i$ er
+$$Z_{i,x}=f_{x}+\sum_{y \in S_n \mid y \neq x} f_y \cdot I_{i,x}(y) \geq f_{x}$$
+Hvor $S_n$ er de første $n$ elementer i $S$. Da $Z_{i,x}$ er en random variable, kan vi kigge på dens expected value. Hvor vi bruger at $\sum_{y \in S_n}f_{y}=n=\mid S_n\mid$ som estimation.
+$$E(Z_{i,x})=E(f_x+\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot I_{i,x}(y))$$
+Linearity of expectation og at $f_x$ er en konstant.
+$$=E(f_{x})+E\left(\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot I_{i,x}(y)\right)$$
+Da $\sum_{y \in S_{n} \mid x \neq y} f_{y}$ alle sammen er konstanter.
+$$=f_{x}+\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot E(I_{i,x}(y))$$
+Da expected value af en random incidator variable er $p$.
+$$\leq f_{x}+\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot \frac{1}{b}$$
+$$\leq f_{x} + \frac{1}{b} \sum_{y \in S_{n}} f_{y}$$
+$$=f_{x}+\frac{n}{b}$$
+her er antal collisions afhængig af $n$ hvilket vil sige vi forventer at have mange collisions. Vi kan bruge **markovs inequality** hvor vi isloere antal collisions med **x**, og kigge på om et er mere end $2\cdot \frac{n}{b}$
+$$p(Z_{i,x}-f_{x} \geq \frac{2n}{b})=\frac{E(Z_{i,x}-f_{x})}{\frac{2n}{b}}=\frac{\frac{n}{b}}{\frac{2n}{b}}=\frac{1}{2}$$
+Da dette er for alle rækker $i$, kan vi se på sandsynligheden for elementer der clasher med **x** i alle rækker **i**. Derfor kan vi nu kigge på minimum af $\hat{f_x}=Z_{i,x}$, baseret på at alle universelle hashfunktioner er independent, så sandsynlighed for at alle $Z_{i,x}$ værdier er mere end $\frac{2n}{b}$ er dem alle gange sammen:
+$$p(\hat{f}_x-f_x\geq \frac{2n}{b})\leq \frac{1}{2^{l}}$$
+Nu vil vi gerne kunne finde værdierne til **b** og **l**, således at vi kan bounde den her probability for at antallet af gange **x** gentager sig, er mere end et specific sandsynlighed.\\
+Vi får givet **$\epsilon$, $\delta$** således at
+$$p(\hat{f}_x-f_x\geq \epsilon \cdot n)\leq \delta$$
+Hvis vi vælger $b=\frac{2}{\epsilon}$ and $l=\log_{2} \left(\frac{1}{\delta} \right)$ deraf:
+$$p(\hat{f}_{x}-f_{x}\geq \epsilon n)= p(\hat{f}_{x}-f_{x}\geq \frac{2}{b} n) \leq 2^{-l}=2^{-\log_2 (\frac{1}{\delta})}=\frac{1}{\frac{1}{\delta}}=\delta$$
+Nu kan vi bruge
+$$b \times l = \frac{2}{\epsilon} \cdot \log(\frac{1}{\delta})$$
+som er uafhængig af **n**, længden af input. \\
+
+Eksempel: Vil vise alle elementer som viser sig mindst 100 gange, i.e $\frac{n}{100}$, med nøjagtigheden skal være $1\%$ fra det rigtige, er væk fra sin rigtige værdi med sandsynlighedehn $\frac{1}{1000}$. Derfor skal 
+$$\epsilon=\frac{1}{100} 1\%=\frac{1}{10^4}=10^{-4}$$
+og
+$$\delta = \frac{1}{1000} = 10^{-3}$$
+deraf:
+$$p(\hat{f}_x-f_x\geq 10^{-4} n) \leq 10^{-3}$$
+Tænk på det i den her rækkefølge: først siger vi at estimatet skal være at $\frac{n}{100}$ væk fra den rigtige værdi. Yderligerer vælger vi at forstærke det med at differencen skal være $1\&$ af $\frac{n}{100}$ væk fra det rigtige. Slutteligt så vil gerne have at chancen for at differencen er $\frac{n}{10000}$ væk fra sin rigtige værdi, skal være $0.1\%$.\\
+
+Det betyder at 
+$$b=\frac{2}{\epsilon}=\frac{2}{10^{-4}}=20,000$$ 
+og 
+$$l=\log_{2} (\frac{1}{\delta})=\log_2 \frac{1}{10^{-3}}=\log_2 10^3 \approx 10$$
+så med 200,000 counteres kan vi give et estimat på at counteren er mere end $1\%$ væk fra sin reelle værdi, for elementer som viser sig mere end 100 gange, med en sandsynlighed på $0.1\%$. Det er altså ikke sandsynligt at counteren er mere end $1\%$ væk fra sin reelle værdi.
 # 8. String matching (naive algorithm, The Rabin-Karp algorithm, Finite-automaton-based string matching).
 **Dont define the basics before we know what we will need them for**
 ## Basics
@@ -300,8 +459,147 @@ Looking at the longest prefix of `p` which is also a suffix of `T[i]`, is the sa
 	- illustration
 
 # 9. Maximum flows (Definitions, Ford Fulkerson algorithm, Max-Flow- Min-Cut theorem, Edmonds-Karp Algorithm, bipartite matching, integrality theorem)
-Briefly define the residual network, not that interesting.
-  
+## Figuring out if your flow is actually maximal
+![[Pasted image 20231230120835.png]]
+The flow of the `(S,T)` network will always be $\mid f\mid=f(S,T)-f(T,S)$ which means that it will always be what flows from the S side to the T side, minus what goes back. This is due to the flow value being $\sum_{v \in S} b_{f}(s)$.
+This can easily be seen from the next picture:
+![[Pasted image 20231230121229.png]]
+What is inside of S will always have $\forall v\in S:  b_{f}(v)=0$ except for little `s`. That means the only flow which can contribute positively is the arcs going out of `S` and negatively is the arcs that go back into `S`. 
+![[Pasted image 20231230121506.png]]
+This is true since we can maximally send out the capacity of the arcs coming from `S` into `T`, and what comes back may be `0`, that is $f(T,S)\geq 0$ so we can make some bound. So if we have a cut, and $\mid f\mid = c(S,T)$ then the flow we have found is maximum. 
+**rewrite**: The only flow that can contribute positively is the flow coming out of `S`, therefore this is bounded by the smallest capacity of what we can send out of `S`, which are the bottleneck-arcs. If we find some cut that is larger than some other cut, then this means that these can only get flow from the bottleneck arcs, so the `|f|` must be smaller, i.e we cannot fill all of the arcs on in this cut with their maximum capacity.
+## Residual networks
+![[Pasted image 20231230123551.png]]
+This is just as you have worked with before, we start off with just the regular network, and as we augment the paths with flow, we will start having the capacities backward instead. We can then take any path in the residual network from `s` to `t`, and increase the flow on the forward arcs and decrease the flow on the backward arcs, which will preserve the `S, T` conditions, where all vertices in between will have $b_{f}(v)=0$, and so on. 
+**Get better understanding of why this works?**
+![[Pasted image 20231230125459.png]]
+Do note that during real world examples, we regularly cancel out flows `cancelling out what we have already given of flow` to find a better flow-value.
+This gives rise to the `Ford-folkerson` algorithm, finding augmenting paths until no more can be found. If we cannot find new augmenting paths, then we have a maximum flow. 
 
+This depends very much on the fact that during this augmentation in `N`, all the vertices have flow conservation still. We will find the smallest $\delta$, and on the backwards arcs in `N` we will decrease by $\delta$ while on the forward arcs, we will increase by $\delta$. 
+
+**During the exam** just like Mads has said, we only need to describe the residual network in brief, so it is enough to say that the balance of all other than the vertices `s, t` will still be 0, and we augment with the minimum increase in the residual network.
+## Ford-Folkerson
+The algorithm will stop eventually, since when we can find an augmenting `S,T` path, the flow is increased by $\delta$-units. And if we look at
+![[Pasted image 20231230131221.png]]
+we see that the sum of capacities on all arcs from `S` is an upper bound of the flow, which we proved first, and since we increase the flow `f` by at least `1` each time, then it will terminate, assuming that no infinite capacity path exists from `s` to `t`.
+## Max flow, min capacity cut (proving the found network by Ford-Folkerson is actually maximum)
+min capacity means that since $|f| \leq c(S,T)$ then when we have found the flow that is equal to the capacity of some cut, then the capacity cut must be the minimum, as we may be able to find some capacity cut that is larger, but it is not the minimum
+
+We have to prove the following
+1. `f` is a maximum valued flow in the `S,T` flow for `N=(V, E, c)`
+2. There are no more augmenting paths in $N_{f}$
+3. `|f|=c(S,T)` for some cut `S,T` cut
+Now of course, if we find a capacity (a minimum capacity) of a cut that has the value of the flow, then this is the maximum flow, as we have already proven.
+- Clearly, 1 implies 2, as if we cannot find more augmenting paths, then we cannot increase the flow further.
+- 3 implies 1, as $\mid f\mid \leq c(S,T)$, so if we can find a cut in which $\mid f\mid=c(S,T)$ then this is a max flow.
+- 2 implies 3, as when we have no more augmenting paths in the residual network, that must mean that we cannot get to `T` from `S` anymore in $N_{f}$. This means that we can make the set `S` with arcs going to `T` in such a way that the capacity of all these arcs are maxed out with flow. Thereby we have no way to get to `T` in the residual network, when we define the arcs by how we actually made the residual network. 
+![[Pasted image 20231230134546.png]]
+This must also mean that `N` looks like 
+![[Pasted image 20231230135327.png]]
+Since if we had flow going from `T to S`, then we would be able to cancel it out in $N_{f}$, but as $N_{f}$ has no arcs from `S to T` then the flow must be `0` on all the arcs going from `T to S`. now as
+$$|f|=f(S,T)-f(T,S)$$
+$$|f|=f(S,T)-0=c(S,T)$$
+And since 3 implies 1, then the found flow is maximum.
+
+### Running time
+Now we may only increase the flow by `1` in each iteration, and if there are augmenting paths which augments by more than this we are of course unlucky to have chosen this exact path. But we may always be unlucky, meaning we end up with the running time of 
+$$O(|f| \cdot |E|)$$
+Since we may find the path in linear time in regards to the number of edges $E$.
+### Solution to bad running time: Edmonds-Karp
+![[Pasted image 20231230142426.png]]
+The main point is that when we use `breadth-first-search` the previous augmenting paths length was the shortest path, but in then next iteration, the shortest path will always be the same OR longer. **the IMPORTANT observation is that as we augment along the algorithm, we cannot get a shorter path than the previous shortest path.** That is 
+let $n_{i-1}=$ shortest path in step $i-1$ of the algorithm, then $n_{i-1}\leq n_{i}$. This is because when we use an augmenting path, then we remove an arc (by making an arc backwards), removing the same path from the shortest paths. So we are forced to try other paths now.
+So we cannot end up in a situation where we always choose the same bad path. 
+#### Running time
+![[Pasted image 20231230144806.png]]
+- The paths will be at least of length 1
+- A path may only use the same vertex once, therefore the path may only be $n-1$ long as we ignore the first
+- at most $|E|$ paths in the `breadth-first-search` which has the same length, as we flip at least 1 arc for each augmentation.
+- As we at most can make $|E|$ paths of the same length, and the shortest path may be up to $|V|-1$ long, we have this many augmenting paths.
+	- This is clear from the fact that for each length of an augmenting path $1,2, \dots , |V|-1$ there are maximally $|E|$ augmenting paths with this length.
+- we use `BFS`
+- obvious that each time we find a new augmenting path, we have to again find the shortest BFS-path, as we have to recreate the residual network.
+## Notes for the exam
+- (briefly) network definition
+- $\mid f\mid=f(S,T)-f(T,S)$
+- Residual networks
+- (brief) Ford-Folkerson
+- Max flow, min (capacity) cut
+	1. `f` is a maximum valued flow in the `S,T` flow for `N=(V, E, c)`
+	2. There are no more augmenting paths in $N_{f}$
+	3. `|f|=c(S,T)` for some `S,T` cut
+- Runtime
+- Edmonds-Karp
 # 10. The min-cut problem (randomized algorithm, solution via flows, solution via max-back orderings)
-Can just prove Max-flow-min-cut
+## IMPORTATNT
+- is to understand the fact that having these anti-parallel edges, having flow of `1` on the arc, means that there is an edge present. Therefore when we have found the min-cut, we have found the minimum number of edges we have to remove before the graph is disconnected
+- What the hardest for you to understand why it is true that we can simply fix some `x` and iterate over all the different possible `y` choices.
+	- This is all about thinking it is every possible way to seperate into two partitions where `x` is disconnected from `y` for all `y`.  
+- **Remember** that $\lambda(G)=min\{\lambda(s,t) |y \in V\backslash \{x\}\}$ `is actually` the minimum of all the flows in the corresponding networks.
+	- Now we have to prove why the corresponding flow-value of the different `s, t` networks is the minimum of the number of edges we have to remove before the original graph is disconnected. 
+		- This means we have to prove the max-flow min-cut theorem, `remember that edmond carp is guranteed to find the maximum flow, and this is equal to a minimum cut`, so we prove that this flow is equal to a minimum cut, where filling with flow to the capacity of the arc means we are using it. And the flow is `1` thereby, the summation of all the capacities means we are summing up `1` for each edge we are using. Therefore $|f|=\#min \ edges$.
+## Formulate the problem as a min-cut flow problem
+- We start by defining the fact that $\lambda (G)$ is the minimum edge connectivity. 
+- $\lambda(G)=min\{\lambda(x,y) | x,y \in V\ and \ x\neq y\}$, since this is a combination of `x, y`, when we find the minimum amount of edges that connect these two, we are done.
+- Now we can find the minimum by $\lambda(G)=min\{\lambda(x,y) |y \in V\backslash \{x\}\}$ since
+	- This is simply because it is every possible way to separate the graph into two `partitions`, since for a graph to be connected there must be a way from every vertex to another. If we try all options to disconnect a fixed `x` from `y`, then we have effectively tried all possible ways to disconnect the graph into two components. As, this makes all the vertices not able to reach `x` either.
+- This means we have to run the algorithm $|V|-1$ times.
+## Quickly summarize how we would make the undirected graph to a directed one
+- We can start by taking the undirected graph, and make it into a directed graph, by making unparalleled edges from $(u,v), (v,u) \ |\  \forall v\ and \ u, u\neq v$ all with capacities of 1, simplifying into the fact that the flow can go both ways.
+	- This means there can be `0-1` flow on each arc, signifying that there is an edge here when the flow is `1` or else when it is `0` the edge is not there.
+- Now we can try all pairs of $(s,t)=(x,y)\ |\ y \in V \backslash \{x\}$, run Edmonds-Karp on all these possible S,T-Networks, and take the minimum of all these flow values, bounded by the minimum capacity cuts. 
+- This is because the flow is bounded by the capacity going towards the other partition where the sink `t` is. Now, as the flow is bounded by the minimum capacity of the edges going toward the other partition, and the capacity of `1` on all edges signifies that there is an edge between the two partitions, the minimum capacity **is** the minimum number of edges going towards the other partition.
+- Does this work in ?????$O(\mid V\mid \cdot (\mid V\mid + \mid E\mid))$ ?????????
+
+### Chatten
+Your summary and understanding of how to determine the edge connectivity �(�)λ(G) of an undirected graph using flow algorithms are largely correct. Here's a breakdown of the key points:
+
+1. **Anti-parallel Edges and Flows**: The transformation of an undirected graph into a directed one by replacing each undirected edge with a pair of anti-parallel directed edges, each with a capacity of 1, allows you to use flow algorithms. The presence of a flow of 1 in either direction signifies that the original undirected edge is present. Thus, finding a minimum cut in this flow network corresponds to finding the minimum set of edges whose removal would disconnect the graph.
+    
+2. **Fixing Vertex x and Iterating Over y**: By fixing a vertex �x and iterating over all other vertices �y, you are indeed trying all possible ways to separate the graph into two partitions. This is because a graph is connected if and only if there is a path between every pair of vertices. So, by finding the minimum cut that disconnects �x from �y, you are considering all such partitions. Since you do this for all vertices �y, you effectively consider every possible disconnection scenario, ensuring that you find the true edge connectivity.
+    
+3. **Minimum Edge Connectivity**: The minimum edge connectivity �(�)λ(G) is the smallest number of edges that, when removed, disconnects the graph. Your formula �(�)=min⁡{�(�,�)∣�∈�∖{�}}λ(G)=min{λ(x,y)∣y∈V∖{x}} is correct. It reflects that you only need to consider disconnecting a fixed vertex �x from every other vertex �y, rather than considering every possible pair of vertices.
+    
+4. **Directed Graph Construction**: Your description of converting the undirected graph to a directed one is correct. You replace each undirected edge with two directed edges with capacities of 1, which allows the flow to go in both directions, reflecting the undirected nature of the original graph.
+    
+5. **Edmonds-Karp and Min-Cuts**: Running the Edmonds-Karp algorithm (or any other max-flow algorithm) for all pairs (�,�)(x,y) where �y is every other vertex except �x, and then taking the minimum of these flow values will give you the edge connectivity of the graph.
+    
+6. **Runtime Complexity**: The complexity of �(∣�∣⋅(∣�∣+∣�∣))O(∣V∣⋅(∣V∣+∣E∣)) mentioned at the end is incorrect if it's supposed to reflect the use of the Edmonds-Karp algorithm, which has a runtime of �(∣�∣⋅∣�∣2)O(∣V∣⋅∣E∣2) for each max-flow computation. Since you perform ∣�∣−1∣V∣−1 max-flow computations, the total runtime would be �(∣�∣2⋅∣�∣2)O(∣V∣2⋅∣E∣2). If using more efficient max-flow algorithms like Dinic's algorithm, the complexity could be �(∣�∣3⋅∣�∣)O(∣V∣3⋅∣E∣).
+    
+
+So in summary, your understanding of the method is correct, but there's a need to correct the runtime complexity based on the max-flow algorithm used. For Edmonds-Karp, the complexity is �(∣�∣2⋅∣�∣2)O(∣V∣2⋅∣E∣2), and for more efficient algorithms, it could be �(∣�∣3⋅∣�∣)O(∣V∣3⋅∣E∣).
+## Proving max-flow min-cut theorem
+
+## Exam notes
+- Natural to discuss edge-connectivity
+- Try all possible options
+- Fix specific vertex
+- undirected graph ---> network
+	- `flow = 1` on ark -> we use the underlying undirected edge.
+- Max-flow min-cut
+	- **Remember** that $\lambda(G)=min\{\lambda(s,t) |y \in V\backslash \{x\}\}$ `is actually` the minimum of all the flows in the corresponding networks. (see #remember part of this question for explanation)
+- prove max-flow min-cut.
+	1. `f` is a maximum valued flow in the `S,T` flow for `N=(V, E, c)`
+	2. There are no more augmenting paths in $N_{f}$
+	3. `|f|=c(S,T)` for some `S,T` cut
+
+## min cut algorithm
+probability of contracting edge $e_{i}$ which does not cross the minimal cut `C`, for all contractions is
+$$p(E_{1}\cap E_{2} \cap \dots \cap E_{n-2})=p(E_{1})\cdot p(E_{2}|E_{1})\cdot p(E_{3}|E_{1} \cap E_{2})\cdot \dots p(E_{n-2}|E_{1} \cap E_{2} \cap \dots \cap E_{n-3})$$
+It goes up to $n-2$ as when we have contracted this many edges, then we will have only two vertices left.
+lets focus on a specific cut
+$$p(E_{j}|E_{1} \cap E_{2} \cap \dots \cap E_{j-1})=1-p(not \ E_{j}| E_{1} \cap E_{2} \cap \dots \cap E_{j-1})$$
+I.e `1 - (the event that we choose to contract one of the edges in the minimum cut)`
+$$p(not \ E_{j}| E_{1} \cap E_{2} \cap \dots \cap E_{j-1}) = \frac{\#edges \ in\ min-cut}{\#edges \ left\ after \ j-1 \ contractions}$$
+now `#edges left after j-1 contractions` can be bounded by
+$$\#edges \ left\ after \ j-1 \ contractions\geq |V|-j+1 \cdot \frac{min\{edge\ degree\}}{2}$$
+$$\geq |V|-j+1 \cdot \frac{\#num \ edges\ in\ min-cut}{2}$$
+thereby (insert what we just found out in the original equation)
+$$p(not \ E_{j}| E_{1} \cap E_{2} \cap \dots \cap E_{j-1}) \leq \frac{2}{|V|-j+1}$$
+$$1-\frac{2}{|V|-j+1}=\frac{|V|-j-1}{|V|-j+1}$$
+therefore 
+$$1-p(not \ E_{j}| E_{1} \cap E_{2} \cap \dots \cap E_{j-1}) \geq \frac{|V|-j-1}{|V|-j+1}$$
+This all ends up with
+![[Pasted image 20240103190806.png]]
+

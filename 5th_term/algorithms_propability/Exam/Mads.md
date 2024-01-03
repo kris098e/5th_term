@@ -35,7 +35,6 @@ Show that the expected number of people to get their hat in the hat-check proble
 
 
 ### 7 - Universal hashing: 
-
 A: Let U be a set of keys, $S \subseteq U, n=|S|$ and let h be chosen uniformly at random from a universal set of hash functions from U to |m|. Shows that the expected number of keys $k' \in S - \{k\}$ ("-" is "\\") such that h(k') = h(k) is at most n/m
 
 B: Define a universal set of hash function (pick one shown in the course and show that it is universal)
