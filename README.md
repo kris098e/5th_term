@@ -1,2 +1,2 @@
 # Optimal usage
-Download `obsidian` and use the cloned repository as the `obsidian-vault`. The `.obsidian` file included in the repo will give all the configurations needed.
+Download `obsidian`. `cd` into `5th-term`, use this as the `obsidian-vault`. The `.obsidian` file included in the directory will give all the configurations needed.
