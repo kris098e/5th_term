@@ -1,15 +1,8 @@
- [[exspmjan24.pdf]]
+[[exspmjan24.pdf]]
 # remember
 you can choose exercises from the assignments or from class.
 ## Look at again
-- proving the stars and bars, pigeon hole princriple
-- hurtig kig på at lave universelle hash funktioner
-- Kig på at lave median finding og mest af alt `quick sort`.
 - waiting to find a good assignment with K-sat
-- recurrence relations
-- count-min sketch
-- quick-sort
-
 # Try again
 - Flows went like shit
 - String matching is still shit
@@ -17,18 +10,23 @@ you can choose exercises from the assignments or from class.
 - the different counting rules
 - Pigeon hole principle
 	- could show the thing with $n^2+1$ distinct element then increasing or decreasing of size $n+1$?
-![[Pasted image 20231214200425.png]]
-- When we have filled out all of the possible combinations, we still have one more person to insert. However, when we insert the number 101 person, there are no more unused combinations only allowing for $(10,10)$, and since we know that one person must have the tuple $(10,10)$ associated with it, if this new person is shorter than that person, then it will increase the longest decreasing series, else it will increase it.
-	- Can also decide to look at two people, `i, j`, where $i < j$. 
-		- if `i` is taller than `j`, then person `j` will have its $D_{j} \geq D_{i}+1$ since `j` is taller, so it will extend the longest decreasing.
-		- Same is true for if `i` is smaller. Then person `j` will extend this. 
-	- this proves that no person has the same tuple, meaning that there must be one of the tuple values which exceeds the allowed `n`, to be `n+1`.
-
-
-
+we do this by proof by contradiction.
+Vi opstiller elementerne i en række
+$$x_{1},x_{2}, \dots, x_{i}, \dots x_{j}, \dots x_{n+1}$$
+- Lad os først tilknytte en 2-tuple med hvert element, $(I_{i},D_{i})$ som er den længste stigende sekvens op til og med element $x_{i}$ og den længste decreasing sekvens op til og med.
+- Antag nu som contradiction at den største værdi i en af de her værdier er $n$. For tuplen er der $n \cdot n=n^{2}$ mulige tupler, pr. produkt-reglen.
+- ved brug af pigeon hole principle $\lceil \frac{k}{N}\rceil$, hvor `k=antal entries`, `N=antal muligheder for hvor entries kan være`.
+	- her har vi $k=n^{2}+1$
+	- $N=n\cdot n=n^{2}$
+	- Dermed $\lceil \frac{n^{2}+1}{n^{2}}\rceil = 2$, hvilket vil sige at to har den samme tuple.
+- dette kan ikke være muligt da hvis vi kigger på $x_{i},x_{j}$ hvor $j$ står længere henne i rækken så har vi to scenarier, da disse ikke kan være lig hinanden
+	- $x_{i}<x_{j}\implies$ $I_{j} \geq I_{i}+1$
+	- $x_{i}> x_{j}\implies$ $D_{j} \geq D_{i}+1$
+- dermed er der ikke to tupler der er ens, hvilket medfører at der må være en en tuple som har $>n$ på en af sin tuples værdier.
 
 - **ramseys theorem** the example on page 425.
 - group of 6 people, each pair of individuals contains 2 enemies or 2 friends, there are now 3 mutual friends or 3 mutual enemies, when we pick a person out. This follows from the generalized pigeon hole principle $\lceil \frac{n}{\groups}\rceil=\lceil \frac{5}{2}\rceil=3$. Meaning that there must be at least 4 friends or 4 enemies.
+	- simply stated. We pick a person out. Now he is either friends with or enemies with the other person `i` for all persons $i \in \{1,2,3,4,5\}$, and these are put into boxes. Then one box must have $\lceil \frac{5}{2} \rceil =3$ inside. Therefore $3+the\ guy=3+1=4$ friends or enemies.
 
 - permutations, combinations
 	- with repetition
@@ -335,13 +333,29 @@ There are $n^2$ options to match the random variables, therefore we have $n(n-1)
 we can now insert into the formula:
 $$p(|X(S)-E(X)| \geq 10) \leq \frac{2-1}{10^2}=\frac{1}{100}$$
 ## K-Sat
-
+- Har clauses med `k` literaler, på formen $C_{i}=(k_{1}\vee k_{2}\vee \dots \vee k_{k})$
+- Vi har `m` af de her klausuler seperet med and-operator: $C_{1}\wedge C_{2}\wedge \dots \wedge C_{m}$
+- Sandsynligheden for at vi satisfier $C_{i}$ er $p(C_{i})=1-p(!C_{i})=1-\left( \frac{1}{2^{k}} \right)=\frac{2^{k}-1}{2^{k}}$
+- laver indicator random variables, $X_{i}$ er 1 hviss klausus $C_{i}$ er satisfied, ellers 0
+	- $E(X_{i})=p(X_{i}=1)1+p(X_{i}=0)0=p(X_{i}=1)=p(C_{i})=\frac{2^{k}-1}{2^{k}}$
+- Lad $X=\sum\limits_{i=1}^{n}X_{i}\implies E(X)=E\left( \sum\limits_{i=1}^{n}X_{i} \right)=\sum\limits_{i=1}^{n}E(X_{i})=\sum\limits_{i=1}^{n} \frac{2^{k}-1}{2^{k}}=n\frac{2^{k}-1}{2^{k}}$
+	- Forventer at satisfy præcis så mange. Vi ved der findes en truth assignment til alle `k` literaler som tilfredstiller mindst så mange, ellers ville `X` forventede værdi være mindre end dette. I.e. `X` vil tage den forventede værdi, ellers ville den forventede værdi være mindre.
+- Vil nu vise hvor mange klausuler vi forventer at tilfredstille baseret på `n`
+	- lad $I_{i}$ være 1 hvis klausul $C_{i}$ ikke er satisfied, ellers 0
+	- $E(I_{i})=p(I_{i}=1)1+p(I_{i})0=\frac{1}{2^{k}}$
+	- lad $I=\sum\limits_{i=1}^{n}I_{i} \implies E\left( \sum\limits_{i=1}^{n}I_{i} \right)=\sum\limits_{i=1}^{n}E(I_{i})=n \frac{1}{2^{k}}$
+		- Det betyder altså, så længe at $n <2^{k}$ er det forventet antal ikke-tilfredstillet klausuler $< 1$.
 ## Notes for the exam
 - (Chebyshev) Probability that more than 10 people get their hat back
-- Universal hashing
+- k-sat
 # 7. Universal hashing (universal hash functions, perfect hashing (also called 2-level hashing), count-min sketch)
+## Making the family of universal hash functions
+![[Pasted image 20240108120426.png]]
+- choose a prime, which is $p \geq |U|$ and let $|U| \subseteq \{0,1,2, \dots , p-1\}$. That is, we map the universe to maximally p different elements, that is, we associate the universe elements with p different options
+- let the set $a=\{0,1,2,\dots, p-1\}$ and $b=\{1,2,3,\dots, p\}$
+	- choose a uniformly random input entry in `a` and `b`, and let your hash function be $h_{a,b}(k)=((ak+b)\mod \ p)\ mod \ m$
 ## Universal hashing
-- Choose a random universal hashfunction independant of the keys.
+- Choose a random universal hashfunction independent of the keys.
 The probability that two keys hash to the same index should be $\frac{1}{|S|}$, i.e.
 $$p(h(k)=h(l))\leq \frac{1}{m}$$
 
@@ -478,60 +492,74 @@ which is less expensive to calculate than calculating the powers of 10 over and 
 $$2341=2\cdot 10^{3}+3\cdot 10^{2}+4\cdot 10^{1}+1$$
 We can then calculate the next shifts value in constant time once we have the first shifts value by 
 $$t_{S+1}=10(t_{S}-10^{m-1}T[S+1])+T[S+m+1]$$
-In this way we use the information from the previous calculation as well.
+In this way, we use the information from the previous calculation as well.
 ## Rabin karp
 - utilizes this. So, first calculate $t_{0}$ and then we can calculate all the other $S={1,2,3\dots n-m}$ in constant time. So this will take $\Theta(m)$ for calculating $t_{0}$ and then $\Theta(n-m)$ for calculating the rest.
 - But this is too good to be true, as we cannot assume we can compare two very large numbers in constant time. **solution** use `modulo`. That is, we do `mod q` on the pattern `p` and on all the $t_{S}$, and compare these instead.
 - When we want to calculate the next $t_{S+1}$ we will do the calculation, where `d` is the base. ![[Pasted image 20231228100311.png]]
 - But now if `p mod q` matches with $t_{S} \% q$ then we will have to compare the two original numbers, since they may not actually be equal.
-- we want to choose $q\le 10\cdot size \ of \ computer \ word$ since then we can compare the two numbers `mod q` in constant time, as the two numbers can fit into one computer word.  That means we always expect $10[0\dots q-1]$, i.e 10 times something between $0$ and $q-1$. So $0\dots 9+10[0\dots q-1]$ can fit into a computer word, and we can do constant time comparisons.
+- we want to choose $q\le 10\cdot size \ of \ computer \ word$ since then we can compare the two numbers `mod q` in constant time, as the two numbers can fit into one computer word.  That means we always expect $10[0\dots q-1]$, i.e 10 times something between $0$ and $q-1$. So $0\dots 9+10[0\dots q-1]$ can fit into a computer word, **this is such that we can do the calculation above, i.e $t_{s+1}$ in constant time**
+	- That is, look at the fact that $h=d^{m-1}\ mod\  q$, it is downscaled such that we dont exceed a computer word.
+	- Therefore we can still keep a processing time of $O(m+n-m)=n$
+	- We still can compare elements of in constant time as well, as all $t_{s}$ are downscaled to fit into a computer word.
+### At the exam
+- But now if `p mod q` matches with $t_{S} \% q$ then we will have to compare the two original numbers, since they may not actually be equal.
+- `q` should have a value such that `10q < computer word`, as then we can can make sure that when we calculate the previous value, and we do the calculation $10(t_{s})$, then we will maximally multiply $10(q-1)$, and add `x` where $0 \leq x < 10$, such that this $t_{s+1}$ can again fit inside a computer word.
+- **dont try to show the formula** just say that we can still calculate the previous based on modulo calculation. That is, we can `still` calculate $t_{s+1}$ from $t_{s}$
 ### Expected spurries hits
-- Have to test all the matches whether they are actually equal. So in the worst case we still have running time $\Theta(m(n-m))$. However, if we can prove that all of the values from $0\to q$ are equally likely, then the probability of a collision is $\frac{1}{p}$ for a match which was not actually a match. That means we have $E(\#hits)=\frac{O(n)}{q}=\frac{n}{q}$
+- Have to test all the matches whether they are actually equal. So in the worst case we still have running time $\Theta(m(n-m))$. However, if we can prove that all of the values from $0\to q$ are equally likely, that is all $Z^{*}: [0,q)$ then the probability of a collision is $\frac{1}{q}$ for a match that was not actually a match. That means we have $E(\#hits)=\frac{O(n)}{q} \leq \frac{n}{q}$
 ### Final analysis
 The expected matching time will be
 $$O(n)+O\left( m\left( v+\frac{n}{q} \right) \right)$$
-where `v=#actual hits` and $\frac{n}{q}$ is `spurries hits`. and we assume $q\ge m$, which is very likely since q=$\frac{size \ of \ computer \ word}{10}$_ which should be very large, and we expect `v` is $O(1)$, then $O\left( m\left( v+\frac{n}{q} \right) \right)=O(n)$ so the expected time for matching is $O(n)$ as $n\ge m$. So the total running time is
-$$O(matching + preprocessing)=O(n+m)=O(n)$$
+where `v=#actual hits` and $\frac{n}{q}$ is `spurries hits`. and we assume $q\ge m$, or just argue that $O\left( \frac{m}{q} \right)=O(1) \implies O\left( \frac{m}{q} n\right)=O(n)$ and we expect `v` is $O(1)$, then $O\left( m\left( v+\frac{n}{q} \right) \right)=O(n)$ so the expected time for matching is $O(n)$ as $n\ge m$. So the total running time is
+$$O(matching + preprocessing)=O(m+n)=O(n)$$
+Dont think this is entirely correct. This is the actual runtime of the algorithm: go over `n` elements, match on the last expression: $O(n)+O\left( m\left( v+\frac{n}{q} \right) \right)=O(n)+O(n)=O(n)$ 
+Preprocessing is `O(n)`. So preprocessing + matching is $O(n)+O(n)=O(n)$.
 ## DFA
+### Starting notes
+All about the suffix function and how we just always want to find the longest prefix of `p` with length `k`, which is a suffix of the input string `x`
+That is $\sigma(x)=max\{k | p_{k}\ ]\ x\}$
+Also having the final state function $\Phi(x)$ is the state we are in the DFA after reading in the string `x`.
+- we want to have the transition function as $\delta(q,a)=\sigma(p_{q}a)$. See the subsection `Proof that we can make DFA without looking at input T`
+	- just draw the illustration
+### Good example
+as the picture
+![[string_matching.excalidraw]]
+We can first show we can construct `p` without looking at `T`. Then we can show an example, that if we read in some of `T`, then we dont have to remember what we have read. We only care about the state that we are in after reading in some of the characters. Therefore the suffix function is equal to the state we are in after reading in the string `x`
+### intro
 we have a graph $M=(Q,q_{0},A,\Sigma,\delta)$
 - Q is the states
 - $q_{0}$ is the start state
 - A is the accept states $A\subseteq Q$
 - $\Sigma$ is the alphabet
 - $\delta:Q\times \Sigma \to Q$ is the transition function.
-
 We now make a function, $\Phi$ which is the `final state function`, where if `M` accepts $w$ then $\Phi(w)\in A$. So $\delta(wa)=\delta(\Phi(w)a)$ since we know the state from the `final state function` and then we just follow the arc `a`.
 
 We want to construct $M=M(p)$ independently of the input text, such that we always have a DFA for the pattern $p$ over the alphabet.
 ### Suffix function
 $$\sigma(x)=max\{k|\ p_{k}\ ]\ x\}$$
-which simply means, the longest postfix of x which is a prefix of `p`.
+which simply means, the longest prefix of `p` (the length is `k`), which is a suffix of `x`.
 - The suffix function implies $\forall x\in \Sigma^{*} \implies \sigma(xa) \le \sigma(x) + 1$ since the new character `a` may just give a smaller prefix of `p` which is a suffix of `x`.
 We now want to define the DFA as having 
 - $Q=\{0,1,2\dots m\}$
 - $A=\{m\}$
 - $q_{0}=0$
-- $\delta(q,a)=\sigma(p_{q}a)$, since $p_{q}$ is the longest suffix of $T[q]$ which forms a prefix of `p`, and then we transition to the new state when we have read `a`.
-This will ensure we don't have to construct the DFA  from the input text `T` which is the goal. 
+- $\delta(q,a)=\sigma(p_{q}a)$, since $p_{q}$ is the longest suffix of $T_{q}$ which forms a prefix of `p`, and then we transition to the new state when we have read `a`.
+This will ensure we don't have to construct the DFA  from the input text `T` which is the goal.
 ### Proof that we can make DFA without looking at input T
-let $q=\Phi(T_{i})$ be the state we are in after reading $T_{i}$, then $p_{q}$ is the longest prefix of `p` which is a suffix of $T[i]$. Then when we read $a=T[i+1]$, we want to make the transition to $\delta(q,a)=\sigma(T[i]a)=\sigma(p_{q}a)$ i.e we dont have to look at `T`, we only care about the state we are in. This can be seen form this picture
+let $q=\Phi(T_{i})$ be the state we are in after reading $T_{i}$, then $p_{q}$ is the longest prefix of `p` which is a suffix of $T_{i}$. Then when we read $a=T[i+1]$, we want to make the transition to $\delta(q,a)=\sigma(T_{i}a)=\sigma(p_{q}a)$ i.e we dont have to look at `T`, we only care about the state we are in. This can be seen from this picture
 ![[string_matching.excalidraw]]
-when we look at $T[i]$ we have moved to some state in the DFA, but the DFA is constructed to only accept suffixes of T which are of length of `m`, i.e `p` is suffix of `T`. Therefore, when we have read $T[i]$ we are in the state corresponding to if we had only read $p_{q}$. 
+when we look at $T_{i}$ we have moved to some state in the DFA, **but the DFA is constructed to only accept suffixes of T which are of length of `m`, i.e `p` is a suffix of `T`**. Therefore, when we have read $T_{i}$ we are in the state corresponding to if we had only read $p_{q}$. 
 
-Looking at the longest prefix of `p` which is also a suffix of `T[i]`, is the same as looking at the first `q` (which corresponds to the state we are in the DFA) letters of `p` and then the transition when we add $a$.
+Looking at the longest prefix of `p` which is also a suffix of $T_{i}$, is the same as looking at the first `q` (which corresponds to the state we are in the DFA) letters of `p` and then the transition when we add $a$.
 ### Final proof of the state we are in after reading $T[i+1]$
 ## Notes for the exam
 - (briefly)Showcase naive algorithm
-- Shifts, $p\ ]\ T[s+m]$
-- Rabin Karp with Horners rule
+- Shifts and their requirements
+- Rabin-Karp with Horners rule
 - modulo (10q)
 - $p(hit)=\frac{1}{q}$
-- Expected match time => runtime of the whole algorithm 
-- DFA
-	- Suffix function $\sigma(x)=max \{k | \ p_{k}\ ] \ x\}$
-	- $\delta(q,a)=\sigma(T[i]a)=\sigma(p_{q}a)$, independent of T.
-	- illustration
-
+- Expected match time
 # 9. Maximum flows (Definitions, Ford Fulkerson algorithm, Max-Flow- Min-Cut theorem, Edmonds-Karp Algorithm, bipartite matching, integrality theorem)
 ## Figuring out if your flow is actually maximal
 ![[Pasted image 20231230120835.png]]
@@ -577,7 +605,7 @@ $$|f|=f(S,T)-0=c(S,T)$$
 And since 3 implies 1, then the found flow is maximum.
 
 ### Running time
-Now we may only increase the flow by `1` in each iteration, and if there are augmenting paths which augments by more than this we are of course unlucky to have chosen this exact path. But we may always be unlucky, meaning we end up with the running time of 
+Now we may only increase the flow by `1` in each iteration, and if there are augmenting paths which augment by more than this we are of course unlucky to have chosen this exact path. But we may always be unlucky, meaning we end up with the running time of 
 $$O(|f| \cdot |E|)$$
 Since we may find the path in linear time in regards to the number of edges $E$.
 ### Solution to bad running time: Edmonds-Karp
@@ -591,22 +619,20 @@ So we cannot end up in a situation where we always choose the same bad path.
 - A path may only use the same vertex once, therefore the path may only be $n-1$ long as we ignore the first
 - at most $|E|$ paths in the `breadth-first-search` which has the same length, as we flip at least 1 arc for each augmentation.
 - As we at most can make $|E|$ paths of the same length, and the shortest path may be up to $|V|-1$ long, we have this many augmenting paths.
+	- **note that we dont care about the length of each path**, we just care about how many augmenting paths there are.
 	- This is clear from the fact that for each length of an augmenting path $1,2, \dots , |V|-1$ there are maximally $|E|$ augmenting paths with this length.
 - we use `BFS`
 - obvious that each time we find a new augmenting path, we have to again find the shortest BFS-path, as we have to recreate the residual network.
+	- so for each time we augment, and there may be $(|V|-1)\cdot|E|$ augmenting paths in total, we run `BFS` again, which runs in $|V|+|E|$.
 ## Residual network example
 Show first how it looks in `N`, then show that you are allowed to cancel it in `N_G`.
 ![[residual.excalidraw]]
 
 ## Notes for the exam
 - (briefly) network definition
-- $\mid f\mid=f(S,T)-f(T,S)$
 - Residual networks (**just show example**)
 - (brief) Ford-Folkerson
 - Max flow, min (capacity) cut
-	1. `f` is a maximum valued flow in the `S,T` flow for `N=(V, E, c)`
-	2. There are no more augmenting paths in $N_{f}$
-	3. `|f|=c(S,T)` for some `S,T` cut
 - Runtime
 - Edmonds-Karp
 # 10. The min-cut problem (randomized algorithm, solution via flows, solution via max-back orderings)

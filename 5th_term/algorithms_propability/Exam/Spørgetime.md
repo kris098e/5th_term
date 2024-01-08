@@ -2,8 +2,8 @@
 - 13 min fremlæggelse
 	- ik spild tid på det nemmeste, man skal vise så man viser hvad man kan. Gå let henover triviliteter
 - må ikke have formler
-- bedst ikke at have formler med ind, så husk dem. Hvis ikke man kan huske det fx, så kan man bare prøve at udlede det
+	- bedst ikke at have formler med ind, så husk dem. Hvis ikke man kan huske det fx, så kan man bare prøve at udlede det
 - Vigtigt at komme videre fra noget som er mere trivielt, så man kan mere handwave det
 - **Han vil gerne have noget på tavlen**
 - husk at lytte efter til hvad han spørger om, han spørger meget specifikt.
-	- Det er okay at spørge igen
+	- Det er okay at spørge om hvad han helt præcist spurgte om, hvis man ikke fik det med
