@@ -1,13 +1,32 @@
-[[exspmjan24.pdf]]
+ [[exspmjan24.pdf]]
 # remember
 you can choose exercises from the assignments or from class.
+## Look at again
+- proving the stars and bars, pigeon hole princriple
+- hurtig kig på at lave universelle hash funktioner
+- Kig på at lave median finding og mest af alt `quick sort`.
+- waiting to find a good assignment with K-sat
+- recurrence relations
+- count-min sketch
+- quick-sort
+
+# Try again
+- Flows went like shit
+- String matching is still shit
 # 1. Basic counting problems (pigeon hole principle, generalized permutations and combinations etc)
 - the different counting rules
 - Pigeon hole principle
 	- could show the thing with $n^2+1$ distinct element then increasing or decreasing of size $n+1$?
 ![[Pasted image 20231214200425.png]]
-When we have filled out all of the possible combinations, we still have one more person to insert. However, when we insert the number 101 person, there are no more unused combinations only allowing for $(10,10)$, and since we know that one person must have the tuple $(10,10)$ associated with it, if this new person is shorter than that person, then it will increase the longest decreasing series, else it will increase it.
- 
+- When we have filled out all of the possible combinations, we still have one more person to insert. However, when we insert the number 101 person, there are no more unused combinations only allowing for $(10,10)$, and since we know that one person must have the tuple $(10,10)$ associated with it, if this new person is shorter than that person, then it will increase the longest decreasing series, else it will increase it.
+	- Can also decide to look at two people, `i, j`, where $i < j$. 
+		- if `i` is taller than `j`, then person `j` will have its $D_{j} \geq D_{i}+1$ since `j` is taller, so it will extend the longest decreasing.
+		- Same is true for if `i` is smaller. Then person `j` will extend this. 
+	- this proves that no person has the same tuple, meaning that there must be one of the tuple values which exceeds the allowed `n`, to be `n+1`.
+
+
+
+
 - **ramseys theorem** the example on page 425.
 - group of 6 people, each pair of individuals contains 2 enemies or 2 friends, there are now 3 mutual friends or 3 mutual enemies, when we pick a person out. This follows from the generalized pigeon hole principle $\lceil \frac{n}{\groups}\rceil=\lceil \frac{5}{2}\rceil=3$. Meaning that there must be at least 4 friends or 4 enemies.
 
@@ -29,10 +48,18 @@ When we have filled out all of the possible combinations, we still have one more
 
 - $${2n\choose{2}} = {n \choose 2}+n^2$$
 - Find the exercise with how many permutations of people we can seat around a table.
+
+## Notes to proofs
+- remember pigeon hole principle is a contradiction proof, remember to use example, `n=10`
+- Counting with repetition, write up the `x1+x2+x3=7`, then `xxxxxxx=7`, but we also want to distinguish these from each other. Therefore we want `n-1` bars.
+- ${n\choose r}=\frac{n!}{r!\cdot (n-r)!}$
+	- Since $n-r$ is the number of elements we cannot permute further on from the original set
 ## Notes for the exam
 - Pigeon hole principle ($n^{2}+1$)
+	- proof with the example
 	- Cases for person $j < k$
 - Counting with repetition
+	- stars and bars
 - Permutations with repetitions
 # 2. Inclusion-exclusion with applications(derivation of the general formula, number of onto-functions, the hatcheck problem)
 - start by drawing the Venn-diagram, and showing the formula
@@ -66,6 +93,10 @@ Fluently you can quickly prove the generalisation of this, arguing that there is
 - This is similar to the number of onto functions, but just now it is factorial instead of power. 
 - The intuition is that, we look at the entire space $10!$, and remove the once that does not meet the predicate. So we remove ${10 \choose 1}9!$ since we here select 1 of the coats to be the correct, and then we do not care about the rest. We have not subtracted too many, so we add this. We then end up with
 - $\sum_{k=0}^{n} (-1)^{k}{n \choose k}(n-k)! \approx \frac{n!}{e}$ as the number of scenarios where no people get the correct coat.
+
+## Remember 
+- The formula for finding how many elements are in the sets, **remember** to write it is $|A_{1}\cup A_{2}\cup \dots \cup A_{n}|=...$ . I.e remember to say that this is what it calculated
+- Remember that we want each elements to be counted only once.
 ## Exam Notes
 - Generalized formula for inclusion-exclusion (venn-diagram)
 - Prove each element is counted only once
@@ -180,13 +211,12 @@ There are $n^2$ options to match the random variables, therefore we have $n(n-1)
 
 we can now insert into the formula:
 $$p(|X(S)-E(X)| \geq 10) \leq \frac{2-1}{10^2}=\frac{1}{100}$$
-
 ## Notes to take with into the exam
-- Markovs inequality
-	- $p(|X(s) \geq a) \leq \frac{E(X)}{a}$
 - Chebyshevs inequality
-	- $p(|X(S)-E(X)| \geq r) \leq \frac{V(X)}{r^2}$
 - Probability that more than 10 people get their hat back
+	- bounded by Chebyshevs inequality
+- Markovs inequality
+- Prove variance formula
 # 4. Randomized algorithms (Quicksort, median finding and selection, min-cut in graphs, generating a random permutation, majority element, and more!!!)
 **Use less time on not-randselect / select** just handwave it, showcasing it is $O(n^2)$
 ## Median finding
@@ -233,26 +263,51 @@ I.e for each of the rounds, how much work is done in each recursive call, and ho
 ![[Pasted image 20231031072940.png]]
 It says they are all `disjoint`. This means that when we split $S$ we will create a subproblems of type $j$  The main point is that they are `disjoint`.
 ![[Pasted image 20231031073116.png]]
-- The total number of subproblems of type `j` is exactly what is stated. Think about if we have 5 elements and we split in the middel then we have 2 subproblems.
+- The total number of subproblems of type `j` is exactly what is stated. Think about if we have 5 elements and we split in the middle then we have 2 subproblems.
 - so there are at most $\frac{n}{n\cdot \left( \frac{3}{4} \right)^{j+1}}$ subproblems of type `j`
 	- for each of these subproblems, we do at most $n\cdot \left( \frac{3}{4} \right)^j$ work to find the good splitter / median, as this is the largest split we can make, if you choose an unlucky splitter. These cancel out, meaning the expected amount of work on each subproblem is $O(n)$
 ![[Pasted image 20231031073245.png]]
-- How many times can we divide n by $\frac{4}{3}$ before we go down to 1? That is, the largest possible set side after $\frac{n}{\frac{4}{3}}=\frac{3}{4}n$. 
+- How many times can we divide n by $\frac{4}{3}$ before we go down to 1? That is, the largest possible set size after $\frac{n}{\frac{4}{3}}=\frac{3}{4}n$. 
 - There are at most $\log_{\frac{4}{3}}n$ different types, `j`, and as we do $O(n)$ on each subproblem, we will do a total amount of work $O(n \log n)$
+## RandQSort by Rosen
+### Starting notes
+- It is all about looking at the chance of comparing two specific elements, and all of the possible ways to do so. As summing up the expectation of each element being compared, will give the total expectated number of elements being compared
+- Remember that we look at how the sorted array is looking all the way, to make sure we can analyze if we pick something smaller than both the elements, larger or in-between.
+### Proof
+We look at the sorted set
+$z_{1}<z_{2}<z_{3}<z_{4}<\dots <z_{n}$
+Define random variable $Z_{i,j}=1$ iff $z_{i}$ is compared with $z_{j}$. These are `only` compared when these are chosen as the pivot. Look at the set
+$$Z[i,j]=\{z_{i}<z_{i+1}< \dots < z_{j}\}$$
+obvious to see that in the same round for qsort, `i` and `j` are compared only if these are the pivots. Since if we choose some $z_{x}< z_{i}$ as the pivot, then all these elements ends up in $S^{+}$. same if larger than $z_{j}$, if between $z_{i},z_{j}$ then these are never compared. Since we use random median finding that means the probability of either of these being chosen must be the
+$$E(Z_{i,j})=p(Z_{i,j}=1)=\frac{2}{j-i+1}$$
+As only choosing $z_{i},z_{j}$ will work, and there are $j-i+1$ elements in the set. Since this is a random indicator variable we can calculate the expected value/running-time of the algorithm
+$$E(Z)=E(\sum\limits_{i=1}^{n-1}\sum\limits_{j=i+1}^{n}Z_{i,j})$$
+use linearity of expectation
+$$=\sum\limits_{i=1}^{n-1}\sum\limits_{j=i+1}^{n}E(Z_{i,j})$$
+$$=\sum\limits_{i=1}^{n-1}\sum\limits_{j=i+1}^{n} \frac{2}{j-i+1}$$
+make variable shift, let `k=j-i`
+$$=\sum\limits_{i=1}^{n-1}\sum\limits_{j=i+1}^{n} \frac{2}{k+1}$$
+$$=2\sum\limits_{i=1}^{n-1}\sum\limits_{j=i+1}^{n} \frac{1}{k+1}$$
+$$< 2\sum\limits_{i=1}^{n-1}\sum\limits_{j=i+1}^{n} \frac{1}{k}$$
+$$< 2\sum\limits_{i=1}^{n-1} H(n)$$
+$$<2 nH(n)=2n \cdot ln (n)$$
+i.e algorithm is
+$$O(n \cdot ln(n))$$
+
 ## Notes to take with into the exam
 - The split picture
-- select(S, k) / median finding
-- randselect
-	- central splitter
-	- prove linear runtime
-	- phases
-	- probability of good splitter, expected #times before finding a good splitter
+- Select(S, k) / median finding
+- Randselect
+	- Central splitter
+	- Prove linear runtime
+	- Phases
+	- Probability of good splitter, expected #times before finding a good splitter
 	- Expected value of all random variables.
 - RandQsort
 	- Splits are disjoint (back to split picture)
-	- how many subproblems are at most created of type `j`
-	- how much work for each, the median finding time
-	- total types of `j`
+	- How many subproblems are at most created of type `j`
+	- How much work for each, the median finding time
+	- Total types of `j`
 # 5. Probabilistic analysis (using (indicator) random variables, coupon collector, expected running time of quicksort and selection, randomized approximation for max k-SAT)
 ## Quicksort and selection
 Look at the problem above.
@@ -279,38 +334,10 @@ There are $n^2$ options to match the random variables, therefore we have $n(n-1)
 
 we can now insert into the formula:
 $$p(|X(S)-E(X)| \geq 10) \leq \frac{2-1}{10^2}=\frac{1}{100}$$
-## Universal hashing
-- Choose a random universal hashfunction independant of the keys.
-The probability that two keys hash to the same index should be $\frac{1}{|S|}$, i.e.
-$$p(h(k)=h(l))\leq \frac{1}{m}$$
-
-given that
-$$h: U \to [m]_{0}$$
-i.e it has to use all spots `m`, for all input keys in the universe `m`
-- We handle all collisions with chaining
-	- what is the length of the linked list at index `i` in the hash table?
-say we hash some collection of elements $S$ where $|S| = n$.
-- we now wish to hash. a new element `k`
-	- if $k \notin S$, then we want $E(n_{h(k)})$ of the linked list at any index to be $\leq \frac{n}{m}=\alpha$
-	- if $k \in S$ then we want $E(n_{h(k)})$ at any index to be $\leq \frac{n}{m}+1=\alpha + 1$
-define random indicator variable for `k`, $\forall l \in U \ define\ X_{k,l}, \ where \ k \neq l \ is =1$ iff $h(k)=h(l)$ else 0.
-now since we have fixed our element `k`. Now we can calculate the expected value of the random variable
-$$E(X_{k,l})=p \cdot 1 +(1-p)0=p \implies E(X_{k,l})\leq \frac{1}{m}$$
-we can now analyze the length of the linked list at a given index.
-$$X=\sum\limits_{l \in S}X_{k,l}$$
-$$E(X)=E\left( \sum\limits_{l \in S}X_{k,l} \right)=\sum\limits_{l \in S}E(X_{k,l}) \leq \frac{n}{m}=\alpha$$
-now if $k\in S$, then we are guaranteed that we will have an extra element in the index, when we hash the same element again, `and also, since $k\in S$ then we will have 1 random indicator variable less generated, therefore we only have n-1 random indicator variables`, therefore this would be $E(X)=\frac{n-1}{m}+1 \leq \alpha +1$
-
-**In conclusion**
-- if $k \notin S$, then we want $E(n_{h(k)})$ of the linked list at any index to be $\leq \frac{n}{m}=\alpha$
-- if $k \in S$ then we want $E(n_{h(k)})$ at any index to be $\leq \frac{n}{m}+1=\alpha + 1$
-
-**Therefore** if we make $O(m)$ insert operations, fx $S\in O(m)=10m$, then the `search, insert, delete, ...` operations will be constant time $O(1)$.
+## K-Sat
 
 ## Notes for the exam
-- Chebyshevs inequality
-	- $p(|X(S)-E(X)| \geq r) \leq \frac{V(X)}{r^2}$
-- Probability that more than 10 people get their hat back
+- (Chebyshev) Probability that more than 10 people get their hat back
 - Universal hashing
 # 7. Universal hashing (universal hash functions, perfect hashing (also called 2-level hashing), count-min sketch)
 ## Universal hashing
@@ -320,7 +347,7 @@ $$p(h(k)=h(l))\leq \frac{1}{m}$$
 
 given that
 $$h: U \to [m]_{0}$$
-i.e it has to use all spots `m`, for all input keys in the universe `m`
+i.e it has to use all spots `m`, for all input keys in the universe `U`
 - We handle all collisions with chaining
 	- what is the length of the linked list at index `i` in the hash table?
 say we hash some collection of elements $S$ where $|S| = n$.
@@ -340,11 +367,46 @@ now if $k\in S$, then we are guaranteed that we will have an extra element in th
 - if $k \in S$ then we want $E(n_{h(k)})$ at any index to be $\leq \frac{n}{m}+1=\alpha + 1$
 
 **Therefore** if we make $O(m)$ insert operations, fx $S\in O(m)=10m$, then the `search, insert, delete, ...` operations will be constant time $O(1)$.
+## Perfect hashing
+The probability that we have any collisions when we use a universal hash function into a table of size $n^2$ where $n=\mid S\mid$ is $\frac{1}{2}$.
+Define random indicator variable, $Z_{k,l}=1$ iff $h(k)=h(l)$ else 0. We have ${n \choose 2}$ ways for collision
+![[Pasted image 20231218160804.png]]
+probability of collision is $\frac{1}{n^2}$.  there are ${ n \choose 2}$ ways to collide. Therefore, the expected number of collisions is: $\frac{{n \choose 2}}{n^{2}}< \frac{1}{2}$. Bound this by Markovs inequality
+$$p(Z \geq 1) \leq \frac{E(Z)}{1}=E(Z)<\frac{1}{2}$$
+probability of no collision $p(Z=0)=1-p(Z=1)\implies p(Z=0)\geq \frac{1}{2}$.
+Expected number of times we run the algorithm $\frac{1}{p}=\frac{1}{\frac{1}{2}}<2$.
+But we now still use $n^2$ memory.
+
+Use $n^2$ in the 2nd level of hash table.
+
+let
+$$n_{j}=\forall x\in n\mid \{ x \mid h(x)=j\}\mid$$
+And use table size of
+$$n_{j}^2$$
+for storage in this 2nd hash table. This means that $n_{j}$ is the number of elements hashed to the j'th index. We will then need to store the hash function for the table, and this much storage for each. Let us look at the expected value of storage in all the 2nd hash tables
+$$E\left( \sum_{i=0}^{n-1} n_{j}^{2}\right)$$
+Note that it does make sense to take the expected value of this, as $n_{j}$ depends on the random hash function.
+we use that
+$n^{2}=n+2 {n\choose 2}=n+n(n-1)$
+$$\begin{align}
+E\left( \sum_{i=0}^{n-1} n_{i}^2 \right)=E\left(\sum_{i=0}^{n-1}n_{i}+2 {n_{i}\choose 2}\right) \\
+= E(\sum_{i=0}^{n-1}n_{i})+E\left(\sum_{i=0}^{n-1}2 {n_{i}\choose 2}\right) \\
+=E(n)+2E\left(\sum_{i=0}^{n-1} {n_{i} \choose 2}\right) \\
+=n+2E(r)
+\end{align}
+$$
+the `n` comes from the fact we sum up all that is mapped to the `i'th` position. Iterating over all indexes will end up giving all of the elements, which is just `n`.
+$\sum_{i=0}^{n-1} {n_{i} \choose 2}$ is simply the total number of collisions. I.e we sum up all the collisions.
+$$E(r)={n\choose 2}\cdot \frac{1}{n} = \frac{n-1}{2}$$
+$$E\left(\sum_{i=0}^{n-1} n_{i}^{2}\right)=n+2\frac{n-1}{2}\lt 2n$$
+We can then bound the probability that the expected value is more than 4n:
+$$p\left( \sum_{i=0}^{n-1}n_{i}^2 >4n\right)\leq \frac{E\left( \sum_{i=0}^{n-1}n_{i}^2 \right)}{4n}=\frac{2n}{4n}=\frac{1}{2}$$
+This means the probability that we have to use more than $4n$ space is $\frac{1}{2}$.
 ## Count min sketch
 Bruges til at finde heavy hitters i et uendeligt langt input. Lav en $l \times b$ matrix **M**. Hver row har sin egen hash function, som er randomly valgt ud fra en familie af universelle hashfunctions $U \to [b]$. Flow er så når man møder et input, kører man hashfunktionen på alle rækker og addere til counteren hvor dette input bliver hashet til.\\
 **Eksempel?**\\
 Anerkend at selvom man har et uendeligt input, så bruger man altid den samme mængde plads. Altid $l \times b$. Der kommer til at være clashes i counterne, så counterne i cellerne er kun en upper bound for hvor mange gange input bliver mødt. \\
-Vi kigger vil nu, ved at bruge en probabalistic approach, kigge på hvad den forventede mængde clashes vi har er. Definer random indicator variable $I_{i,x}(y)$ som er $1$ hviss $h_{i}(x)=h_{i}(y)$ ellers 0. Hvor $h_{i}$ er den universelle hashfunktion $i$ ved række $i$. Da vi bruger en universal hashfunction, er sandsynligheden for to forskellige input clasher $p(I_{i,x}(y)=1)\leq \frac{1}{b}$. Det betyder at counteren i celle $i$ er
+Vi vil nu kigge på, at bruge en probabalistic approach, kigge på hvad den forventede mængde clashes vi har er. Definer random indicator variable $I_{i,x}(y)$ som er $1$ hviss $h_{i}(x)=h_{i}(y)$ ellers 0. Hvor $h_{i}$ er den universelle hashfunktion $i$ ved række $i$. Da vi bruger en universal hashfunction, er sandsynligheden for to forskellige input clasher $p(I_{i,x}(y)=1)\leq \frac{1}{b}$. Det betyder at counteren i celle $i$ er
 $$Z_{i,x}=f_{x}+\sum_{y \in S_n \mid y \neq x} f_y \cdot I_{i,x}(y) \geq f_{x}$$
 Hvor $S_n$ er de første $n$ elementer i $S$. Da $Z_{i,x}$ er en random variable, kan vi kigge på dens expected value. Hvor vi bruger at $\sum_{y \in S_n}f_{y}=n=\mid S_n\mid$ som estimation.
 $$E(Z_{i,x})=E(f_x+\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot I_{i,x}(y))$$
@@ -382,6 +444,18 @@ $$b=\frac{2}{\epsilon}=\frac{2}{10^{-4}}=20,000$$
 og 
 $$l=\log_{2} (\frac{1}{\delta})=\log_2 \frac{1}{10^{-3}}=\log_2 10^3 \approx 10$$
 så med 200,000 counteres kan vi give et estimat på at counteren er mere end $1\%$ væk fra sin reelle værdi, for elementer som viser sig mere end 100 gange, med en sandsynlighed på $0.1\%$. Det er altså ikke sandsynligt at counteren er mere end $1\%$ væk fra sin reelle værdi.
+## Exam notes
+- Perfect hashing
+	- Solution with $n^2$ in 1st table
+	- Random indicator variable
+	- Bound by Markov
+	- Expected number of trials before perfect
+	- Solution with $n^2$ in 2nd table
+	- Bound by Markov, more than `4n`
+- Universal hashing
+	- Drawing
+	- Hash collection `S`, `|S|=n`
+	- Random indicator variable, fix on `k`
 # 8. String matching (naive algorithm, The Rabin-Karp algorithm, Finite-automaton-based string matching).
 **Dont define the basics before we know what we will need them for**
 ## Basics
@@ -491,7 +565,7 @@ We have to prove the following
 2. There are no more augmenting paths in $N_{f}$
 3. `|f|=c(S,T)` for some cut `S,T` cut
 Now of course, if we find a capacity (a minimum capacity) of a cut that has the value of the flow, then this is the maximum flow, as we have already proven.
-- Clearly, 1 implies 2, as if we cannot find more augmenting paths, then we cannot increase the flow further.
+- Clearly, 1 implies 2, as $!2 \implies !1$ therefore, there is an augmenting path, then the flow is not a maximum. That is, we can increase by at least `1`, then the flow is clearly not maximum.
 - 3 implies 1, as $\mid f\mid \leq c(S,T)$, so if we can find a cut in which $\mid f\mid=c(S,T)$ then this is a max flow.
 - 2 implies 3, as when we have no more augmenting paths in the residual network, that must mean that we cannot get to `T` from `S` anymore in $N_{f}$. This means that we can make the set `S` with arcs going to `T` in such a way that the capacity of all these arcs are maxed out with flow. Thereby we have no way to get to `T` in the residual network, when we define the arcs by how we actually made the residual network. 
 ![[Pasted image 20231230134546.png]]
@@ -520,10 +594,14 @@ So we cannot end up in a situation where we always choose the same bad path.
 	- This is clear from the fact that for each length of an augmenting path $1,2, \dots , |V|-1$ there are maximally $|E|$ augmenting paths with this length.
 - we use `BFS`
 - obvious that each time we find a new augmenting path, we have to again find the shortest BFS-path, as we have to recreate the residual network.
+## Residual network example
+Show first how it looks in `N`, then show that you are allowed to cancel it in `N_G`.
+![[residual.excalidraw]]
+
 ## Notes for the exam
 - (briefly) network definition
 - $\mid f\mid=f(S,T)-f(T,S)$
-- Residual networks
+- Residual networks (**just show example**)
 - (brief) Ford-Folkerson
 - Max flow, min (capacity) cut
 	1. `f` is a maximum valued flow in the `S,T` flow for `N=(V, E, c)`
