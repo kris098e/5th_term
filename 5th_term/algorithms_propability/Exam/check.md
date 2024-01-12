@@ -39,3 +39,8 @@ $$b=\frac{2}{\epsilon}=\frac{2}{10^{-4}}=20,000$$
 og 
 $$l=\log_{2} (\frac{1}{\delta})=\log_2 \frac{1}{10^{-3}}=\log_2 10^3 \approx 10$$
 så med 200,000 counteres kan vi give et estimat på at counteren er mere end $1\%$ væk fra sin reelle værdi, for elementer som viser sig mere end 100 gange, med en sandsynlighed på $0.1\%$. Det er altså ikke sandsynligt at counteren er mere end $1\%$ væk fra sin reelle værdi.
+
+$$p(X > (1+\delta)\mu) < \left( \frac{e^{\delta}}{(1+\delta)^{1+\delta}} \right)^{\mu}$$
+$$p(X < (1-\delta)\mu ) < e^{\frac{1}{2} \mu \delta^2}$$
+
+

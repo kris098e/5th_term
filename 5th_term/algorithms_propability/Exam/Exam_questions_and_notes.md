@@ -1,8 +1,6 @@
 [[exspmjan24.pdf]]
 # remember
 you can choose exercises from the assignments or from class.
-## Look at again
-- waiting to find a good assignment with K-sat
 # Try again
 - Flows went like shit
 - String matching is still shit
@@ -54,7 +52,7 @@ $$x_{1},x_{2}, \dots, x_{i}, \dots x_{j}, \dots x_{n+1}$$
 	- Since $n-r$ is the number of elements we cannot permute further on from the original set
 ## Notes for the exam
 - Pigeon hole principle ($n^{2}+1$)
-	- proof with the example
+	- Generalized formula
 	- Cases for person $j < k$
 - Counting with repetition
 	- stars and bars
@@ -98,12 +96,8 @@ Fluently you can quickly prove the generalisation of this, arguing that there is
 ## Exam Notes
 - Generalized formula for inclusion-exclusion (venn-diagram)
 - Prove each element is counted only once
-	- Focus in on specific element `a`
-	- Uses binomial theorem $(x+y)^{n}=\sum\limits_{k=0}^{n}{n \choose k}x^{k} y^{n-k}$, 
 - Number of onto functions
-	- Connect seen pattern with a generalized formula
 - Hatcheck derangements
-	- Similar with last function, now it is just permutations
 # 3. Discrete probability, random variables and bounds (expected value, variance, Bayes formula, Markov's inequality, Chebyshev's inequality and Chernoff bounds)
 ## Comment
 Maybe do more examples instead of doing the basics
@@ -209,12 +203,19 @@ There are $n^2$ options to match the random variables, therefore we have $n(n-1)
 
 we can now insert into the formula:
 $$p(|X(S)-E(X)| \geq 10) \leq \frac{2-1}{10^2}=\frac{1}{100}$$
+
+## Chernoff
+The reason why the chernoff bound provides a better bound is as it is an exponential bound. That is, the bound becomes much better / smaller when the `expected value increases`.
+- $\delta$ denotes how many percentage away the random variable `X` should be away from its expected value.
+$$p(X > (1 + \delta) \mu) < \left( \frac{e^{\delta}}{(1+\delta)^{1+\delta}} \right)^{\mu}$$
+$$p(X < (1-\delta) \mu) < e^{\frac{1}{2} \mu \delta^{2}}$$
+We then take the sum of these to take the entire event space of these being larger or smaller than some deviation from the expected value.
 ## Notes to take with into the exam
 - Chebyshevs inequality
 - Probability that more than 10 people get their hat back
-	- bounded by Chebyshevs inequality
 - Markovs inequality
 - Prove variance formula
+- Bayes
 # 4. Randomized algorithms (Quicksort, median finding and selection, min-cut in graphs, generating a random permutation, majority element, and more!!!)
 **Use less time on not-randselect / select** just handwave it, showcasing it is $O(n^2)$
 ## Median finding
@@ -255,9 +256,13 @@ constant time.
 We now look how many subproblems there are, which is based on the splitter: i.e running quicksort on $S^{-}$ and $S^+$.
 ![[Pasted image 20231217120635.png]]
 ### Prove how many problems we end up with.
-**Remember** that the set `S` has type `j` if the following holds
+**VERY IMPORTANT: Remember** that we just look at the current number of elements `S` has type `j` if the following holds
 $$n\cdot \left( \frac{3}{4} \right)^{j+1}<\mid S'\mid \leq n\cdot \left( \frac{3}{4} \right)^j$$
-I.e for each of the rounds, how much work is done in each recursive call, and how many recursive calls are there.
+This means when we look at the number of subproblems of type `j`, they just have at least the size of 
+$$n\cdot \left( \frac{3}{4} \right)^{j+1}$$
+**So we ONLY care about the size of each set that is a subproblem of type `j`**, and then we look how many problems are of this size.
+
+
 ![[Pasted image 20231031072940.png]]
 It says they are all `disjoint`. This means that when we split $S$ we will create a subproblems of type $j$  The main point is that they are `disjoint`.
 ![[Pasted image 20231031073116.png]]
@@ -293,22 +298,16 @@ i.e algorithm is
 $$O(n \cdot ln(n))$$
 
 ## Notes to take with into the exam
-- The split picture
-- Select(S, k) / median finding
+- The problem **illustration**
 - Randselect
-	- Central splitter
-	- Prove linear runtime
-	- Phases
-	- Probability of good splitter, expected #times before finding a good splitter
-	- Expected value of all random variables.
 - RandQsort
-	- Splits are disjoint (back to split picture)
-	- How many subproblems are at most created of type `j`
-	- How much work for each, the median finding time
-	- Total types of `j`
 # 5. Probabilistic analysis (using (indicator) random variables, coupon collector, expected running time of quicksort and selection, randomized approximation for max k-SAT)
 ## Quicksort and selection
 Look at the problem above.
+## Notes to take with into the exam
+- The problem **illustration**
+- Randselect
+- RandQsort
 # 6. Examples of applications of indicator random variables (find some yourselves in the pensum, there are many!)
 ## Hatcheck with bounds
 Probability that more than 10 people get their hat back in the hatcheck problem, bounded by chebyshev:
@@ -347,7 +346,7 @@ $$p(|X(S)-E(X)| \geq 10) \leq \frac{2-1}{10^2}=\frac{1}{100}$$
 		- Det betyder altså, så længe at $n <2^{k}$ er det forventet antal ikke-tilfredstillet klausuler $< 1$.
 ## Notes for the exam
 - (Chebyshev) Probability that more than 10 people get their hat back
-- k-sat
+- K-sat
 # 7. Universal hashing (universal hash functions, perfect hashing (also called 2-level hashing), count-min sketch)
 ## Making the family of universal hash functions
 ![[Pasted image 20240108120426.png]]
@@ -382,6 +381,11 @@ now if $k\in S$, then we are guaranteed that we will have an extra element in th
 
 **Therefore** if we make $O(m)$ insert operations, fx $S\in O(m)=10m$, then the `search, insert, delete, ...` operations will be constant time $O(1)$.
 ## Perfect hashing
+
+## Recap of presentation
+remember when we want to prove the $n^{2}$ case, we write it as
+$$E(\sum\limits_{k,l \in L |k\neq l} X_{k,l})$$
+## Notes
 The probability that we have any collisions when we use a universal hash function into a table of size $n^2$ where $n=\mid S\mid$ is $\frac{1}{2}$.
 Define random indicator variable, $Z_{k,l}=1$ iff $h(k)=h(l)$ else 0. We have ${n \choose 2}$ ways for collision
 ![[Pasted image 20231218160804.png]]
@@ -428,7 +432,7 @@ Linearity of expectation og at $f_x$ er en konstant.
 $$=E(f_{x})+E\left(\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot I_{i,x}(y)\right)$$
 Da $\sum_{y \in S_{n} \mid x \neq y} f_{y}$ alle sammen er konstanter.
 $$=f_{x}+\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot E(I_{i,x}(y))$$
-Da expected value af en random incidator variable er $p$.
+Da expected value af en random indicator variable er $p$.
 $$\leq f_{x}+\sum_{y \in S_{n} \mid x \neq y} f_{y} \cdot \frac{1}{b}$$
 $$\leq f_{x} + \frac{1}{b} \sum_{y \in S_{n}} f_{y}$$
 $$=f_{x}+\frac{n}{b}$$
@@ -461,15 +465,10 @@ så med 200,000 counteres kan vi give et estimat på at counteren er mere end $1
 ## Exam notes
 - Perfect hashing
 	- Solution with $n^2$ in 1st table
-	- Random indicator variable
-	- Bound by Markov
-	- Expected number of trials before perfect
 	- Solution with $n^2$ in 2nd table
-	- Bound by Markov, more than `4n`
 - Universal hashing
 	- Drawing
-	- Hash collection `S`, `|S|=n`
-	- Random indicator variable, fix on `k`
+	- Derive
 # 8. String matching (naive algorithm, The Rabin-Karp algorithm, Finite-automaton-based string matching).
 **Dont define the basics before we know what we will need them for**
 ## Basics
@@ -555,11 +554,11 @@ Looking at the longest prefix of `p` which is also a suffix of $T_{i}$, is the s
 ### Final proof of the state we are in after reading $T[i+1]$
 ## Notes for the exam
 - (briefly)Showcase naive algorithm
-- Shifts and their requirements
-- Rabin-Karp with Horners rule
-- modulo (10q)
-- $p(hit)=\frac{1}{q}$
-- Expected match time
+- Rabin-Karp
+	- Shifts and their requirements
+	- Rabin-Karp with Horners rule
+	- modulo (10q)
+	- Expected running time
 # 9. Maximum flows (Definitions, Ford Fulkerson algorithm, Max-Flow- Min-Cut theorem, Edmonds-Karp Algorithm, bipartite matching, integrality theorem)
 ## Figuring out if your flow is actually maximal
 ![[Pasted image 20231230120835.png]]
@@ -618,6 +617,7 @@ So we cannot end up in a situation where we always choose the same bad path.
 - The paths will be at least of length 1
 - A path may only use the same vertex once, therefore the path may only be $n-1$ long as we ignore the first
 - at most $|E|$ paths in the `breadth-first-search` which has the same length, as we flip at least 1 arc for each augmentation.
+	- This is simply an upper bound. That is, we may use all of the edges, but using all possible ways in the graph with the same length, will make you have to take paths with more length.
 - As we at most can make $|E|$ paths of the same length, and the shortest path may be up to $|V|-1$ long, we have this many augmenting paths.
 	- **note that we dont care about the length of each path**, we just care about how many augmenting paths there are.
 	- This is clear from the fact that for each length of an augmenting path $1,2, \dots , |V|-1$ there are maximally $|E|$ augmenting paths with this length.
@@ -630,7 +630,7 @@ Show first how it looks in `N`, then show that you are allowed to cancel it in `
 
 ## Notes for the exam
 - (briefly) network definition
-- Residual networks (**just show example**)
+- Residual networks (**show example**)
 - (brief) Ford-Folkerson
 - Max flow, min (capacity) cut
 - Runtime
@@ -676,19 +676,14 @@ So in summary, your understanding of the method is correct, but there's a need t
 ## Proving max-flow min-cut theorem
 
 ## Exam notes
-- Natural to discuss edge-connectivity
-- Try all possible options
-- Fix specific vertex
+- Min edge-connectivity
 - undirected graph ---> network
-	- `flow = 1` on ark -> we use the underlying undirected edge.
 - Max-flow min-cut
-	- **Remember** that $\lambda(G)=min\{\lambda(s,t) |y \in V\backslash \{x\}\}$ `is actually` the minimum of all the flows in the corresponding networks. (see #remember part of this question for explanation)
 - prove max-flow min-cut.
-	1. `f` is a maximum valued flow in the `S,T` flow for `N=(V, E, c)`
-	2. There are no more augmenting paths in $N_{f}$
-	3. `|f|=c(S,T)` for some `S,T` cut
-
 ## min cut algorithm
+## starting notes
+REMEMBER THE INEQUALITY PART
+## Notes
 probability of contracting edge $e_{i}$ which does not cross the minimal cut `C`, for all contractions is
 $$p(E_{1}\cap E_{2} \cap \dots \cap E_{n-2})=p(E_{1})\cdot p(E_{2}|E_{1})\cdot p(E_{3}|E_{1} \cap E_{2})\cdot \dots p(E_{n-2}|E_{1} \cap E_{2} \cap \dots \cap E_{n-3})$$
 It goes up to $n-2$ as when we have contracted this many edges, then we will have only two vertices left.
@@ -701,8 +696,10 @@ $$\#edges \ left\ after \ j-1 \ contractions\geq |V|-j+1 \cdot \frac{min\{edge\ 
 $$\geq |V|-j+1 \cdot \frac{\#num \ edges\ in\ min-cut}{2}$$
 thereby (insert what we just found out in the original equation)
 $$p(not \ E_{j}| E_{1} \cap E_{2} \cap \dots \cap E_{j-1}) \leq \frac{2}{|V|-j+1}$$
+This is because we divide by something that is lower than what we should, as we have found a lower bound of how many edges there are left. Therefore the value we get the from the actual fraction
+$\frac{\#edges \ in\ min-cut}{\#edges \ left\ after \ j-1 \ contractions}$ then we get a larger number. 
 $$1-\frac{2}{|V|-j+1}=\frac{|V|-j-1}{|V|-j+1}$$
-therefore 
+therefore. Now as we subtract by something that is bigger than it should be, we get a lower number than we should, therefore this a lower bound 
 $$1-p(not \ E_{j}| E_{1} \cap E_{2} \cap \dots \cap E_{j-1}) \geq \frac{|V|-j-1}{|V|-j+1}$$
 This all ends up with
 ![[Pasted image 20240103190806.png]]

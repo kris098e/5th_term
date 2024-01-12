@@ -3,6 +3,7 @@
   "spellcheck": true,
   "alwaysUpdateLinks": true,
   "pdfExportSettings": {
+    "includeName": true,
     "pageSize": "Letter",
     "landscape": false,
     "margin": "0",
