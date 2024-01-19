@@ -23,7 +23,7 @@ When refactoring, new features, enhancing?
 - when refactoring code we also get a lot of code smell, which is contraintuitive when you actually want to remove
 - The ones owning the classes are the ones creating the most code smell for the code
 	- the more experienced ones will introduce more code smell because they may be more happy with complex code
-	- the new developers produce more spagghetti code, but introduce less spagghetti code
+	- the new developers produce more spagghetti code, but introduce less code rot
 		- may fx be because their PRs would be more gone through
 - code smell is also tied to work load
 ![[Pasted image 20231106175027.png]]

@@ -4,22 +4,57 @@
     "type": "split",
     "children": [
       {
-        "id": "9508e87a968ed322",
+        "id": "44208d979e8535f5",
         "type": "tabs",
         "children": [
           {
-            "id": "185ed365d058fe88",
+            "id": "c4be645d823738b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms_propability/Exam/Exam_questions_and_notes.md",
+                "file": "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "8237aab6f80f4583",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "software_engineering/Theory/12_UX/UI_UX.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c943110f40a2d1c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "software_engineering/Exam/9.Organizational_Design,_Ethics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "829e4a5de1992f40",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -93,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algorithms_propability/Exam/Exam_questions_and_notes.md",
+                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algorithms_propability/Exam/Exam_questions_and_notes.md",
+                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algorithms_propability/Exam/Exam_questions_and_notes.md"
+                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf"
               }
             }
           },
@@ -169,53 +204,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "185ed365d058fe88",
+  "active": "829e4a5de1992f40",
   "lastOpenFiles": [
-    "algorithms_propability/14_hiring_problem.md",
-    "algorithms_propability/Exam/Exam_questions_and_notes.md",
-    "algorithms_propability/2.Discrete posibilities.md",
-    "algorithms_propability/Exam/Exam_problems_2.pdf",
-    "algorithms_propability/Exam/Look at again.md",
-    "algorithms_propability/10.max-back_orderings_of_graphs.md",
-    "algorithms_propability/Exam/check.md",
-    "algorithms_propability/3. Inclusion exclusion.md",
-    "algorithms_propability/Exam/Exam_problems_questions_2.pdf",
-    "algorithms_propability/8.flows.md",
-    "algorithms_propability/4.Kleinberg_and_Tardos.md",
-    "algorithms_propability/11.hashing.md",
-    "algorithms_propability/exercises/last exam exercises.md",
-    "algorithms_propability/Exam/Exam_problems_1.pdf",
-    "algorithms_propability/Exam/Exam_problems_questions_1.pdf",
-    "algorithms_propability/exercises/6.random_permutation.md",
-    "algorithms_propability/exercises/graph_contraction.md",
-    "algorithms_propability/exercises/5.networks_flows.md",
-    "algorithms_propability/exercises/4.Ksat_recurrence.md",
-    "algorithms_propability/exercises/3.advanced_counting.md",
-    "algorithms_propability/exercises/2.Discrete_probability.md",
-    "algorithms_propability/13_string-matching.md",
-    "algorithms_propability/exspmjan24.pdf",
+    "software_engineering/Theory/9_Design_patterns/Lecture 9_ Design Patterns 2.pdf",
+    "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf",
+    "software_engineering/Theory/8_UML_C4_architecture/c4.md",
+    "software_engineering/Theory/7_Documentation_and_APIs/slides.pdf",
+    "software_engineering/Theory/6_product_and_other_things/0.Estimations.md",
+    "software_engineering/Theory/5_Product_Backlog_and_Project/lecture_5.pdf",
+    "software_engineering/Theory/5_Product_Backlog_and_Project/1.user-stories.md",
+    "software_engineering/Theory/5_Product_Backlog_and_Project/0.use-cases.md",
+    "software_engineering/Theory/7_Documentation_and_APIs/Universal_robots.md",
+    "software_engineering/Theory/7_Documentation_and_APIs/UML.md",
+    "software_engineering/Theory/7_Documentation_and_APIs/REST_and_documentation.md",
+    "software_engineering/Theory/6_product_and_other_things/talk_from_product_manager_at_lego.md",
+    "software_engineering/Exam/00.noter til fremlæggelse.md",
+    "software_engineering/Exam/9.Organizational_Design,_Ethics.md",
+    "software_engineering/Exam/0.Kig_pa.md",
+    "software_engineering/Exam/8.Software_Testing.md",
+    "software_engineering/Exam/7.Design_Patterns.md",
+    "software_engineering/Exam/6.Software_Architecture.md",
+    "software_engineering/Exam/5.Complexity_Models_in_Process_Design.md",
+    "software_engineering/Exam/4.Users,_Requirements,_and_Backlog_Items.md",
+    "software_engineering/Exam/3.Scrum.md",
+    "software_engineering/Exam/2.Agile.md",
+    "software_engineering/Exam/1.Plan_Oriented_Methods.md",
+    "software_engineering/Theory/12_UX/UI_UX.md",
+    "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
+    "software_engineering/Theory/8_UML_C4_architecture/Architecture_UML.md",
+    "software_engineering/Theory/8_UML_C4_architecture/0.recap.md",
+    "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
+    "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
+    "Excalidraw/vindue.png",
+    "pictures/Pasted Image 20240117204009_876.png",
+    "formal_languages_data_processing/4_data_cleaning_web_scraping/datacleaning_webscraping.pdf",
+    "formal_languages_data_processing/scil_v_1.2.3/documentation.pdf",
+    "software_engineering/Theory/4_stakeholders/Lecture 4_ Users and Requirements 2.pdf",
+    "software_engineering/Theory/3 Scrum/scrum.pdf",
+    "pictures/Pasted image 20240112120258.png",
+    "pictures/Pasted image 20240112113644.png",
+    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/Lecture 2_ Agile.pdf",
+    "software_engineering/Theory/1_Planning_models/slides.pdf",
+    "pictures/Pasted image 20240112100443.png",
+    "pictures/Pasted image 20240112100257.png",
+    "pictures/Pasted image 20240112094908.png",
     "pictures/Pasted image 20240108120426.png",
-    "algorithms_propability/Exam/Spørgetime.md",
-    "algorithms_propability/6.recurence_relations.md",
-    "algorithms_propability/Exam/Algo_sand_2.pdf",
-    "algorithms_propability/Exam/Algo_sand_1.pdf",
-    "algorithms_propability/9.CORMEN_5.md",
     "pictures/Pasted image 20240107172036.png",
     "pictures/Pasted image 20240107164313.png",
-    "algorithms_propability/12_count_min_scetch.md",
-    "algorithms_propability/exercises/NB_NOT_THIS_YEARS_EXAM_PROBLEMS_exopg22.1.pdf",
-    "pictures/Pasted image 20240106193723.png",
-    "Excalidraw/residual.excalidraw.md",
-    "algorithms_propability/Exam/Mads.md",
-    "Untitled 3.md",
-    "pictures/Pasted image 20240103190806.png",
-    "pictures/Pasted image 20240103154502.png",
-    "pictures/Pasted image 20240103153754.png",
-    "algorithms_propability/Exam/tmp",
-    "pictures/Pasted image 20231230144806.png",
-    "pictures/Pasted image 20231230142426.png",
-    "pictures/Pasted image 20231230135327.png",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/slides.pdf",
     "Untitled.canvas"
   ]
 }

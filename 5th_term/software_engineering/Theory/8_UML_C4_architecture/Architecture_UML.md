@@ -67,7 +67,7 @@ Good software design has **high cohesion** and **low coupling**.
 **see slides**
 - expose specification
 	- not implementation
-- private, final
+	- private
 # Layered architecture approach
 **slides**
 - reduce complexity
