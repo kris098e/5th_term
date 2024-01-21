@@ -4,57 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "44208d979e8535f5",
+        "id": "4b20dc07081f4834",
         "type": "tabs",
         "children": [
           {
-            "id": "c4be645d823738b1",
+            "id": "b2f41bb9f4b0e734",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
+                "file": "formal_languages_data_processing/exam/Lex/tutorial.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8237aab6f80f4583",
+            "id": "be27884c1b5f0840",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "software_engineering/Theory/12_UX/UI_UX.md",
+                "file": "formal_languages_data_processing/3_compilers/7.code_generation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c943110f40a2d1c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "software_engineering/Exam/9.Organizational_Design,_Ethics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "829e4a5de1992f40",
+            "id": "2f8e7fd83bd85351",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf"
+                "file": "formal_languages_data_processing/attachments/slides-code-generation.pdf"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -128,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf",
+                "file": "formal_languages_data_processing/exam/Lex/tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf",
+                "file": "formal_languages_data_processing/exam/Lex/tutorial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf"
+                "file": "formal_languages_data_processing/exam/Lex/tutorial.md"
               }
             }
           },
@@ -204,53 +191,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "829e4a5de1992f40",
+  "active": "b2f41bb9f4b0e734",
   "lastOpenFiles": [
-    "software_engineering/Theory/9_Design_patterns/Lecture 9_ Design Patterns 2.pdf",
-    "software_engineering/Theory/8_UML_C4_architecture/slides 1.pdf",
+    "pictures/Pasted image 20240121102035.png",
+    "pictures/Pasted image 20240121102008.png",
+    "pictures/Pasted image 20240121102000.png",
+    "pictures/Pasted image 20240121101948.png",
+    "formal_languages_data_processing/3_compilers/example_lex/lex-tutorial/README.md",
+    "formal_languages_data_processing/exam/Lex/tutorial.md",
+    "formal_languages_data_processing/exam/Lex",
+    "formal_languages_data_processing/exam/a.out",
+    "formal_languages_data_processing/exam/lex.yy.c",
+    "formal_languages_data_processing/exam/exl.l",
+    "formal_languages_data_processing/exercises/SCIL_walkthrough/walkthrough.md",
+    "formal_languages_data_processing/2_CLI_data_formats.md",
+    "formal_languages_data_processing/3_compilers/7.code_generation.md",
+    "formal_languages_data_processing/attachments/slides-code-generation.pdf",
+    "formal_languages_data_processing/exam/Look at again.md",
+    "formal_languages_data_processing/exam/exam notes.md",
+    "Exam.md",
+    "Untitled 4.md",
+    "formal_languages_data_processing/exam/jflap/JFLAP7.1.jar",
+    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer.html",
+    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer_files/viz.js",
+    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer_files/noam.js",
+    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer_files/main.496cbf87.chunk.css",
+    "formal_languages_data_processing/exam/jflap/JFLAP_files/wc-03.gif",
+    "formal_languages_data_processing/exam/jflap/JFLAP_files/somerights20.png",
+    "formal_languages_data_processing/exam/jflap/JFLAP_files/silverball.gif",
+    "formal_languages_data_processing/exam/jflap/JFLAP_files/nsfsm.gif",
+    "formal_languages_data_processing/exam/jflap/JFLAP_files/needsPremier.gif",
+    "formal_languages_data_processing/exam/jflap/JFLAP_files/jflapLogo2.jpg",
+    "formal_languages_data_processing/exam/JFLAP_files/wc-03.gif",
+    "formal_languages_data_processing/1_finite_automata.md",
+    "formal_languages_data_processing/0_Introduction.md",
+    "formal_languages_data_processing/exercises/1.CLI tools seaching.md",
+    "formal_languages_data_processing/exercises/0.DFA and NFA.md",
+    "Excalidraw/formelle_sprog/1-19b.excalidraw.md",
+    "1_finite_automata.md|Prove-we-can-make-a-regular-expression-from-a-DFA.md",
+    "1_finite_automota.md",
+    "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md",
+    "Excalidraw/formelle_sprog/IntersectionDFA.excalidraw.md",
+    "Presentation tips.md",
     "software_engineering/Theory/8_UML_C4_architecture/c4.md",
-    "software_engineering/Theory/7_Documentation_and_APIs/slides.pdf",
     "software_engineering/Theory/6_product_and_other_things/0.Estimations.md",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/lecture_5.pdf",
     "software_engineering/Theory/5_Product_Backlog_and_Project/1.user-stories.md",
     "software_engineering/Theory/5_Product_Backlog_and_Project/0.use-cases.md",
     "software_engineering/Theory/7_Documentation_and_APIs/Universal_robots.md",
     "software_engineering/Theory/7_Documentation_and_APIs/UML.md",
-    "software_engineering/Theory/7_Documentation_and_APIs/REST_and_documentation.md",
-    "software_engineering/Theory/6_product_and_other_things/talk_from_product_manager_at_lego.md",
-    "software_engineering/Exam/00.noter til fremlæggelse.md",
-    "software_engineering/Exam/9.Organizational_Design,_Ethics.md",
-    "software_engineering/Exam/0.Kig_pa.md",
-    "software_engineering/Exam/8.Software_Testing.md",
-    "software_engineering/Exam/7.Design_Patterns.md",
-    "software_engineering/Exam/6.Software_Architecture.md",
-    "software_engineering/Exam/5.Complexity_Models_in_Process_Design.md",
-    "software_engineering/Exam/4.Users,_Requirements,_and_Backlog_Items.md",
-    "software_engineering/Exam/3.Scrum.md",
-    "software_engineering/Exam/2.Agile.md",
-    "software_engineering/Exam/1.Plan_Oriented_Methods.md",
-    "software_engineering/Theory/12_UX/UI_UX.md",
-    "software_engineering/Theory/8_UML_C4_architecture/SOLID.md",
-    "software_engineering/Theory/8_UML_C4_architecture/Architecture_UML.md",
-    "software_engineering/Theory/8_UML_C4_architecture/0.recap.md",
-    "software_engineering/Theory/9_Design_patterns/gang_of_four.md",
-    "software_engineering/Theory/9_Design_patterns/Complexity_CRAP_coderod.md",
-    "Excalidraw/vindue.png",
-    "pictures/Pasted Image 20240117204009_876.png",
-    "formal_languages_data_processing/4_data_cleaning_web_scraping/datacleaning_webscraping.pdf",
-    "formal_languages_data_processing/scil_v_1.2.3/documentation.pdf",
-    "software_engineering/Theory/4_stakeholders/Lecture 4_ Users and Requirements 2.pdf",
-    "software_engineering/Theory/3 Scrum/scrum.pdf",
-    "pictures/Pasted image 20240112120258.png",
-    "pictures/Pasted image 20240112113644.png",
-    "software_engineering/Theory/2 Agile, cynefin, planning spectrum,/Lecture 2_ Agile.pdf",
-    "software_engineering/Theory/1_Planning_models/slides.pdf",
-    "pictures/Pasted image 20240112100443.png",
-    "pictures/Pasted image 20240112100257.png",
-    "pictures/Pasted image 20240112094908.png",
-    "pictures/Pasted image 20240108120426.png",
-    "pictures/Pasted image 20240107172036.png",
-    "pictures/Pasted image 20240107164313.png",
     "Untitled.canvas"
   ]
 }

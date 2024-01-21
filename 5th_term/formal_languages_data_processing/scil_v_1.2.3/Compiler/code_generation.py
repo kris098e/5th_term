@@ -82,7 +82,7 @@ class Arg:
 class Ins:
     """Representation of an instruction with an opcode, a number of
        arguments, and an optional comment.
-    """
+    """ 
     def __init__(self, *args, c=""):
         self.opcode = args[0]
         self.args = args[1:]

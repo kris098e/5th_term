@@ -106,7 +106,6 @@ in the arithmetic
 
 Proof **1.54** via structural proof
 
-
 Proof this is a regular language (ab ∪ a)∗
 ![[Pasted image 20230911131357.png]]
 
