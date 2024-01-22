@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/exam/exam notes.md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "a76c20fa1bbb566d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-01-22 12.35.14.excalidraw.md"
               }
             }
           },
@@ -37,19 +47,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+                "file": "formal_languages_data_processing/exam/exam notes.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "802dfcbc0723b367",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/attachments/Appel-3-8.excalidraw.md"
               }
             }
           },
@@ -90,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+                "file": "formal_languages_data_processing/exam/exam notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+                "file": "formal_languages_data_processing/exam/exam notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md"
+                "file": "formal_languages_data_processing/exam/exam notes.md"
               }
             }
           },
@@ -242,23 +242,28 @@
   },
   "active": "300a9abb3938a3dc",
   "lastOpenFiles": [
-    "formal_languages_data_processing/exercises/3.compilers/attachments/Appel-3-8.excalidraw.md",
     "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+    "formal_languages_data_processing/exercises/3.compilers/attachments/Appel-3-8.excalidraw.md",
+    "formal_languages_data_processing/exam/Look at again.md",
+    "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
+    "formal_languages_data_processing/exercises/3.compilers/1.Context-free_grammars.md",
+    "formal_languages_data_processing/exercises/3.compilers/3..md",
+    "formal_languages_data_processing/3_compilers/4.2_Using_parser_generators.md",
     "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
+    "formal_languages_data_processing/exam/exam notes.md",
+    "pictures/Pasted image 20240122123541.png",
+    "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
+    "Excalidraw/Drawing 2024-01-22 12.35.14.excalidraw.md",
+    "pictures/Pasted Image 20240122123530_032.png",
+    "pictures/Pasted image 20240122123301.png",
+    "pictures/Pasted image 20240122123233.png",
     "pictures/Pasted image 20240122103900.png",
     "pictures/Pasted image 20240122103659.png",
-    "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
-    "formal_languages_data_processing/3_compilers/4.2_Using_parser_generators.md",
     "formal_languages_data_processing/3_compilers/4.2.0_example_use.md",
     "Untitled.md",
     "books/formal_languages_data_processing/Modern-Compiler-Implementation-in-C.pdf",
-    "formal_languages_data_processing/exercises/3.compilers/3..md",
-    "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
-    "formal_languages_data_processing/exam/Look at again.md",
-    "formal_languages_data_processing/exam/exam notes.md",
     "pictures/Pasted image 20240122070238.png",
     "formal_languages_data_processing/3_compilers/3.Context free languages.md",
-    "formal_languages_data_processing/exercises/3.compilers/1.Context-free_grammars.md",
     "formal_languages_data_processing/exercises/3.compilers/4..md",
     "formal_languages_data_processing/exercises/3.compilers/Nice bison example.md",
     "formal_languages_data_processing/3_compilers/1.Parsing.md",
@@ -279,15 +284,9 @@
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-sticky-regex/node_modules/@babel/core/README.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-spread/node_modules/@babel/core/README.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-shorthand-properties/node_modules/@babel/core/README.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-reserved-words/node_modules/@babel/core/README.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-regenerator/node_modules/@babel/core/README.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/stream-http/test/server/static/browserify.png",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@jest/core/build/assets/jest_logo.png",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_world.png",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_word.png",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_zip.png",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_wrench.png",
     "Untitled.canvas"
   ]
 }

@@ -275,3 +275,19 @@ we add the rule to the number for the rule in the table
 
 
 ## Bottom up parsers
+### Important
+- if we `left-factor` the chances of clashes are a lot less when using other than LR parsers. **hvad fuck er left-factoring?**
+	- That is, LR-parsers can easily handle left-recursion.
+- The only difference from `LR(0)` and `SLR(1)` is that in the parsing table, when we reduce, we only put the `reduce` action in the columns of the terminals which are in the follow of the left hand side.
+### LR(0)
+The only difference from `LR(0)` and `SLR(1)` is that in the parsing table, when we reduce, we only put the `reduce` action in the columns of the terminals which are in the follow of the left hand side. 
+**When doing the table for LR(0)** we put the reduce action under every single terminal for row corresponding to the state $I_{x}$.
+This will of course lead to more clashes whether to `shift or reduce` or some other combination.
+![[Pasted image 20240122123301.png]]
+#### Table
+![[Pasted image 20240122123541.png]]
+### SLR(1)
+The only difference from `LR(0)` and `SLR(1)` is that in the parsing table, when we reduce, we only put the `reduce` action in the columns of the terminals which are in the follow of the left hand side.
+#### Table
+![[Pasted image 20240122123233.png]]
+Hvad fuck er left factoring
