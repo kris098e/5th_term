@@ -23,13 +23,12 @@ reserved = {
     'then': 'THEN',
     'else': 'ELSE',
     'while': 'WHILE',
+    'as_long_as': 'AS_LONG_AS',
     'do': 'DO',
     'function': 'FUNCTION',
     'return': 'RETURN',
     'var': 'VAR',
-    'print': 'PRINT',
-    'repeat': 'REPEAT',
-    'until': 'UNTIL',
+    'print': 'PRINT'
 }
 
 
@@ -84,7 +83,7 @@ def t_INT(t):
 
 
 # Ignored characters
-t_ignore = " \t\r|"  # \r included for the sake of windows users
+t_ignore = " \t\r"  # \r included for the sake of windows users
 
 
 def t_newline(t):
@@ -194,13 +193,13 @@ def p_statement(t):
                  | statement_assignment
                  | statement_ifthenelse
                  | statement_while
-                 | statement_repeat_until
+                 | statement_as_long_as
                  | statement_compound'''
     t[0] = t[1]
 
-def p_statement_repeat_until(t):
-    'statement_repeat_until : REPEAT statement_list UNTIL expression SEMICOL'
-    t[0] = AST.statement_repeat_until(t[4], t[2], t.lexer.lineno)
+def p_statement_as_long_as(t):
+    'statement_as_long_as : AS_LONG_AS expression DO statement'
+    t[0] = AST.statement_while(t[2], t[4], t.lexer.lineno)
 
 def p_statement_return(t):
     'statement_return : RETURN expression SEMICOL'
@@ -220,6 +219,7 @@ def p_statement_assignment(t):
 def p_statement_ifthenelse(t):
     'statement_ifthenelse : IF expression THEN statement ELSE statement'
     t[0] = AST.statement_ifthenelse(t[2], t[4], t[6], t.lexer.lineno)
+
 
 def p_statement_while(t):
     'statement_while :  WHILE expression DO statement'

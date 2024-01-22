@@ -4,44 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "4b20dc07081f4834",
+        "id": "81eb64c706276abe",
         "type": "tabs",
         "children": [
           {
-            "id": "b2f41bb9f4b0e734",
+            "id": "6b4bb5a3c4cb98dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/exam/Lex/tutorial.md",
+                "file": "formal_languages_data_processing/exam/exam notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "be27884c1b5f0840",
+            "id": "d264d29e6117d54b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/3_compilers/7.code_generation.md",
+                "file": "formal_languages_data_processing/exam/Look at again.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2f8e7fd83bd85351",
+            "id": "300a9abb3938a3dc",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "formal_languages_data_processing/attachments/slides-code-generation.pdf"
+                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e4f958b8920637f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "08e170557f9ea388",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -115,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "formal_languages_data_processing/exam/Lex/tutorial.md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "formal_languages_data_processing/exam/Lex/tutorial.md",
+                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "formal_languages_data_processing/exam/Lex/tutorial.md"
+                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md"
               }
             }
           },
@@ -191,54 +218,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b2f41bb9f4b0e734",
+  "active": "300a9abb3938a3dc",
   "lastOpenFiles": [
-    "pictures/Pasted image 20240121102035.png",
-    "pictures/Pasted image 20240121102008.png",
-    "pictures/Pasted image 20240121102000.png",
-    "pictures/Pasted image 20240121101948.png",
-    "formal_languages_data_processing/3_compilers/example_lex/lex-tutorial/README.md",
-    "formal_languages_data_processing/exam/Lex/tutorial.md",
-    "formal_languages_data_processing/exam/Lex",
-    "formal_languages_data_processing/exam/a.out",
-    "formal_languages_data_processing/exam/lex.yy.c",
-    "formal_languages_data_processing/exam/exl.l",
-    "formal_languages_data_processing/exercises/SCIL_walkthrough/walkthrough.md",
-    "formal_languages_data_processing/2_CLI_data_formats.md",
-    "formal_languages_data_processing/3_compilers/7.code_generation.md",
-    "formal_languages_data_processing/attachments/slides-code-generation.pdf",
+    "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
+    "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+    "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
+    "formal_languages_data_processing/3_compilers/4.2_Using_parser_generators.md",
+    "formal_languages_data_processing/3_compilers/4.2.0_example_use.md",
+    "Untitled.md",
+    "books/formal_languages_data_processing/Modern-Compiler-Implementation-in-C.pdf",
+    "formal_languages_data_processing/exercises/3.compilers/3..md",
+    "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
     "formal_languages_data_processing/exam/Look at again.md",
     "formal_languages_data_processing/exam/exam notes.md",
-    "Exam.md",
-    "Untitled 4.md",
-    "formal_languages_data_processing/exam/jflap/JFLAP7.1.jar",
-    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer.html",
-    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer_files/viz.js",
-    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer_files/noam.js",
-    "formal_languages_data_processing/exam/dfa_minimize/DFA Minimizer_files/main.496cbf87.chunk.css",
-    "formal_languages_data_processing/exam/jflap/JFLAP_files/wc-03.gif",
-    "formal_languages_data_processing/exam/jflap/JFLAP_files/somerights20.png",
-    "formal_languages_data_processing/exam/jflap/JFLAP_files/silverball.gif",
-    "formal_languages_data_processing/exam/jflap/JFLAP_files/nsfsm.gif",
-    "formal_languages_data_processing/exam/jflap/JFLAP_files/needsPremier.gif",
-    "formal_languages_data_processing/exam/jflap/JFLAP_files/jflapLogo2.jpg",
-    "formal_languages_data_processing/exam/JFLAP_files/wc-03.gif",
-    "formal_languages_data_processing/1_finite_automata.md",
-    "formal_languages_data_processing/0_Introduction.md",
-    "formal_languages_data_processing/exercises/1.CLI tools seaching.md",
-    "formal_languages_data_processing/exercises/0.DFA and NFA.md",
-    "Excalidraw/formelle_sprog/1-19b.excalidraw.md",
-    "1_finite_automata.md|Prove-we-can-make-a-regular-expression-from-a-DFA.md",
-    "1_finite_automota.md",
-    "Excalidraw/formelle_sprog/1or2Bs.excalidraw.md",
-    "Excalidraw/formelle_sprog/IntersectionDFA.excalidraw.md",
-    "Presentation tips.md",
-    "software_engineering/Theory/8_UML_C4_architecture/c4.md",
-    "software_engineering/Theory/6_product_and_other_things/0.Estimations.md",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/1.user-stories.md",
-    "software_engineering/Theory/5_Product_Backlog_and_Project/0.use-cases.md",
-    "software_engineering/Theory/7_Documentation_and_APIs/Universal_robots.md",
-    "software_engineering/Theory/7_Documentation_and_APIs/UML.md",
+    "pictures/Pasted image 20240122070238.png",
+    "formal_languages_data_processing/3_compilers/3.Context free languages.md",
+    "formal_languages_data_processing/exercises/3.compilers/1.Context-free_grammars.md",
+    "formal_languages_data_processing/exercises/3.compilers/4..md",
+    "formal_languages_data_processing/exercises/3.compilers/Nice bison example.md",
+    "formal_languages_data_processing/3_compilers/1.Parsing.md",
+    "formal_languages_data_processing/exercises/3.compilers/0.Exercises.md",
+    "formal_languages_data_processing/3_compilers/0.introduction_scanner.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/transformation/file/merge-map.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/transformation/file/generate.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/transformation/file/file.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/parser/util/missing-plugin-helper.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/config/validation/removed.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/config/validation/plugins.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/config/validation/options.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/config/validation/option-assertions.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/lib/config/helpers/environment.js",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-unicode-regex/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-typeof-symbol/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-template-literals/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-sticky-regex/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-spread/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-shorthand-properties/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-reserved-words/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-regenerator/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-react-jsx-development/node_modules/@babel/core/README.md",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/stream-http/test/server/static/browserify.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@jest/core/build/assets/jest_logo.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_world.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_word.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_zip.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_wrench.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_world.png",
+    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_word.png",
     "Untitled.canvas"
   ]
 }

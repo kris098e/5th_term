@@ -248,3 +248,30 @@ paste -d ’ ’ myfile1 myfile2
 ### SED you didnt remember them all
 [[05.pdf#page=13]]
 ### AWK (dont bother)
+
+# Parsing
+## Top down parsers 101
+![[Pasted image 20231005145633.png]]
+![[Appel-3-5.excalidraw]]
+- `nullable:` can derive the empty string from the rule.
+- `FIRST:` here we still look at the left hand side, and see which terminals we can end with
+- `FOLLOW:` here we look at the non-terminal (fx find `S` on the right-hand side, and follow this) on the `! right-hand side !` and see which terminals we can get
+	- Look at the example below. Since `S` is nullable we have the following
+		- For `X` we see that `S` is nullable, meaning we can have the entire right hand side and reduce when just having `X`, therefore we can also `FOLLOW(S)`, and ofc right after `X` we can find `S`, so we have to add the `FIRST(S)`.
+			- The same thing happens for `E`. Since when we have gotten `E` on `rule 5`, then we can reduce on the rule. Therefore we can take the `FOLLOW(X)` for `E`.
+			- do note that in `FOLLOW(S)` we do not add `FOLLOW(X)` when looking at `rule 5` since `E` is not nullable. If it were, we could add `FOLLOW(X)` to `FOLLOW(S)`.
+		- for `B` we see that `S` is nullable, meaning we can also go onto `E` and take the `first(E)`. We can of course also get the `first(S)`, as these are the terminals we can get from `S`.
+![[Pasted image 20231010085848.png]]
+For each of the rule, perform the rule above
+we add the rule to the number for the rule in the table
+**Explanation of the above-constructed table**
+> For each of the rules we have, we perform what is stated in the picture
+> > This means we for each of the nonterminals X, enter in the row for the non-terminal X, the number of the rule for each of the terminals that is in the FIRST(X).
+> > For the follow-part, we find the rule/production that makes this non-terminal nullable. We enter the number for this rule in the row corresponding to the non-terminal, for each of the columns/terminals where the terminal is in the follow of this non-terminal.
+> 
+> What these entries essentially mean is with this nonterminal, we can get to the terminal with the following rules
+> > With the FIRST(X) we get how we immediately can get it with the left-hand side
+> > With the FOLLOW(X) we get how we can get it during a production of some other nonterminal
+
+
+## Bottom up parsers

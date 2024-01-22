@@ -26,9 +26,9 @@ Rule 20    statement -> statement_print
 Rule 21    statement -> statement_assignment
 Rule 22    statement -> statement_ifthenelse
 Rule 23    statement -> statement_while
-Rule 24    statement -> statement_repeat_until
+Rule 24    statement -> statement_as_long_as
 Rule 25    statement -> statement_compound
-Rule 26    statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL
+Rule 26    statement_as_long_as -> AS_LONG_AS expression DO statement
 Rule 27    statement_return -> RETURN expression SEMICOL
 Rule 28    statement_print -> PRINT expression SEMICOL
 Rule 29    statement_assignment -> IDENT ASSIGN expression SEMICOL
@@ -64,9 +64,10 @@ Rule 57    expression_list -> expression COMMA expression_list
 Terminals, with rules where they appear
 
 ASSIGN               : 29
+AS_LONG_AS           : 26
 COMMA                : 9 18 57
 DIVIDE               : 46
-DO                   : 31
+DO                   : 26 31
 ELSE                 : 30
 EQ                   : 47
 FUNCTION             : 14
@@ -84,13 +85,11 @@ NEQ                  : 48
 PLUS                 : 43
 PRINT                : 28
 RCURL                : 14 32
-REPEAT               : 26
 RETURN               : 27
 RPAREN               : 14 42 53
-SEMICOL              : 26 27 28 29
+SEMICOL              : 27 28 29
 THEN                 : 30
 TIMES                : 45
-UNTIL                : 26
 VAR                  : 6 7
 WHILE                : 31
 error                : 
@@ -114,13 +113,13 @@ optional_parameter_list : 14
 optional_variables_declaration_list : 3
 parameter_list       : 16 18
 program              : 0
-statement            : 30 30 31 33 34
+statement            : 26 30 30 31 33 34
+statement_as_long_as : 24
 statement_assignment : 21
 statement_compound   : 25
 statement_ifthenelse : 22
-statement_list       : 3 26 32 34
+statement_list       : 3 32 34
 statement_print      : 20
-statement_repeat_until : 24
 statement_return     : 19
 statement_while      : 23
 variables_declaration_list : 5 7
@@ -145,7 +144,7 @@ state 0
     IDENT           reduce using rule 2 (empty -> .)
     IF              reduce using rule 2 (empty -> .)
     WHILE           reduce using rule 2 (empty -> .)
-    REPEAT          reduce using rule 2 (empty -> .)
+    AS_LONG_AS      reduce using rule 2 (empty -> .)
     LCURL           reduce using rule 2 (empty -> .)
     VAR             shift and go to state 6
 
@@ -183,7 +182,7 @@ state 3
     IDENT           reduce using rule 2 (empty -> .)
     IF              reduce using rule 2 (empty -> .)
     WHILE           reduce using rule 2 (empty -> .)
-    REPEAT          reduce using rule 2 (empty -> .)
+    AS_LONG_AS      reduce using rule 2 (empty -> .)
     LCURL           reduce using rule 2 (empty -> .)
     FUNCTION        shift and go to state 11
 
@@ -202,7 +201,7 @@ state 4
     IDENT           reduce using rule 4 (optional_variables_declaration_list -> empty .)
     IF              reduce using rule 4 (optional_variables_declaration_list -> empty .)
     WHILE           reduce using rule 4 (optional_variables_declaration_list -> empty .)
-    REPEAT          reduce using rule 4 (optional_variables_declaration_list -> empty .)
+    AS_LONG_AS      reduce using rule 4 (optional_variables_declaration_list -> empty .)
     LCURL           reduce using rule 4 (optional_variables_declaration_list -> empty .)
 
 
@@ -216,7 +215,7 @@ state 5
     IDENT           reduce using rule 5 (optional_variables_declaration_list -> variables_declaration_list .)
     IF              reduce using rule 5 (optional_variables_declaration_list -> variables_declaration_list .)
     WHILE           reduce using rule 5 (optional_variables_declaration_list -> variables_declaration_list .)
-    REPEAT          reduce using rule 5 (optional_variables_declaration_list -> variables_declaration_list .)
+    AS_LONG_AS      reduce using rule 5 (optional_variables_declaration_list -> variables_declaration_list .)
     LCURL           reduce using rule 5 (optional_variables_declaration_list -> variables_declaration_list .)
 
 
@@ -241,14 +240,14 @@ state 7
     (21) statement -> . statement_assignment
     (22) statement -> . statement_ifthenelse
     (23) statement -> . statement_while
-    (24) statement -> . statement_repeat_until
+    (24) statement -> . statement_as_long_as
     (25) statement -> . statement_compound
     (27) statement_return -> . RETURN expression SEMICOL
     (28) statement_print -> . PRINT expression SEMICOL
     (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
     (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
     (31) statement_while -> . WHILE expression DO statement
-    (26) statement_repeat_until -> . REPEAT statement_list UNTIL expression SEMICOL
+    (26) statement_as_long_as -> . AS_LONG_AS expression DO statement
     (32) statement_compound -> . LCURL statement_list RCURL
 
     RETURN          shift and go to state 23
@@ -256,7 +255,7 @@ state 7
     IDENT           shift and go to state 25
     IF              shift and go to state 26
     WHILE           shift and go to state 27
-    REPEAT          shift and go to state 28
+    AS_LONG_AS      shift and go to state 28
     LCURL           shift and go to state 29
 
     statement_list                 shift and go to state 14
@@ -266,7 +265,7 @@ state 7
     statement_assignment           shift and go to state 18
     statement_ifthenelse           shift and go to state 19
     statement_while                shift and go to state 20
-    statement_repeat_until         shift and go to state 21
+    statement_as_long_as           shift and go to state 21
     statement_compound             shift and go to state 22
 
 state 8
@@ -278,7 +277,7 @@ state 8
     IDENT           reduce using rule 10 (optional_functions_declaration_list -> empty .)
     IF              reduce using rule 10 (optional_functions_declaration_list -> empty .)
     WHILE           reduce using rule 10 (optional_functions_declaration_list -> empty .)
-    REPEAT          reduce using rule 10 (optional_functions_declaration_list -> empty .)
+    AS_LONG_AS      reduce using rule 10 (optional_functions_declaration_list -> empty .)
     LCURL           reduce using rule 10 (optional_functions_declaration_list -> empty .)
 
 
@@ -291,7 +290,7 @@ state 9
     IDENT           reduce using rule 11 (optional_functions_declaration_list -> functions_declaration_list .)
     IF              reduce using rule 11 (optional_functions_declaration_list -> functions_declaration_list .)
     WHILE           reduce using rule 11 (optional_functions_declaration_list -> functions_declaration_list .)
-    REPEAT          reduce using rule 11 (optional_functions_declaration_list -> functions_declaration_list .)
+    AS_LONG_AS      reduce using rule 11 (optional_functions_declaration_list -> functions_declaration_list .)
     LCURL           reduce using rule 11 (optional_functions_declaration_list -> functions_declaration_list .)
 
 
@@ -308,7 +307,7 @@ state 10
     IDENT           reduce using rule 12 (functions_declaration_list -> function .)
     IF              reduce using rule 12 (functions_declaration_list -> function .)
     WHILE           reduce using rule 12 (functions_declaration_list -> function .)
-    REPEAT          reduce using rule 12 (functions_declaration_list -> function .)
+    AS_LONG_AS      reduce using rule 12 (functions_declaration_list -> function .)
     LCURL           reduce using rule 12 (functions_declaration_list -> function .)
     FUNCTION        shift and go to state 11
 
@@ -335,7 +334,7 @@ state 12
     IDENT           reduce using rule 6 (variables_declaration_list -> VAR variables_list .)
     IF              reduce using rule 6 (variables_declaration_list -> VAR variables_list .)
     WHILE           reduce using rule 6 (variables_declaration_list -> VAR variables_list .)
-    REPEAT          reduce using rule 6 (variables_declaration_list -> VAR variables_list .)
+    AS_LONG_AS      reduce using rule 6 (variables_declaration_list -> VAR variables_list .)
     LCURL           reduce using rule 6 (variables_declaration_list -> VAR variables_list .)
     VAR             shift and go to state 6
 
@@ -353,7 +352,7 @@ state 13
     IDENT           reduce using rule 8 (variables_list -> IDENT .)
     IF              reduce using rule 8 (variables_list -> IDENT .)
     WHILE           reduce using rule 8 (variables_list -> IDENT .)
-    REPEAT          reduce using rule 8 (variables_list -> IDENT .)
+    AS_LONG_AS      reduce using rule 8 (variables_list -> IDENT .)
     LCURL           reduce using rule 8 (variables_list -> IDENT .)
     COMMA           shift and go to state 33
 
@@ -377,25 +376,24 @@ state 15
     (21) statement -> . statement_assignment
     (22) statement -> . statement_ifthenelse
     (23) statement -> . statement_while
-    (24) statement -> . statement_repeat_until
+    (24) statement -> . statement_as_long_as
     (25) statement -> . statement_compound
     (27) statement_return -> . RETURN expression SEMICOL
     (28) statement_print -> . PRINT expression SEMICOL
     (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
     (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
     (31) statement_while -> . WHILE expression DO statement
-    (26) statement_repeat_until -> . REPEAT statement_list UNTIL expression SEMICOL
+    (26) statement_as_long_as -> . AS_LONG_AS expression DO statement
     (32) statement_compound -> . LCURL statement_list RCURL
 
     $end            reduce using rule 33 (statement_list -> statement .)
     RCURL           reduce using rule 33 (statement_list -> statement .)
-    UNTIL           reduce using rule 33 (statement_list -> statement .)
     RETURN          shift and go to state 23
     PRINT           shift and go to state 24
     IDENT           shift and go to state 25
     IF              shift and go to state 26
     WHILE           shift and go to state 27
-    REPEAT          shift and go to state 28
+    AS_LONG_AS      shift and go to state 28
     LCURL           shift and go to state 29
 
     statement                      shift and go to state 15
@@ -405,7 +403,7 @@ state 15
     statement_assignment           shift and go to state 18
     statement_ifthenelse           shift and go to state 19
     statement_while                shift and go to state 20
-    statement_repeat_until         shift and go to state 21
+    statement_as_long_as           shift and go to state 21
     statement_compound             shift and go to state 22
 
 state 16
@@ -417,11 +415,10 @@ state 16
     IDENT           reduce using rule 19 (statement -> statement_return .)
     IF              reduce using rule 19 (statement -> statement_return .)
     WHILE           reduce using rule 19 (statement -> statement_return .)
-    REPEAT          reduce using rule 19 (statement -> statement_return .)
+    AS_LONG_AS      reduce using rule 19 (statement -> statement_return .)
     LCURL           reduce using rule 19 (statement -> statement_return .)
     $end            reduce using rule 19 (statement -> statement_return .)
     RCURL           reduce using rule 19 (statement -> statement_return .)
-    UNTIL           reduce using rule 19 (statement -> statement_return .)
     ELSE            reduce using rule 19 (statement -> statement_return .)
 
 
@@ -434,11 +431,10 @@ state 17
     IDENT           reduce using rule 20 (statement -> statement_print .)
     IF              reduce using rule 20 (statement -> statement_print .)
     WHILE           reduce using rule 20 (statement -> statement_print .)
-    REPEAT          reduce using rule 20 (statement -> statement_print .)
+    AS_LONG_AS      reduce using rule 20 (statement -> statement_print .)
     LCURL           reduce using rule 20 (statement -> statement_print .)
     $end            reduce using rule 20 (statement -> statement_print .)
     RCURL           reduce using rule 20 (statement -> statement_print .)
-    UNTIL           reduce using rule 20 (statement -> statement_print .)
     ELSE            reduce using rule 20 (statement -> statement_print .)
 
 
@@ -451,11 +447,10 @@ state 18
     IDENT           reduce using rule 21 (statement -> statement_assignment .)
     IF              reduce using rule 21 (statement -> statement_assignment .)
     WHILE           reduce using rule 21 (statement -> statement_assignment .)
-    REPEAT          reduce using rule 21 (statement -> statement_assignment .)
+    AS_LONG_AS      reduce using rule 21 (statement -> statement_assignment .)
     LCURL           reduce using rule 21 (statement -> statement_assignment .)
     $end            reduce using rule 21 (statement -> statement_assignment .)
     RCURL           reduce using rule 21 (statement -> statement_assignment .)
-    UNTIL           reduce using rule 21 (statement -> statement_assignment .)
     ELSE            reduce using rule 21 (statement -> statement_assignment .)
 
 
@@ -468,11 +463,10 @@ state 19
     IDENT           reduce using rule 22 (statement -> statement_ifthenelse .)
     IF              reduce using rule 22 (statement -> statement_ifthenelse .)
     WHILE           reduce using rule 22 (statement -> statement_ifthenelse .)
-    REPEAT          reduce using rule 22 (statement -> statement_ifthenelse .)
+    AS_LONG_AS      reduce using rule 22 (statement -> statement_ifthenelse .)
     LCURL           reduce using rule 22 (statement -> statement_ifthenelse .)
     $end            reduce using rule 22 (statement -> statement_ifthenelse .)
     RCURL           reduce using rule 22 (statement -> statement_ifthenelse .)
-    UNTIL           reduce using rule 22 (statement -> statement_ifthenelse .)
     ELSE            reduce using rule 22 (statement -> statement_ifthenelse .)
 
 
@@ -485,29 +479,27 @@ state 20
     IDENT           reduce using rule 23 (statement -> statement_while .)
     IF              reduce using rule 23 (statement -> statement_while .)
     WHILE           reduce using rule 23 (statement -> statement_while .)
-    REPEAT          reduce using rule 23 (statement -> statement_while .)
+    AS_LONG_AS      reduce using rule 23 (statement -> statement_while .)
     LCURL           reduce using rule 23 (statement -> statement_while .)
     $end            reduce using rule 23 (statement -> statement_while .)
     RCURL           reduce using rule 23 (statement -> statement_while .)
-    UNTIL           reduce using rule 23 (statement -> statement_while .)
     ELSE            reduce using rule 23 (statement -> statement_while .)
 
 
 state 21
 
-    (24) statement -> statement_repeat_until .
+    (24) statement -> statement_as_long_as .
 
-    RETURN          reduce using rule 24 (statement -> statement_repeat_until .)
-    PRINT           reduce using rule 24 (statement -> statement_repeat_until .)
-    IDENT           reduce using rule 24 (statement -> statement_repeat_until .)
-    IF              reduce using rule 24 (statement -> statement_repeat_until .)
-    WHILE           reduce using rule 24 (statement -> statement_repeat_until .)
-    REPEAT          reduce using rule 24 (statement -> statement_repeat_until .)
-    LCURL           reduce using rule 24 (statement -> statement_repeat_until .)
-    $end            reduce using rule 24 (statement -> statement_repeat_until .)
-    RCURL           reduce using rule 24 (statement -> statement_repeat_until .)
-    UNTIL           reduce using rule 24 (statement -> statement_repeat_until .)
-    ELSE            reduce using rule 24 (statement -> statement_repeat_until .)
+    RETURN          reduce using rule 24 (statement -> statement_as_long_as .)
+    PRINT           reduce using rule 24 (statement -> statement_as_long_as .)
+    IDENT           reduce using rule 24 (statement -> statement_as_long_as .)
+    IF              reduce using rule 24 (statement -> statement_as_long_as .)
+    WHILE           reduce using rule 24 (statement -> statement_as_long_as .)
+    AS_LONG_AS      reduce using rule 24 (statement -> statement_as_long_as .)
+    LCURL           reduce using rule 24 (statement -> statement_as_long_as .)
+    $end            reduce using rule 24 (statement -> statement_as_long_as .)
+    RCURL           reduce using rule 24 (statement -> statement_as_long_as .)
+    ELSE            reduce using rule 24 (statement -> statement_as_long_as .)
 
 
 state 22
@@ -519,11 +511,10 @@ state 22
     IDENT           reduce using rule 25 (statement -> statement_compound .)
     IF              reduce using rule 25 (statement -> statement_compound .)
     WHILE           reduce using rule 25 (statement -> statement_compound .)
-    REPEAT          reduce using rule 25 (statement -> statement_compound .)
+    AS_LONG_AS      reduce using rule 25 (statement -> statement_compound .)
     LCURL           reduce using rule 25 (statement -> statement_compound .)
     $end            reduce using rule 25 (statement -> statement_compound .)
     RCURL           reduce using rule 25 (statement -> statement_compound .)
-    UNTIL           reduce using rule 25 (statement -> statement_compound .)
     ELSE            reduce using rule 25 (statement -> statement_compound .)
 
 
@@ -672,41 +663,37 @@ state 27
 
 state 28
 
-    (26) statement_repeat_until -> REPEAT . statement_list UNTIL expression SEMICOL
-    (33) statement_list -> . statement
-    (34) statement_list -> . statement statement_list
-    (19) statement -> . statement_return
-    (20) statement -> . statement_print
-    (21) statement -> . statement_assignment
-    (22) statement -> . statement_ifthenelse
-    (23) statement -> . statement_while
-    (24) statement -> . statement_repeat_until
-    (25) statement -> . statement_compound
-    (27) statement_return -> . RETURN expression SEMICOL
-    (28) statement_print -> . PRINT expression SEMICOL
-    (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
-    (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
-    (31) statement_while -> . WHILE expression DO statement
-    (26) statement_repeat_until -> . REPEAT statement_list UNTIL expression SEMICOL
-    (32) statement_compound -> . LCURL statement_list RCURL
+    (26) statement_as_long_as -> AS_LONG_AS . expression DO statement
+    (35) expression -> . expression_integer
+    (36) expression -> . expression_identifier
+    (37) expression -> . expression_call
+    (38) expression -> . expression_binop
+    (39) expression -> . expression_group
+    (40) expression_integer -> . INT
+    (41) expression_identifier -> . IDENT
+    (42) expression_call -> . IDENT LPAREN optional_expression_list RPAREN
+    (43) expression_binop -> . expression PLUS expression
+    (44) expression_binop -> . expression MINUS expression
+    (45) expression_binop -> . expression TIMES expression
+    (46) expression_binop -> . expression DIVIDE expression
+    (47) expression_binop -> . expression EQ expression
+    (48) expression_binop -> . expression NEQ expression
+    (49) expression_binop -> . expression LT expression
+    (50) expression_binop -> . expression GT expression
+    (51) expression_binop -> . expression LTE expression
+    (52) expression_binop -> . expression GTE expression
+    (53) expression_group -> . LPAREN expression RPAREN
 
-    RETURN          shift and go to state 23
-    PRINT           shift and go to state 24
-    IDENT           shift and go to state 25
-    IF              shift and go to state 26
-    WHILE           shift and go to state 27
-    REPEAT          shift and go to state 28
-    LCURL           shift and go to state 29
+    INT             shift and go to state 41
+    IDENT           shift and go to state 42
+    LPAREN          shift and go to state 43
 
-    statement_list                 shift and go to state 48
-    statement                      shift and go to state 15
-    statement_return               shift and go to state 16
-    statement_print                shift and go to state 17
-    statement_assignment           shift and go to state 18
-    statement_ifthenelse           shift and go to state 19
-    statement_while                shift and go to state 20
-    statement_repeat_until         shift and go to state 21
-    statement_compound             shift and go to state 22
+    expression                     shift and go to state 48
+    expression_integer             shift and go to state 36
+    expression_identifier          shift and go to state 37
+    expression_call                shift and go to state 38
+    expression_binop               shift and go to state 39
+    expression_group               shift and go to state 40
 
 state 29
 
@@ -718,14 +705,14 @@ state 29
     (21) statement -> . statement_assignment
     (22) statement -> . statement_ifthenelse
     (23) statement -> . statement_while
-    (24) statement -> . statement_repeat_until
+    (24) statement -> . statement_as_long_as
     (25) statement -> . statement_compound
     (27) statement_return -> . RETURN expression SEMICOL
     (28) statement_print -> . PRINT expression SEMICOL
     (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
     (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
     (31) statement_while -> . WHILE expression DO statement
-    (26) statement_repeat_until -> . REPEAT statement_list UNTIL expression SEMICOL
+    (26) statement_as_long_as -> . AS_LONG_AS expression DO statement
     (32) statement_compound -> . LCURL statement_list RCURL
 
     RETURN          shift and go to state 23
@@ -733,7 +720,7 @@ state 29
     IDENT           shift and go to state 25
     IF              shift and go to state 26
     WHILE           shift and go to state 27
-    REPEAT          shift and go to state 28
+    AS_LONG_AS      shift and go to state 28
     LCURL           shift and go to state 29
 
     statement_list                 shift and go to state 49
@@ -743,7 +730,7 @@ state 29
     statement_assignment           shift and go to state 18
     statement_ifthenelse           shift and go to state 19
     statement_while                shift and go to state 20
-    statement_repeat_until         shift and go to state 21
+    statement_as_long_as           shift and go to state 21
     statement_compound             shift and go to state 22
 
 state 30
@@ -755,7 +742,7 @@ state 30
     IDENT           reduce using rule 13 (functions_declaration_list -> function functions_declaration_list .)
     IF              reduce using rule 13 (functions_declaration_list -> function functions_declaration_list .)
     WHILE           reduce using rule 13 (functions_declaration_list -> function functions_declaration_list .)
-    REPEAT          reduce using rule 13 (functions_declaration_list -> function functions_declaration_list .)
+    AS_LONG_AS      reduce using rule 13 (functions_declaration_list -> function functions_declaration_list .)
     LCURL           reduce using rule 13 (functions_declaration_list -> function functions_declaration_list .)
 
 
@@ -776,7 +763,7 @@ state 32
     IDENT           reduce using rule 7 (variables_declaration_list -> VAR variables_list variables_declaration_list .)
     IF              reduce using rule 7 (variables_declaration_list -> VAR variables_list variables_declaration_list .)
     WHILE           reduce using rule 7 (variables_declaration_list -> VAR variables_list variables_declaration_list .)
-    REPEAT          reduce using rule 7 (variables_declaration_list -> VAR variables_list variables_declaration_list .)
+    AS_LONG_AS      reduce using rule 7 (variables_declaration_list -> VAR variables_list variables_declaration_list .)
     LCURL           reduce using rule 7 (variables_declaration_list -> VAR variables_list variables_declaration_list .)
 
 
@@ -796,7 +783,6 @@ state 34
 
     $end            reduce using rule 34 (statement_list -> statement statement_list .)
     RCURL           reduce using rule 34 (statement_list -> statement statement_list .)
-    UNTIL           reduce using rule 34 (statement_list -> statement statement_list .)
 
 
 state 35
@@ -1126,9 +1112,29 @@ state 47
 
 state 48
 
-    (26) statement_repeat_until -> REPEAT statement_list . UNTIL expression SEMICOL
+    (26) statement_as_long_as -> AS_LONG_AS expression . DO statement
+    (43) expression_binop -> expression . PLUS expression
+    (44) expression_binop -> expression . MINUS expression
+    (45) expression_binop -> expression . TIMES expression
+    (46) expression_binop -> expression . DIVIDE expression
+    (47) expression_binop -> expression . EQ expression
+    (48) expression_binop -> expression . NEQ expression
+    (49) expression_binop -> expression . LT expression
+    (50) expression_binop -> expression . GT expression
+    (51) expression_binop -> expression . LTE expression
+    (52) expression_binop -> expression . GTE expression
 
-    UNTIL           shift and go to state 69
+    DO              shift and go to state 69
+    PLUS            shift and go to state 53
+    MINUS           shift and go to state 54
+    TIMES           shift and go to state 55
+    DIVIDE          shift and go to state 56
+    EQ              shift and go to state 57
+    NEQ             shift and go to state 58
+    LT              shift and go to state 59
+    GT              shift and go to state 60
+    LTE             shift and go to state 61
+    GTE             shift and go to state 62
 
 
 state 49
@@ -1165,7 +1171,7 @@ state 51
     IDENT           reduce using rule 9 (variables_list -> IDENT COMMA variables_list .)
     IF              reduce using rule 9 (variables_list -> IDENT COMMA variables_list .)
     WHILE           reduce using rule 9 (variables_list -> IDENT COMMA variables_list .)
-    REPEAT          reduce using rule 9 (variables_list -> IDENT COMMA variables_list .)
+    AS_LONG_AS      reduce using rule 9 (variables_list -> IDENT COMMA variables_list .)
     LCURL           reduce using rule 9 (variables_list -> IDENT COMMA variables_list .)
 
 
@@ -1178,11 +1184,10 @@ state 52
     IDENT           reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
     IF              reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
     WHILE           reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
-    REPEAT          reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
+    AS_LONG_AS      reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
     LCURL           reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
     $end            reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
     RCURL           reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
-    UNTIL           reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
     ELSE            reduce using rule 27 (statement_return -> RETURN expression SEMICOL .)
 
 
@@ -1605,11 +1610,10 @@ state 65
     IDENT           reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
     IF              reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
     WHILE           reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
-    REPEAT          reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
+    AS_LONG_AS      reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
     LCURL           reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
     $end            reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
     RCURL           reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
-    UNTIL           reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
     ELSE            reduce using rule 28 (statement_print -> PRINT expression SEMICOL .)
 
 
@@ -1648,14 +1652,14 @@ state 67
     (21) statement -> . statement_assignment
     (22) statement -> . statement_ifthenelse
     (23) statement -> . statement_while
-    (24) statement -> . statement_repeat_until
+    (24) statement -> . statement_as_long_as
     (25) statement -> . statement_compound
     (27) statement_return -> . RETURN expression SEMICOL
     (28) statement_print -> . PRINT expression SEMICOL
     (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
     (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
     (31) statement_while -> . WHILE expression DO statement
-    (26) statement_repeat_until -> . REPEAT statement_list UNTIL expression SEMICOL
+    (26) statement_as_long_as -> . AS_LONG_AS expression DO statement
     (32) statement_compound -> . LCURL statement_list RCURL
 
     RETURN          shift and go to state 23
@@ -1663,7 +1667,7 @@ state 67
     IDENT           shift and go to state 25
     IF              shift and go to state 26
     WHILE           shift and go to state 27
-    REPEAT          shift and go to state 28
+    AS_LONG_AS      shift and go to state 28
     LCURL           shift and go to state 29
 
     statement                      shift and go to state 91
@@ -1672,7 +1676,7 @@ state 67
     statement_assignment           shift and go to state 18
     statement_ifthenelse           shift and go to state 19
     statement_while                shift and go to state 20
-    statement_repeat_until         shift and go to state 21
+    statement_as_long_as           shift and go to state 21
     statement_compound             shift and go to state 22
 
 state 68
@@ -1683,14 +1687,14 @@ state 68
     (21) statement -> . statement_assignment
     (22) statement -> . statement_ifthenelse
     (23) statement -> . statement_while
-    (24) statement -> . statement_repeat_until
+    (24) statement -> . statement_as_long_as
     (25) statement -> . statement_compound
     (27) statement_return -> . RETURN expression SEMICOL
     (28) statement_print -> . PRINT expression SEMICOL
     (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
     (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
     (31) statement_while -> . WHILE expression DO statement
-    (26) statement_repeat_until -> . REPEAT statement_list UNTIL expression SEMICOL
+    (26) statement_as_long_as -> . AS_LONG_AS expression DO statement
     (32) statement_compound -> . LCURL statement_list RCURL
 
     RETURN          shift and go to state 23
@@ -1698,7 +1702,7 @@ state 68
     IDENT           shift and go to state 25
     IF              shift and go to state 26
     WHILE           shift and go to state 27
-    REPEAT          shift and go to state 28
+    AS_LONG_AS      shift and go to state 28
     LCURL           shift and go to state 29
 
     statement                      shift and go to state 92
@@ -1707,42 +1711,43 @@ state 68
     statement_assignment           shift and go to state 18
     statement_ifthenelse           shift and go to state 19
     statement_while                shift and go to state 20
-    statement_repeat_until         shift and go to state 21
+    statement_as_long_as           shift and go to state 21
     statement_compound             shift and go to state 22
 
 state 69
 
-    (26) statement_repeat_until -> REPEAT statement_list UNTIL . expression SEMICOL
-    (35) expression -> . expression_integer
-    (36) expression -> . expression_identifier
-    (37) expression -> . expression_call
-    (38) expression -> . expression_binop
-    (39) expression -> . expression_group
-    (40) expression_integer -> . INT
-    (41) expression_identifier -> . IDENT
-    (42) expression_call -> . IDENT LPAREN optional_expression_list RPAREN
-    (43) expression_binop -> . expression PLUS expression
-    (44) expression_binop -> . expression MINUS expression
-    (45) expression_binop -> . expression TIMES expression
-    (46) expression_binop -> . expression DIVIDE expression
-    (47) expression_binop -> . expression EQ expression
-    (48) expression_binop -> . expression NEQ expression
-    (49) expression_binop -> . expression LT expression
-    (50) expression_binop -> . expression GT expression
-    (51) expression_binop -> . expression LTE expression
-    (52) expression_binop -> . expression GTE expression
-    (53) expression_group -> . LPAREN expression RPAREN
+    (26) statement_as_long_as -> AS_LONG_AS expression DO . statement
+    (19) statement -> . statement_return
+    (20) statement -> . statement_print
+    (21) statement -> . statement_assignment
+    (22) statement -> . statement_ifthenelse
+    (23) statement -> . statement_while
+    (24) statement -> . statement_as_long_as
+    (25) statement -> . statement_compound
+    (27) statement_return -> . RETURN expression SEMICOL
+    (28) statement_print -> . PRINT expression SEMICOL
+    (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
+    (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
+    (31) statement_while -> . WHILE expression DO statement
+    (26) statement_as_long_as -> . AS_LONG_AS expression DO statement
+    (32) statement_compound -> . LCURL statement_list RCURL
 
-    INT             shift and go to state 41
-    IDENT           shift and go to state 42
-    LPAREN          shift and go to state 43
+    RETURN          shift and go to state 23
+    PRINT           shift and go to state 24
+    IDENT           shift and go to state 25
+    IF              shift and go to state 26
+    WHILE           shift and go to state 27
+    AS_LONG_AS      shift and go to state 28
+    LCURL           shift and go to state 29
 
-    expression                     shift and go to state 93
-    expression_integer             shift and go to state 36
-    expression_identifier          shift and go to state 37
-    expression_call                shift and go to state 38
-    expression_binop               shift and go to state 39
-    expression_group               shift and go to state 40
+    statement                      shift and go to state 93
+    statement_return               shift and go to state 16
+    statement_print                shift and go to state 17
+    statement_assignment           shift and go to state 18
+    statement_ifthenelse           shift and go to state 19
+    statement_while                shift and go to state 20
+    statement_as_long_as           shift and go to state 21
+    statement_compound             shift and go to state 22
 
 state 70
 
@@ -1753,11 +1758,10 @@ state 70
     IDENT           reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
     IF              reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
     WHILE           reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
-    REPEAT          reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
+    AS_LONG_AS      reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
     LCURL           reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
     $end            reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
     RCURL           reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
-    UNTIL           reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
     ELSE            reduce using rule 32 (statement_compound -> LCURL statement_list RCURL .)
 
 
@@ -2291,11 +2295,10 @@ state 90
     IDENT           reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
     IF              reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
     WHILE           reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
-    REPEAT          reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
+    AS_LONG_AS      reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
     LCURL           reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
     $end            reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
     RCURL           reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
-    UNTIL           reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
     ELSE            reduce using rule 29 (statement_assignment -> IDENT ASSIGN expression SEMICOL .)
 
 
@@ -2315,39 +2318,27 @@ state 92
     IDENT           reduce using rule 31 (statement_while -> WHILE expression DO statement .)
     IF              reduce using rule 31 (statement_while -> WHILE expression DO statement .)
     WHILE           reduce using rule 31 (statement_while -> WHILE expression DO statement .)
-    REPEAT          reduce using rule 31 (statement_while -> WHILE expression DO statement .)
+    AS_LONG_AS      reduce using rule 31 (statement_while -> WHILE expression DO statement .)
     LCURL           reduce using rule 31 (statement_while -> WHILE expression DO statement .)
     $end            reduce using rule 31 (statement_while -> WHILE expression DO statement .)
     RCURL           reduce using rule 31 (statement_while -> WHILE expression DO statement .)
-    UNTIL           reduce using rule 31 (statement_while -> WHILE expression DO statement .)
     ELSE            reduce using rule 31 (statement_while -> WHILE expression DO statement .)
 
 
 state 93
 
-    (26) statement_repeat_until -> REPEAT statement_list UNTIL expression . SEMICOL
-    (43) expression_binop -> expression . PLUS expression
-    (44) expression_binop -> expression . MINUS expression
-    (45) expression_binop -> expression . TIMES expression
-    (46) expression_binop -> expression . DIVIDE expression
-    (47) expression_binop -> expression . EQ expression
-    (48) expression_binop -> expression . NEQ expression
-    (49) expression_binop -> expression . LT expression
-    (50) expression_binop -> expression . GT expression
-    (51) expression_binop -> expression . LTE expression
-    (52) expression_binop -> expression . GTE expression
+    (26) statement_as_long_as -> AS_LONG_AS expression DO statement .
 
-    SEMICOL         shift and go to state 99
-    PLUS            shift and go to state 53
-    MINUS           shift and go to state 54
-    TIMES           shift and go to state 55
-    DIVIDE          shift and go to state 56
-    EQ              shift and go to state 57
-    NEQ             shift and go to state 58
-    LT              shift and go to state 59
-    GT              shift and go to state 60
-    LTE             shift and go to state 61
-    GTE             shift and go to state 62
+    RETURN          reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    PRINT           reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    IDENT           reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    IF              reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    WHILE           reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    AS_LONG_AS      reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    LCURL           reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    $end            reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    RCURL           reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
+    ELSE            reduce using rule 26 (statement_as_long_as -> AS_LONG_AS expression DO statement .)
 
 
 state 94
@@ -2358,13 +2349,13 @@ state 94
 
     IDENT           shift and go to state 71
 
-    parameter_list                 shift and go to state 100
+    parameter_list                 shift and go to state 99
 
 state 95
 
     (14) function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN . LCURL body RCURL
 
-    LCURL           shift and go to state 101
+    LCURL           shift and go to state 100
 
 
 state 96
@@ -2418,7 +2409,7 @@ state 97
     LPAREN          shift and go to state 43
 
     expression                     shift and go to state 88
-    expression_list                shift and go to state 102
+    expression_list                shift and go to state 101
     expression_integer             shift and go to state 36
     expression_identifier          shift and go to state 37
     expression_call                shift and go to state 38
@@ -2433,14 +2424,14 @@ state 98
     (21) statement -> . statement_assignment
     (22) statement -> . statement_ifthenelse
     (23) statement -> . statement_while
-    (24) statement -> . statement_repeat_until
+    (24) statement -> . statement_as_long_as
     (25) statement -> . statement_compound
     (27) statement_return -> . RETURN expression SEMICOL
     (28) statement_print -> . PRINT expression SEMICOL
     (29) statement_assignment -> . IDENT ASSIGN expression SEMICOL
     (30) statement_ifthenelse -> . IF expression THEN statement ELSE statement
     (31) statement_while -> . WHILE expression DO statement
-    (26) statement_repeat_until -> . REPEAT statement_list UNTIL expression SEMICOL
+    (26) statement_as_long_as -> . AS_LONG_AS expression DO statement
     (32) statement_compound -> . LCURL statement_list RCURL
 
     RETURN          shift and go to state 23
@@ -2448,43 +2439,26 @@ state 98
     IDENT           shift and go to state 25
     IF              shift and go to state 26
     WHILE           shift and go to state 27
-    REPEAT          shift and go to state 28
+    AS_LONG_AS      shift and go to state 28
     LCURL           shift and go to state 29
 
-    statement                      shift and go to state 103
+    statement                      shift and go to state 102
     statement_return               shift and go to state 16
     statement_print                shift and go to state 17
     statement_assignment           shift and go to state 18
     statement_ifthenelse           shift and go to state 19
     statement_while                shift and go to state 20
-    statement_repeat_until         shift and go to state 21
+    statement_as_long_as           shift and go to state 21
     statement_compound             shift and go to state 22
 
 state 99
-
-    (26) statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .
-
-    RETURN          reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    PRINT           reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    IDENT           reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    IF              reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    WHILE           reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    REPEAT          reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    LCURL           reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    $end            reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    RCURL           reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    UNTIL           reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-    ELSE            reduce using rule 26 (statement_repeat_until -> REPEAT statement_list UNTIL expression SEMICOL .)
-
-
-state 100
 
     (18) parameter_list -> IDENT COMMA parameter_list .
 
     RPAREN          reduce using rule 18 (parameter_list -> IDENT COMMA parameter_list .)
 
 
-state 101
+state 100
 
     (14) function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL . body RCURL
     (3) body -> . optional_variables_declaration_list optional_functions_declaration_list statement_list
@@ -2500,23 +2474,23 @@ state 101
     IDENT           reduce using rule 2 (empty -> .)
     IF              reduce using rule 2 (empty -> .)
     WHILE           reduce using rule 2 (empty -> .)
-    REPEAT          reduce using rule 2 (empty -> .)
+    AS_LONG_AS      reduce using rule 2 (empty -> .)
     LCURL           reduce using rule 2 (empty -> .)
     VAR             shift and go to state 6
 
-    body                           shift and go to state 104
+    body                           shift and go to state 103
     optional_variables_declaration_list shift and go to state 3
     empty                          shift and go to state 4
     variables_declaration_list     shift and go to state 5
 
-state 102
+state 101
 
     (57) expression_list -> expression COMMA expression_list .
 
     RPAREN          reduce using rule 57 (expression_list -> expression COMMA expression_list .)
 
 
-state 103
+state 102
 
     (30) statement_ifthenelse -> IF expression THEN statement ELSE statement .
 
@@ -2525,22 +2499,21 @@ state 103
     IDENT           reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
     IF              reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
     WHILE           reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
-    REPEAT          reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
+    AS_LONG_AS      reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
     LCURL           reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
     $end            reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
     RCURL           reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
-    UNTIL           reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
     ELSE            reduce using rule 30 (statement_ifthenelse -> IF expression THEN statement ELSE statement .)
 
 
-state 104
+state 103
 
     (14) function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body . RCURL
 
-    RCURL           shift and go to state 105
+    RCURL           shift and go to state 104
 
 
-state 105
+state 104
 
     (14) function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL .
 
@@ -2550,6 +2523,6 @@ state 105
     IDENT           reduce using rule 14 (function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL .)
     IF              reduce using rule 14 (function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL .)
     WHILE           reduce using rule 14 (function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL .)
-    REPEAT          reduce using rule 14 (function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL .)
+    AS_LONG_AS      reduce using rule 14 (function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL .)
     LCURL           reduce using rule 14 (function -> FUNCTION IDENT LPAREN optional_parameter_list RPAREN LCURL body RCURL .)
 

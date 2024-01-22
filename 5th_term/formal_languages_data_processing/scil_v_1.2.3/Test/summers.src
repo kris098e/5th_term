@@ -8,11 +8,11 @@ function sum_recurse(n) {
 }
 
 function sum_loop(n) {
-  var sum, i
+ var sum, i
   
   i = 1;
   sum = 0;
-  while i <= n do {
+  as_long_as i <= n do {
     sum = sum + i;
     i = i + 1;
   }

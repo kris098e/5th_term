@@ -1,3 +1,4 @@
+
 # This module provides class definitions for all the node types in the
 # abstract syntax tree (AST). Each node accepts a visitor via its
 # accept method, which implements a generic recursive traversal of
@@ -28,7 +29,7 @@ class body:
         visitor.preMidVisit(self)
         if self.functions_decl:
             self.functions_decl.accept(visitor)
-        visitor.it(self)
+        visitor.postMidVisit(self)
         self.stm_list.accept(visitor)
         visitor.postVisit(self)
 
@@ -241,15 +242,3 @@ class expression_list:
         if self.next:
             self.next.accept(visitor)
         visitor.postVisit(self)
-
-@dataclass
-class statement_repeat_until:
-    exp: Any
-    repeat_part: Any
-    lineno: int
-
-    def accept(self, visitor):
-        visitor.preVisit(self)
-        self.repeat_part.accept(visitor)
-        self.exp.accept(visitor)
-        visitor.midVisit(self)
