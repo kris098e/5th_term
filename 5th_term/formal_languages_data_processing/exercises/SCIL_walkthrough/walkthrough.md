@@ -106,8 +106,8 @@ In the provided precedence rules:
 
 ```python
 precedence = (
-    ('right', 'EQ', 'NEQ', 'LT', 'GT', 'LTE', 'GTE'),
-    ('left', 'PLUS', 'MINUS'),
+    ('right', 'EQ', 'NEQ', 'LT', 'GT', 'LTE', 'GTE'), #Makes sense that these are right associative, as we will want to evealuate the entire right-hand side before assigning something to the identifier or the expression.
+    ('left', 'PLUS', 'MINUS'), #makes sense to put this as having lower precedence than TIMES, DIVIDE. As when we have the full expression of E DIVIDE E or E TIMES E we will want to reduce first, before moving on. See [4.2_using_parser_processing]
     ('left', 'TIMES', 'DIVIDE'),
 )
 ```

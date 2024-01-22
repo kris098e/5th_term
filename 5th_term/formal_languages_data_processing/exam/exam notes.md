@@ -250,7 +250,27 @@ paste -d ’ ’ myfile1 myfile2
 ### AWK (dont bother)
 
 # Parsing
-## Top down parsers 101
+Sure, I'll explain the difference between bottom-up parsing and top-down parsing in the context of crafting parsers for context-free grammars (CFGs) in a simple way:
+
+1. **Top-Down Parsing**:
+    
+    - **Starting Point**: Begins at the top, which means it starts with the start symbol of the grammar.
+    - **Approach**: It tries to break down the start symbol into smaller parts, step by step, following the grammar rules, until it reaches the terminals (the actual input tokens).
+    - **Prediction**: It predicts which grammar rule to apply at each step. If the prediction is wrong, it may have to backtrack and try a different rule (this is known as backtracking).
+    - **Example**: A common top-down parser is the Recursive Descent Parser.
+2. **Bottom-Up Parsing**:
+    
+    - **Starting Point**: Begins at the bottom, which means it starts with the input tokens.
+    - **Approach**: It gradually combines tokens into larger structures (like phrases or expressions) based on the grammar rules, working its way up until it constructs the start symbol.
+    - **Building**: It does not need to predict the rules in advance. Instead, it combines the tokens and applies the rules based on what it has already seen.
+    - **Example**: A popular bottom-up parser is the Shift-Reduce Parser.
+
+In summary, top-down parsing starts with the highest level of the grammar and works its way down to the input tokens, often guessing which rules to apply. Bottom-up parsing starts with the input tokens and works its way up to the highest level of the grammar, constructing the parse by combining tokens into larger units based on the rules.
+
+![[Pasted image 20240122161009.png]]
+## Top down parsers
+[Examples](2.Parsing)
+### Example how it is done
 ![[Pasted image 20231005145633.png]]
 ![[Appel-3-5.excalidraw]]
 - `nullable:` can derive the empty string from the rule.
@@ -274,11 +294,19 @@ we add the rule to the number for the rule in the table
 > > With the FOLLOW(X) we get how we can get it during a production of some other nonterminal
 
 
+### How to insert into this
+![[Pasted image 20240122150619.png]]
+![[Pasted image 20240122150644.png]]
+![[Pasted image 20240122150654.png]]
+![[Pasted image 20240122150704.png]]
+![[Pasted image 20240122150712.png]]
 ## Bottom up parsers
 ### Important
 - if we `left-factor` the chances of clashes are a lot less when using other than LR parsers. **hvad fuck er left-factoring?**
 	- That is, LR-parsers can easily handle left-recursion.
 - The only difference from `LR(0)` and `SLR(1)` is that in the parsing table, when we reduce, we only put the `reduce` action in the columns of the terminals which are in the follow of the left hand side.
+-  `LR(1)` Remember that it is only when we apply closure to the productions that we can update the lookahead symbol. Else they stay the same when we just move the `.`
+- reducing the `LR(x)` will always sometimes introduce clashes in the parser table. In addition to this, when there are something wrong, since we have less states, we may also provide worse debugging output, due to two or more states being cramped together, we can provide less clear debugging.
 ### LR(0)
 The only difference from `LR(0)` and `SLR(1)` is that in the parsing table, when we reduce, we only put the `reduce` action in the columns of the terminals which are in the follow of the left hand side. 
 **When doing the table for LR(0)** we put the reduce action under every single terminal for row corresponding to the state $I_{x}$.
@@ -291,3 +319,19 @@ The only difference from `LR(0)` and `SLR(1)` is that in the parsing table, when
 #### Table
 ![[Pasted image 20240122123233.png]]
 Hvad fuck er left factoring
+### LR(1) & LALR(1)
+ - `LR(1)` Remember that it is only when we apply closure to the productions that we can update the lookahead symbol. Else they stay the same when we just move the `.`
+ - [Look at own examples](2.parsing# Doing the right recursion)
+ - and the other examples
+#### Examples
+##### LALR(1)
+This is combining the states which looks the same, but has different lookahead symbols. Fx, there is `4,7`, `3,6`, `8,9` which are the same, but different lookahead symbols
+![[Pasted image 20231004120843.png]]
+
+###### LR(1) parsing table
+![[Pasted image 20240122103659.png]]
+
+###### LALR(1) Parsing table
+![[Pasted image 20240122103900.png]]
+
+# dd
