@@ -44,6 +44,28 @@
             }
           },
           {
+            "id": "802dfcbc0723b367",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "formal_languages_data_processing/exercises/3.compilers/attachments/Appel-3-8.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "6909a411ae5a429e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3e4f958b8920637f",
             "type": "leaf",
             "state": {
@@ -220,9 +242,12 @@
   },
   "active": "300a9abb3938a3dc",
   "lastOpenFiles": [
-    "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
+    "formal_languages_data_processing/exercises/3.compilers/attachments/Appel-3-8.excalidraw.md",
     "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
     "formal_languages_data_processing/3_compilers/4.1.parsing - own notes.md",
+    "pictures/Pasted image 20240122103900.png",
+    "pictures/Pasted image 20240122103659.png",
+    "formal_languages_data_processing/3_compilers/4.0.Parsing.md",
     "formal_languages_data_processing/3_compilers/4.2_Using_parser_generators.md",
     "formal_languages_data_processing/3_compilers/4.2.0_example_use.md",
     "Untitled.md",
@@ -256,7 +281,6 @@
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-shorthand-properties/node_modules/@babel/core/README.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-reserved-words/node_modules/@babel/core/README.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-regenerator/node_modules/@babel/core/README.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@svgr/webpack/node_modules/@babel/plugin-transform-react-jsx-development/node_modules/@babel/core/README.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/stream-http/test/server/static/browserify.png",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/istanbul-reports/lib/html/assets/sort-arrow-sprite.png",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@jest/core/build/assets/jest_logo.png",
@@ -264,8 +288,6 @@
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_word.png",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_zip.png",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_wrench.png",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_world.png",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/serve-index/public/icons/page_white_word.png",
     "Untitled.canvas"
   ]
 }
