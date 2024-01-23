@@ -47,7 +47,6 @@ pretty easy when you think about it
 b.
 ![[1-19b.excalidraw]]
 ![[Pasted image 20230919110233.png]]
-
 ## Making a DFA into a regular expression
 - Remember to add epsilon transitions from all accept states to the new accept state. Else it just `Ø`.
 - Just a matter of thinking about how we can get to the other states still, and when we have this removed, how can we get to the other states
@@ -110,12 +109,10 @@ So what is stated in the transition function is that, when we are in the state `
 `transition function`: 
 1. When the read symbol is not epsilon we just take the transition function and we stay in the same state. 
 2. When the symbol is epsilon we have a state for each of the ways of taking the path for `c` and
-
-
-
-
 ## Reducing NFA to a DFA
-
+### JFLAP
+![[Pasted image 20240123120402.png]]
+### By hand
 ![[Pasted image 20230918122418.png]]
 a. NFA which for each machine allows for going to the machines on the empty strings and allows to go back as we can repeat as many times we want
 
@@ -135,7 +132,6 @@ Remember to follow the epsilon and add them to each state
 See that `5, 9, 13` are redundant accept state since state `2` accepts
 ![[Pasted image 20230919104827.png]]
 ![[NFA_1.17b]]
-
 # 2 CLI & data formats
 ![[Pasted image 20240119144557.png]]
 ## Tabular Data
@@ -268,8 +264,16 @@ Sure, I'll explain the difference between bottom-up parsing and top-down parsing
 In summary, top-down parsing starts with the highest level of the grammar and works its way down to the input tokens, often guessing which rules to apply. Bottom-up parsing starts with the input tokens and works its way up to the highest level of the grammar, constructing the parse by combining tokens into larger units based on the rules.
 
 ![[Pasted image 20240122161009.png]]
-## Top down parsers
+## Top down parsers (USE `JsMachine`)
 [Examples](2.Parsing)
+### IMPORTANT
+- **DONT** `type in $ at the first production`
+	- Whenever we don't type in a `$` it is always gonna be there. Therefore, examples of grammars where there are no `$` in the grammar, just ignore the `$`
+- I think the general rule is that we always put `$` as the follow of the starting non-terminal, as we `have not` done this in the exercises, but it must be true since this `JsMachine` website does it.
+#### Example 1
+![[Pasted image 20240123124547.png]]
+#### Example 2
+![[Pasted image 20240123132417.png]]
 ### Example how it is done
 ![[Pasted image 20231005145633.png]]
 ![[Appel-3-5.excalidraw]]
@@ -315,6 +319,8 @@ This will of course lead to more clashes whether to `shift or reduce` or some ot
 #### Table
 ![[Pasted image 20240122123541.png]]
 ### SLR(1)
+> JsMachine: may use different state numbering, but it corresponds to the same thing
+
 The only difference from `LR(0)` and `SLR(1)` is that in the parsing table, when we reduce, we only put the `reduce` action in the columns of the terminals which are in the follow of the left hand side.
 #### Table
 ![[Pasted image 20240122123233.png]]
@@ -324,6 +330,7 @@ Hvad fuck er left factoring
  - [Look at own examples](2.parsing# Doing the right recursion)
  - and the other examples
 #### Examples
+![[Pasted image 20240123134434.png]]
 ##### LALR(1)
 This is combining the states which looks the same, but has different lookahead symbols. Fx, there is `4,7`, `3,6`, `8,9` which are the same, but different lookahead symbols
 ![[Pasted image 20231004120843.png]]
@@ -333,5 +340,11 @@ This is combining the states which looks the same, but has different lookahead s
 
 ###### LALR(1) Parsing table
 ![[Pasted image 20240122103900.png]]
-
-# dd
+# DFA minimization
+## Core tips
+- Do as in the example, that is write up all of the sets which are dealing with, to better debug what to do next. It is essentially a really easy algorithm.
+- Remember
+	- `F` is the final states, and Q is all the states
+	- For `W` we can just work with the one that is the smallest as the start
+[[DFA_minimazation.pdf]]
+![[DFAminimize.excalidraw]]

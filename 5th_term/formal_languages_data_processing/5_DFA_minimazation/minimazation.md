@@ -9,7 +9,7 @@ first reachable state is `q0`
 $\sum$ is here the alphabet
 
 ## Minimization algorithm
-- p stands for partitiion, takes the states in the dfa and split them into disjoint sets. States that ought to be the same will be in the same partition
+- p stands for partition, takes the states in the dfa and split them into disjoint sets. States that ought to be the same will be in the same partition
 ### Example
 starts at page 6
 
