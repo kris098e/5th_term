@@ -44,6 +44,16 @@
             }
           },
           {
+            "id": "2369d85495053d53",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "formal_languages_data_processing/attachments/symbol_type_code.pdf"
+              }
+            }
+          },
+          {
             "id": "133bd8b8cacb8bc6",
             "type": "leaf",
             "state": {
@@ -232,18 +242,26 @@
   },
   "active": "467f0bac9e72587a",
   "lastOpenFiles": [
+    "pictures/Pasted image 20240123165738.png",
+    "pictures/Pasted image 20240123165735.png",
+    "formal_languages_data_processing/exercises/0.DFA and NFA.md",
     "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+    "formal_languages_data_processing/exercises/3.compilers/3..md",
+    "formal_languages_data_processing/0_Introduction.md",
+    "formal_languages_data_processing/attachments/symbol_type_code.pdf",
+    "formal_languages_data_processing/attachments/Code_generation.excalidraw.md",
+    "formal_languages_data_processing/exercises/3.compilers/4..md",
+    "formal_languages_data_processing/attachments/11_symbol_collection_type_checking.pdf",
+    "formal_languages_data_processing/attachments/10_symbol_collection.pdf",
+    "formal_languages_data_processing/attachments/bison_parsser.pdf",
+    "formal_languages_data_processing/scil_v_1.2.3/Compiler/tmp.s",
+    "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
     "formal_languages_data_processing/exam/exam notes.md",
     "formal_languages_data_processing/exam/JsMachines/js/underscore.js",
     "formal_languages_data_processing/exam/JsMachines/js/treeview.js",
     "formal_languages_data_processing/exam/JsMachines/js/tree.js",
     "formal_languages_data_processing/exam/JsMachines/js/slritem.js",
     "formal_languages_data_processing/exam/JsMachines/js/tools.js",
-    "formal_languages_data_processing/exam/JsMachines/js/lrtableview.js",
-    "formal_languages_data_processing/exam/JsMachines/js/lrtable.js",
-    "formal_languages_data_processing/exam/JsMachines/js/grammarview.js",
-    "formal_languages_data_processing/exam/JsMachines/js/lrclosuretableview.js",
-    "formal_languages_data_processing/exam/JsMachines/js/lrparseview.js",
     "formal_languages_data_processing/4_data_cleaning_web_scraping/0.Data_cleaning.md",
     "formal_languages_data_processing/5_DFA_minimazation/minimazation.md",
     "pictures/Pasted image 20240123134434.png",
@@ -266,17 +284,10 @@
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/eslint/node_modules/semver/README.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/eslint/node_modules/semver/CHANGELOG.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/@typescript-eslint/typescript-estree/node_modules/semver/CHANGELOG.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/bn.js/CHANGELOG.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/glob/changelog.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/semver/CHANGELOG.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/sockjs/examples/multiplex/README.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/sockjs/examples/echo/README.md",
-    "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/browserify-rsa/readme.md",
     "pictures/Pasted image 20240122174250.png",
     "pictures/Pasted image 20240122174228.png",
     "pictures/Pasted image 20240122161009.png",
     "pictures/Pasted image 20240122150712.png",
-    "pictures/Pasted image 20240122150704.png",
     "Untitled.canvas"
   ]
 }

@@ -1,5 +1,5 @@
 # Beginning notes
-[[lecture_notes_symbol_type_code.pdf]]
+[[symbol_type_code.pdf]]
 - Remember that just doing `{ }` in scil will not introduce a new scope, only a function will.
 # Token generation
 ```python

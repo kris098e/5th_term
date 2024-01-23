@@ -110,6 +110,14 @@ So what is stated in the transition function is that, when we are in the state `
 1. When the read symbol is not epsilon we just take the transition function and we stay in the same state. 
 2. When the symbol is epsilon we have a state for each of the ways of taking the path for `c` and
 ## Reducing NFA to a DFA
+### Important
+- When we start the NFA to DFA conversation we look at which states $\epsilon$ goes to. so for this we start with the state 
+	- `{0,2}`, then on  
+		- 1 -> `{1,3,2}` because when we get to 3, we have to also follow the $\epsilon$ transition. 
+			- 0 -> `{}` since we from the 3 `SHOULD NOT` follow the epsilon transition, as we did this on the transition. 
+				- `That is`, we only follow the $\epsilon$ transition when we get to a state after follow the `0`, and not before we follow the `0`.
+		- 0 -> `{1}`
+![[Pasted image 20240123165738.png]]
 ### JFLAP
 ![[Pasted image 20240123120402.png]]
 ### By hand

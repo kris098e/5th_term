@@ -102,8 +102,7 @@ def t_error(t):
                   t.lexer.lineno)
     t.lexer.skip(1)
 
-
-# PARSING RULES AND BUILDING THE AST
+# PASING RULES AND BUILDING THE AST
 
 precedence = (
     ('right', 'EQ', 'NEQ', 'LT', 'GT', 'LTE', 'GTE'),

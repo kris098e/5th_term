@@ -81,7 +81,47 @@ F0006_sum_loop:
                 pushq %rbp              # save caller's base pointer
                 movq %rsp, %rbp         # make stack pointer new base pointer
 
-                addq $-16, %rsp         # allocate space for local variables
+                addq $-24, %rsp         # allocate space for local variables
+
+                pushq $9                # push integer expression
+                                        # CALLER PROLOGUE: empty
+
+                pushq 0(%rsp)           # push arguments in reverse order
+                movq %rbp, %rdx         # preparing for static link computation
+                pushq 16(%rdx)          # set up static link for outer function
+                callq F0000_sum_recurse # 
+                addq $16, %rsp          # deallocate stack space for parameters
+                                        # or local variables
+
+                                        # CALLER EPILOGUE: empty
+
+                addq $8, %rsp           # deallocate stack space for parameters
+                                        # or local variables
+
+                pushq %rax              # push return value as the call result
+                movq %rbp, %rdx         # preparing for static link computation
+                popq -24(%rdx)          # assigning the computed expression
+                movq %rbp, %rdx         # preparing for static link computation
+                pushq -24(%rdx)         # push value of 3. variable
+                                        # CALLER PROLOGUE: empty
+
+                                        # PRINTING
+                leaq form(%rip), %rdi   # pass 1. argument in %rdi
+                movq 0(%rsp), %rsi      # pass 2. argument in %rsi
+                movq $0, %rax           # no floating point registers used
+                testq $15, %rsp         # test for 16 byte alignment
+                jz F0014_aligned        # jump if aligned
+                addq $-8, %rsp          # 16 byte aligning
+                callq printf@plt        # call printf
+                addq $8, %rsp           # reverting alignment
+                jmp F0015_end_aligned   # 
+F0014_aligned:
+                callq printf@plt        # call printf
+F0015_end_aligned:
+
+                                        # CALLER EPILOGUE: empty
+
+                addq $8, %rsp           # pop expression from stack
 
                 pushq $1                # push integer expression
                 movq %rbp, %rdx         # preparing for static link computation
@@ -139,6 +179,25 @@ F0007_end_sum_loop:
                 popq %rbp               # restore base pointer
                 ret                     # return from call
 
+F0012_hello:
+
+                                        # CALLEE PROLOGUE
+                pushq %rbp              # save caller's base pointer
+                movq %rsp, %rbp         # make stack pointer new base pointer
+
+                addq $0, %rsp           # allocate space for local variables
+
+                movq %rbp, %rdx         # preparing for static link computation
+                pushq 24(%rdx)          # push value of 1. parameter
+                popq %rax               # move return value to return register
+                jmp F0013_end_hello     # jump to function epiloque
+F0013_end_hello:
+
+                                        # CALLEE EPILOGUE
+                movq %rbp, %rsp         # restore stack pointer
+                popq %rbp               # restore base pointer
+                ret                     # return from call
+
 main:
 
                                         # CALLEE PROLOGUE
@@ -176,76 +235,6 @@ main:
                 movq 0(%rsp), %rsi      # pass 2. argument in %rsi
                 movq $0, %rax           # no floating point registers used
                 testq $15, %rsp         # test for 16 byte alignment
-                jz F0012_aligned        # jump if aligned
-                addq $-8, %rsp          # 16 byte aligning
-                callq printf@plt        # call printf
-                addq $8, %rsp           # reverting alignment
-                jmp F0013_end_aligned   # 
-F0012_aligned:
-                callq printf@plt        # call printf
-F0013_end_aligned:
-
-                                        # CALLER EPILOGUE: empty
-
-                addq $8, %rsp           # pop expression from stack
-
-                pushq $9                # push integer expression
-                                        # CALLER PROLOGUE: empty
-
-                pushq 0(%rsp)           # push arguments in reverse order
-                pushq %rbp              # set up static link for inner function
-                callq F0006_sum_loop    # 
-                addq $16, %rsp          # deallocate stack space for parameters
-                                        # or local variables
-
-                                        # CALLER EPILOGUE: empty
-
-                addq $8, %rsp           # deallocate stack space for parameters
-                                        # or local variables
-
-                pushq %rax              # push return value as the call result
-                                        # CALLER PROLOGUE: empty
-
-                                        # PRINTING
-                leaq form(%rip), %rdi   # pass 1. argument in %rdi
-                movq 0(%rsp), %rsi      # pass 2. argument in %rsi
-                movq $0, %rax           # no floating point registers used
-                testq $15, %rsp         # test for 16 byte alignment
-                jz F0014_aligned        # jump if aligned
-                addq $-8, %rsp          # 16 byte aligning
-                callq printf@plt        # call printf
-                addq $8, %rsp           # reverting alignment
-                jmp F0015_end_aligned   # 
-F0014_aligned:
-                callq printf@plt        # call printf
-F0015_end_aligned:
-
-                                        # CALLER EPILOGUE: empty
-
-                addq $8, %rsp           # pop expression from stack
-
-                pushq $42               # push integer expression
-                                        # CALLER PROLOGUE: empty
-
-                pushq 0(%rsp)           # push arguments in reverse order
-                pushq %rbp              # set up static link for inner function
-                callq F0000_sum_recurse # 
-                addq $16, %rsp          # deallocate stack space for parameters
-                                        # or local variables
-
-                                        # CALLER EPILOGUE: empty
-
-                addq $8, %rsp           # deallocate stack space for parameters
-                                        # or local variables
-
-                pushq %rax              # push return value as the call result
-                                        # CALLER PROLOGUE: empty
-
-                                        # PRINTING
-                leaq form(%rip), %rdi   # pass 1. argument in %rdi
-                movq 0(%rsp), %rsi      # pass 2. argument in %rsi
-                movq $0, %rax           # no floating point registers used
-                testq $15, %rsp         # test for 16 byte alignment
                 jz F0016_aligned        # jump if aligned
                 addq $-8, %rsp          # 16 byte aligning
                 callq printf@plt        # call printf
@@ -259,7 +248,7 @@ F0017_end_aligned:
 
                 addq $8, %rsp           # pop expression from stack
 
-                pushq $42               # push integer expression
+                pushq $9                # push integer expression
                                         # CALLER PROLOGUE: empty
 
                 pushq 0(%rsp)           # push arguments in reverse order
@@ -294,6 +283,91 @@ F0019_end_aligned:
 
                 addq $8, %rsp           # pop expression from stack
 
+                pushq $42               # push integer expression
+                                        # CALLER PROLOGUE: empty
+
+                pushq 0(%rsp)           # push arguments in reverse order
+                pushq %rbp              # set up static link for inner function
+                callq F0000_sum_recurse # 
+                addq $16, %rsp          # deallocate stack space for parameters
+                                        # or local variables
+
+                                        # CALLER EPILOGUE: empty
+
+                addq $8, %rsp           # deallocate stack space for parameters
+                                        # or local variables
+
+                pushq %rax              # push return value as the call result
+                                        # CALLER PROLOGUE: empty
+
+                                        # PRINTING
+                leaq form(%rip), %rdi   # pass 1. argument in %rdi
+                movq 0(%rsp), %rsi      # pass 2. argument in %rsi
+                movq $0, %rax           # no floating point registers used
+                testq $15, %rsp         # test for 16 byte alignment
+                jz F0020_aligned        # jump if aligned
+                addq $-8, %rsp          # 16 byte aligning
+                callq printf@plt        # call printf
+                addq $8, %rsp           # reverting alignment
+                jmp F0021_end_aligned   # 
+F0020_aligned:
+                callq printf@plt        # call printf
+F0021_end_aligned:
+
+                                        # CALLER EPILOGUE: empty
+
+                addq $8, %rsp           # pop expression from stack
+
+                pushq $42               # push integer expression
+                                        # CALLER PROLOGUE: empty
+
+                pushq 0(%rsp)           # push arguments in reverse order
+                pushq %rbp              # set up static link for inner function
+                callq F0006_sum_loop    # 
+                addq $16, %rsp          # deallocate stack space for parameters
+                                        # or local variables
+
+                                        # CALLER EPILOGUE: empty
+
+                addq $8, %rsp           # deallocate stack space for parameters
+                                        # or local variables
+
+                pushq %rax              # push return value as the call result
+                                        # CALLER PROLOGUE: empty
+
+                                        # PRINTING
+                leaq form(%rip), %rdi   # pass 1. argument in %rdi
+                movq 0(%rsp), %rsi      # pass 2. argument in %rsi
+                movq $0, %rax           # no floating point registers used
+                testq $15, %rsp         # test for 16 byte alignment
+                jz F0022_aligned        # jump if aligned
+                addq $-8, %rsp          # 16 byte aligning
+                callq printf@plt        # call printf
+                addq $8, %rsp           # reverting alignment
+                jmp F0023_end_aligned   # 
+F0022_aligned:
+                callq printf@plt        # call printf
+F0023_end_aligned:
+
+                                        # CALLER EPILOGUE: empty
+
+                addq $8, %rsp           # pop expression from stack
+
+                pushq $2                # push integer expression
+                                        # CALLER PROLOGUE: empty
+
+                pushq 0(%rsp)           # push arguments in reverse order
+                pushq %rbp              # set up static link for inner function
+                callq F0012_hello       # 
+                addq $16, %rsp          # deallocate stack space for parameters
+                                        # or local variables
+
+                                        # CALLER EPILOGUE: empty
+
+                addq $8, %rsp           # deallocate stack space for parameters
+                                        # or local variables
+
+                pushq %rax              # push return value as the call result
                 pushq $0                # push integer expression
                 popq %rax               # move return value to return register
                 jmp end_main            # jump to function epiloque

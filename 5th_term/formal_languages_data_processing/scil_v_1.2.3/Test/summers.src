@@ -9,6 +9,9 @@ function sum_recurse(n) {
 
 function sum_loop(n) {
  var sum, i
+ var x
+ x = sum_recurse(9);
+ print x;
   
   i = 1;
   sum = 0;
@@ -17,6 +20,9 @@ function sum_loop(n) {
     i = i + 1;
   }
   return sum;
+}
+function hello(n) {
+  return n;
 }
 
 print sum_recurse(9);
