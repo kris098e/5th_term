@@ -28,7 +28,7 @@ void yyerror() {
 %left '+' '-'
 %left '*' '/'
 
-%% 
+%%
 program: exp
          { theexpression = $1;}
 ;

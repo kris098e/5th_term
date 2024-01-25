@@ -1,3 +1,18 @@
+Walk through
+# Finite automta
+- Reducing a DFA to automata, remember that that when ripping out a state, to look at all the possibilities for each of the other states.
+# Parsers
+## top-down parsers
+- Remember when doing follow of a non-terminal, and the non-terminal right after this non-terminal is nullable, then we add the first(`what is after the non-terminal`). If we reach the end of the production, then we also have to add the follow of the left-hand-side non-terminal. 
+    - **DONT FORGET** when using `JsMachine` for the parser, to keep an eye out for the missing `$`, I.e it is there, so the follow of fx `S` still contains `$`.
+
+
+
+
+
+
+
+
 # Finite Automota, regular expressions and closed under certain operations
 ## Take an extra look at
 - reducing an NFA to a regular expression
@@ -272,6 +287,8 @@ In summary, top-down parsing starts with the highest level of the grammar and wo
 - **DONT** `type in $ at the first production`
 	- Whenever we don't type in a `$` it is always gonna be there. Therefore, examples of grammars where there are no `$` in the grammar, just ignore the `$`
 - I think the general rule is that we always put `$` as the follow of the starting non-terminal, as we `have not` done this in the exercises, but it must be true since this `JsMachine` website does it.
+	- But, keep an eye out for this during the exam. You may have to quickly look into the the follow of some of these non-terminals as `$` is not part of that many of the follow sets. 
+		- **basically, in the examples** the only way you can get `$` in your follow-set, is if you can follow `S` as well.
 #### Example 1
 ![[Pasted image 20240123124547.png]]
 #### Example 2

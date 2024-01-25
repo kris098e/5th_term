@@ -51,7 +51,7 @@ line    : assignment ';'		{;} // assignment will handle the logic, dont do anyth
 assignment : identifier '=' exp  { updateSymbolVal($1,$3); } // call the function
 			;
 exp    	: term                  {$$ = $1;} // save 
-       	| exp '+' term          {$$ = $1 + $3;} // can have multiple `exp` enging with a term
+       	| exp '+' term          {$$ = $1 + $3;} // can have multiple `exp` ending with a term
        	| exp '-' term          {$$ = $1 - $3;} // same
        	;
 term   	: number                {$$ = $1;} // save
