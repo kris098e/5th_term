@@ -36,7 +36,6 @@ in the arithmetic
 
 ### Goal, prove this theorem
 ![[Pasted image 20230911124903.png]]
-
 ## NFA basics
 - Remember that we dont have to define paths for all letters from each state in NFAs
 	- As the walkthrough of the NFA can just stop the branch if it finds itself in a state where it cannot get further 
@@ -77,7 +76,6 @@ start by making a new accept state, remove the other accept states and do _epsil
 from the ones which does not accept we make a transition to the new accept state, writing Ø as the regular expression to the accept state. This will never be accepted anyways
 
 ...
-
 ###### Examples
 ![[Pasted image 20230911134758.png]]
 1. The DFA
@@ -92,10 +90,6 @@ and need to make all possible arrows to all states. Can use the empty set.
 
 Sequentially remove the states one by one by `ripping` them out
 ![[NFA_to_regex.png]]
-
-
-
-
 ## Good exercise for proving that some language is closed under the operation
 ![[Pasted image 20230913130609.png]]
 Have two boxes in which we have removed the accept states in the first, and when we meet the symbol we want to skip, we have epsilon to the box which has accept states. This way we **have** to jump if we want to accept the string.
@@ -114,7 +108,7 @@ So what is stated in the transition function is that, when we are in the state `
 - When we start the NFA to DFA conversation we look at which states $\epsilon$ goes to. so for this we start with the state 
 	- `{0,2}`, then on  
 		- 1 -> `{1,3,2}` because when we get to 3, we have to also follow the $\epsilon$ transition. 
-			- 0 -> `{}` since we from the 3 `SHOULD NOT` follow the epsilon transition, as we did this on the transition. 
+			- 0 -> `{}` since we from the 3 `SHOULD NOT` follow the epsilon transition, as we did this on the last transition. 
 				- `That is`, we only follow the $\epsilon$ transition when we get to a state after follow the `0`, and not before we follow the `0`.
 		- 0 -> `{1}`
 ![[Pasted image 20240123165738.png]]
@@ -130,7 +124,7 @@ Just make them go all the back to the first state, as this has an epsilon transi
 ![[NFA_union.excalidraw]]
 
 b.
-`all about first seeing which states we can go to on an epsilon transition. Then we for this state look at each of the states that we can get to for` $\forall x \in Z$ `and draw the DFA transition`
+`all about first seeing which states we can go to on an epsilon transition. Then we for this state look at each of the states that we can get to for` $\forall x \in \sum\limits$ `and draw the DFA transition`
 Start of by calculating how many states you can reach from the start state with epsilon transisitions
 {1,2,3,6,10}
 Next we need to check what each of the states does on a {0,1, $\epsilon$}
@@ -144,11 +138,11 @@ See that `5, 9, 13` are redundant accept state since state `2` accepts
 ![[Pasted image 20240119144557.png]]
 ## Tabular Data
 - There are likely some rules which are made for these, to make it easier to work with
-[[04.pdf#page=10]]
+[[04.pdf#page=8]]
 ## CLI
 ### GREP
-- careful for character encoding [[04.pdf#page=page=21]]
-- examples of special operators in GREP for `NOT` [[04.pdf#page=34]]
+- careful for character encoding [[04.pdf#page=18]]
+- examples of special operators in GREP for `NOT` [[04.pdf#page=29]]
 ### Other tools
 [[05.pdf]] has examples
 - uniq

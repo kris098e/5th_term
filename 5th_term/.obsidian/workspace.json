@@ -8,31 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5352a5842c9d624e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "formal_languages_data_processing/4_data_cleaning_web_scraping/0.Data_cleaning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "578ec9f6e335946b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "formal_languages_data_processing/5_DFA_minimazation/minimazation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "467f0bac9e72587a",
+            "id": "8e0831cb10c447a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -42,55 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2369d85495053d53",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "formal_languages_data_processing/attachments/symbol_type_code.pdf"
-              }
-            }
-          },
-          {
-            "id": "133bd8b8cacb8bc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d068a69b890c262d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1773e881212d01b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -240,12 +169,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "467f0bac9e72587a",
+  "active": "8e0831cb10c447a1",
   "lastOpenFiles": [
+    "formal_languages_data_processing/attachments/04.pdf",
+    "formal_languages_data_processing/exam/exam notes.md",
+    "formal_languages_data_processing/attachments/05.pdf",
+    "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
+    "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
+    "formal_languages_data_processing/5_DFA_minimazation/minimazation.md",
+    "formal_languages_data_processing/5_DFA_minimazation/DFA_minimazation.pdf",
+    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/1..md",
+    "formal_languages_data_processing/4_data_cleaning_web_scraping/0.Data_cleaning.md",
     "pictures/Pasted image 20240123165738.png",
     "pictures/Pasted image 20240123165735.png",
     "formal_languages_data_processing/exercises/0.DFA and NFA.md",
-    "formal_languages_data_processing/exercises/3.compilers/2.Parsing.md",
     "formal_languages_data_processing/exercises/3.compilers/3..md",
     "formal_languages_data_processing/0_Introduction.md",
     "formal_languages_data_processing/attachments/symbol_type_code.pdf",
@@ -255,21 +192,13 @@
     "formal_languages_data_processing/attachments/10_symbol_collection.pdf",
     "formal_languages_data_processing/attachments/bison_parsser.pdf",
     "formal_languages_data_processing/scil_v_1.2.3/Compiler/tmp.s",
-    "formal_languages_data_processing/exercises/3.compilers/2.1_bison_parsing.md",
-    "formal_languages_data_processing/exam/exam notes.md",
     "formal_languages_data_processing/exam/JsMachines/js/underscore.js",
     "formal_languages_data_processing/exam/JsMachines/js/treeview.js",
-    "formal_languages_data_processing/exam/JsMachines/js/tree.js",
-    "formal_languages_data_processing/exam/JsMachines/js/slritem.js",
-    "formal_languages_data_processing/exam/JsMachines/js/tools.js",
-    "formal_languages_data_processing/4_data_cleaning_web_scraping/0.Data_cleaning.md",
-    "formal_languages_data_processing/5_DFA_minimazation/minimazation.md",
     "pictures/Pasted image 20240123134434.png",
     "pictures/Pasted image 20240123132417.png",
     "pictures/Pasted image 20240123130631.png",
     "pictures/Pasted image 20240123124547.png",
     "pictures/Pasted image 20240123120402.png",
-    "formal_languages_data_processing/exercises/DFA_minimazation_datacleaning/1..md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/caniuse-lite/CHANGELOG.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/jsdom/lib/old-api.md",
     "formal_languages_data_processing/exam/dfa-minimizer-react/node_modules/core-js/features/README.md",
@@ -287,7 +216,6 @@
     "pictures/Pasted image 20240122174250.png",
     "pictures/Pasted image 20240122174228.png",
     "pictures/Pasted image 20240122161009.png",
-    "pictures/Pasted image 20240122150712.png",
     "Untitled.canvas"
   ]
 }
