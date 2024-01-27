@@ -1,6 +1,6 @@
 Walk through
 # Finite automta
-- Reducing a DFA to automata, remember that that when ripping out a state, to look at all the possibilities for each of the other states.
+- Reducing a DFA to regex, remember that that when ripping out a state, to look at all the possibilities for each of the other states.
 # Parsers
 ## top-down parsers
 - Remember when doing follow of a non-terminal, and the non-terminal right after this non-terminal is nullable, then we add the first(`what is after the non-terminal`). If we reach the end of the production, then we also have to add the follow of the left-hand-side non-terminal. 
@@ -14,10 +14,6 @@ Walk through
 
 
 # Finite Automota, regular expressions and closed under certain operations
-## Take an extra look at
-- reducing an NFA to a regular expression
-- reducing a regular expression to NFA
-- reducing NFA to DFA
 ## DFA and NFA
 - The complement of a language is just the accepting DFA for the language, and then swapping the accept states. That is $F=Q \backslash F$.
 - The intersection between two languages is following states in both DFAs and accepting when both of the DFAs accept.
@@ -98,7 +94,6 @@ from the ones which does not accept we make a transition to the new accept state
 3. remove state 2, concatenate it with state 1
 4. remove state 1 and concatenate it with start state
 ### Good exercise showing it all
-
 ![[Pasted image 20230918135652.png]]
 make a new start state and accept state, all the previous accept states gets an empty string transition to the new accept state
 and need to make all possible arrows to all states. Can use the empty set.
